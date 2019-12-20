@@ -1,0 +1,128 @@
+/*
+  Enhanced security database (isc4.gdb) - version D
+   -it allows users to change their own passwords,
+   -it hides other users names
+    (unless you are SYSDBA, you will see only 1 row in "table" USERS)
+   -it creates log file that shows who/when tried to login
+    (however it can't distinguish between successful/unsuccessfull login)
+    (it also logs only known usernames, i.e. that already stored in isc4.gdb)
+   -it restricts logins to 3 attempts per minute for given name,
+    thus minimizes possibility to break into system by scanning passwords
+
+  ! Before running this script do not forget to do _physical copy_ backup of isc4.gdb !
+
+  ! If you need to change path to isc4.gdb file (in CONNECT command),
+    do not forget to change the path in external table definition too !
+
+  Written by: Ivan Prenosil, 2001
+ */
+
+
+
+CONNECT    'C:\Program Files\Borland\InterBase\isc4.gdb'
+  USER     'SYSDBA'
+  PASSWORD 'masterkey';
+
+
+/** Rename USERS table to USERS2. **/
+
+CREATE TABLE USERS2 (
+  USER_NAME     USER_NAME,
+  SYS_USER_NAME USER_NAME,
+  GROUP_NAME    USER_NAME,
+  UID           UID,
+  GID           GID,
+  PASSWD        PASSWD,
+  PRIVILEGE     PRIVILEGE,
+  COMMENT       COMMENT,
+  FIRST_NAME    NAME_PART,
+  MIDDLE_NAME   NAME_PART,
+  LAST_NAME     NAME_PART,
+  FULL_NAME COMPUTED BY (first_name || _UNICODE_FSS ' ' || middle_name || _UNICODE_FSS ' ' || last_name ));
+
+INSERT INTO USERS2
+  (USER_NAME, SYS_USER_NAME, GROUP_NAME, UID, GID, PASSWD, PRIVILEGE, COMMENT, FIRST_NAME, MIDDLE_NAME, LAST_NAME)
+SELECT
+   USER_NAME, SYS_USER_NAME, GROUP_NAME, UID, GID, PASSWD, PRIVILEGE, COMMENT, FIRST_NAME, MIDDLE_NAME, LAST_NAME
+  FROM USERS;
+
+COMMIT;
+
+DROP TABLE USERS;
+
+CREATE UNIQUE INDEX USER_NAME_INDEX2 ON USERS2(USER_NAME);
+
+
+/** Create (external!) log table. **/
+
+CREATE TABLE log_table
+  EXTERNAL FILE 'C:\Program Files\Borland\InterBase\isc4.log'
+( tstamp TIMESTAMP,
+  uname  CHAR(31) );
+
+/* If you want log table to be readable as text file, use this definition:
+( tstamp CHAR(20),
+  spc    CHAR(1) DEFAULT ' ',
+  uname  CHAR(31),
+  crlf   CHAR(2) );   Do not forget to fill "ln" field with CR+LF in trigger */
+
+
+
+/* Create procedure that inserts login-attempt info into log_table
+   (only known user names are logged, i.e. these that are in USERS2 table)
+   and checks whether you are allowed to look at particular row
+   in USERS2 table. If yes, procedure calls SUSPEND, otherwise
+   it finishes by EXIT. Output parameter is ignored. */
+
+SET TERM !!;
+CREATE PROCEDURE log_proc
+  (un VARCHAR(31))
+RETURNS
+  (x CHAR(1))
+AS
+DECLARE VARIABLE cnt INTEGER;
+BEGIN
+
+  IF (USER='')
+  THEN
+    BEGIN
+      SELECT COUNT(*)
+        FROM log_table
+       WHERE uname=:un
+         AND tstamp>CURRENT_TIMESTAMP-0.0007
+        INTO :cnt;
+
+      /* This will allow 3 connections during 1 minute (0.0007 of the day) */
+      IF (cnt>=3) THEN EXIT;
+
+      INSERT INTO log_table (TSTAMP, UNAME)
+             VALUES ( CURRENT_TIMESTAMP, :un);
+    END
+
+  IF (USER='' OR USER='SYSDBA' OR USER=:un)
+  THEN
+    SUSPEND;
+
+END !!
+SET TERM ;!!
+
+
+/** Create view that will be used instead of original USERS table. **/
+
+CREATE VIEW USERS (USER_NAME) AS
+  SELECT *
+    FROM users2
+   WHERE EXISTS (SELECT * FROM log_proc(users2.user_name));
+
+
+/** Grants. **/
+
+GRANT SELECT ON USERS TO PUBLIC;
+
+GRANT UPDATE(PASSWD, GROUP_NAME, UID, GID, FIRST_NAME, MIDDLE_NAME, LAST_NAME)
+   ON USERS
+   TO PUBLIC;
+
+GRANT SELECT, INSERT  ON log_table           TO PROCEDURE log_proc;
+GRANT EXECUTE         ON PROCEDURE log_proc  TO PUBLIC;
+

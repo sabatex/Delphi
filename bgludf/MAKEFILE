@@ -1,0 +1,21 @@
+#$Id: Makefile,v 0.2 2000/07/11 08:44:56 frank Exp $
+# Path to Free Pascal compiler
+BP = c:\pp\bin\win32\ppc386
+
+# where is install
+INSTALL = c:\pp\bin\win32\ginstall -c
+
+# where to install the libraries
+UDFDIR = c:\firebird\udf
+
+all: bbgludf
+
+bgludf: bgludf.dll
+
+bgludf.dll: bgludf.pp
+        $(BP) bgludf.pp
+
+install: all
+        install -g root -o root  -m 750 -s bgludf.dll $(UDFDIR)
+
+#END

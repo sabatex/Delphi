@@ -1,6 +1,11 @@
 unit ntics_const;
 interface
 const
+  Form_Left = 'Left';
+  Form_Heigth = 'Heigth';
+  Form_Top = 'Top';
+  Form_Width = 'Width';
+
   AnsiHexDigits      = ['0'..'9', 'A'..'F', 'a'..'f'];
   MaxKey=4;
   UserHashLength=3; //1..6
@@ -15,7 +20,7 @@ const
   Copyrigth ='Copyrigth(c) 2002 Serhiy Lakas';
   SectionKey = 'Key';
   AvtorHTML = 'http://www.elikom.com';
-  AvtorEMAIL= 'mailto:SerhiyLakas@mail.ru';
+  AvtorEMAIL= 'mailto:sabatex@mail.uzhgorod.ua';
   RsFileUtilsLanguageIndex = 'Illegal language index';
   RsFileUtilsNoVersionInfo = 'File contains no version information';
 

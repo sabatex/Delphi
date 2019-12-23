@@ -1,0 +1,106 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/install
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+release
+dir
+
+DelphiUtils.iss
+file
+
+
+
+
+2007-01-21T10:53:08.406250Z
+4cd71e43df261e4398eb8f813d62ec99
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+JediPackInstall.pas
+file
+
+
+
+
+2007-01-21T10:53:08.421875Z
+1c3ada45489ec988cb3e88fb52c0f764
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+install.txt
+file
+
+
+
+
+2007-01-21T10:53:08.421875Z
+7c96e6097c47e06afefb960151bd8e20
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+JVCLInstall
+dir
+
+clean.bat
+file
+
+
+
+
+2007-01-21T10:53:08.421875Z
+c0c1f2994b9d3e4550d19ef48c398d41
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+JVCLPackages.iss
+file
+
+
+
+
+2007-01-21T10:53:08.500000Z
+94d1e71a952beadd4665d7cd9448ad5a
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+JVCL.iss
+file
+
+
+
+
+2007-01-21T10:53:08.562500Z
+c1853f0526faad4c194455b001911fd9
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+

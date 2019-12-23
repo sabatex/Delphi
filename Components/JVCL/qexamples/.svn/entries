@@ -1,0 +1,181 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/qexamples
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+JvContentScroller
+dir
+
+JvOutlookBar
+dir
+
+JvLogFile
+dir
+
+JvFullColorDialog
+dir
+
+JvDataEmbedded
+dir
+
+JvZoom
+dir
+
+JvArrowButton
+dir
+
+JVCLXExamplesD7.bpg
+file
+
+
+
+
+2007-01-21T10:52:34.000000Z
+7e562343fcf63b645e6c8e3e296596d4
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+JvOutlookBarCustomDraw
+dir
+
+JvMarkupLabel
+dir
+
+JvEmbeddedForms
+dir
+
+JvRollOut
+dir
+
+JvCSVDataSet
+dir
+
+JvNavigationPane
+dir
+
+JvInstallLabel
+dir
+
+JvChartDemo
+dir
+
+JvTMTimeLine
+dir
+
+JvFooterAndGroupHeader
+dir
+
+JvValidators
+dir
+
+JvColorButton
+dir
+
+JvXPControls
+dir
+
+JvZLibMultiple
+dir
+
+JvStringGrid
+dir
+
+JvFindReplace
+dir
+
+JvTransparentButton2
+dir
+
+JvTipOfDay
+dir
+
+JvHTMLParser
+dir
+
+JvScrollingWindow
+dir
+
+JvProgressDialog
+dir
+
+JvDiagramShape
+dir
+
+JvID3v1
+dir
+
+JvOfficeColorButton
+dir
+
+JvErrorIndicator
+dir
+
+JvProfiler32
+dir
+
+JvTranslator
+dir
+
+JvLinkLabel
+dir
+
+JvTransparentButton
+dir
+
+JvColorCombo
+dir
+
+JvValidateEdit
+dir
+
+JvCheckBoxRadioButton
+dir
+
+JvFullColorCircleDialog
+dir
+
+JvLED
+dir
+
+JvSpellChecker
+dir
+
+JvInspector
+dir
+
+JvThread
+dir
+
+JvEdits
+dir
+
+JvDSADialogs
+dir
+
+JvStarfield
+dir
+

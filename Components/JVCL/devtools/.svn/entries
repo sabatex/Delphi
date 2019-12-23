@@ -1,0 +1,184 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/devtools
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+JvExVCL
+dir
+
+pg2want
+dir
+
+makefile.mak
+file
+
+
+
+
+2007-01-21T10:52:21.765625Z
+ddadde46011548016beecbdf415c94b8
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+PackagesGenerator
+dir
+
+Common
+dir
+
+dpp32
+dir
+
+BPRfix
+dir
+
+JConvert
+dir
+
+JvAdjustLineBreaks
+dir
+
+JTouch
+dir
+
+MakeCFG
+dir
+
+LastModifyRepl
+dir
+
+CompressDict
+dir
+
+MakeRC
+dir
+
+SetPoHeader
+dir
+
+ITEStrip
+dir
+
+JComp
+dir
+
+bin
+dir
+
+dcu
+dir
+
+ErrLook
+dir
+
+NoQuotes
+dir
+
+devtools.txt
+file
+
+
+
+
+2007-01-21T10:52:21.765625Z
+e2a2a2d189fca7abea2ad329f82607be
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+QCompressDict
+dir
+
+UPCASE
+dir
+
+MakePNG
+dir
+
+dxgettextResstr
+dir
+
+JvExCLX
+dir
+
+UnitVersioning
+dir
+
+Bpg2Make
+dir
+
+clxgettextResstr
+dir
+
+JVCLConvert
+dir
+
+DFMCleaner
+dir
+
+stripCmtPO
+dir
+
+MakeDOF
+dir
+
+devtools.bpg
+file
+
+
+
+
+2007-01-21T10:52:21.765625Z
+d236c460e4dc73d41f826202f611dfec
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Res2Bmp
+dir
+
+JvclVclClx
+dir
+
+ReadPalettes
+dir
+
+CompileDevTools.bat
+file
+
+
+
+
+2007-01-21T10:52:21.765625Z
+aad2525f570ded2a1f8924b8e9aba0f2
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+FAQBuilder
+dir
+

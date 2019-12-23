@@ -1,0 +1,171 @@
+cleaning...
+Удален файл - D:\MyDoc\components\NTICSLib\obj\dcpbase64.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\dcpbase64.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\DCPblockciphers.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\DCPblockciphers.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\DCPconst.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\DCPconst.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\DCPcrypt2.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\DCPcrypt2.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\DCPgost.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\DCPgost.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\DCPhaval.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\DCPhaval.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\DCPsha1.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\DCPsha1.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\dde1c6_0.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\dde1c6_0.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\fCustomForm.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\fCustomForm.dfm
+Удален файл - D:\MyDoc\components\NTICSLib\obj\fCustomForm.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\fGauge.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\fGauge.dfm
+Удален файл - D:\MyDoc\components\NTICSLib\obj\fGauge.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\FGInt.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\FGInt.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\FGIntPrimeGeneration.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\FGIntPrimeGeneration.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\FGIntRSA.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\FGIntRSA.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\FileVersionInfo.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\FileVersionInfo.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\fRegistrationForm.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\fRegistrationForm.dfm
+Удален файл - D:\MyDoc\components\NTICSLib\obj\fRegistrationForm.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\ntics_classes.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\ntics_classes.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\ntics_const.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\ntics_const.obj
+Удален файл - D:\MyDoc\components\NTICSLib\obj\QLowLevelFunction.dcu
+Удален файл - D:\MyDoc\components\NTICSLib\obj\QLowLevelFunction.obj
+Удален файл - D:\MyDoc\components\NTICSLib\include\dcpbase64.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\DCPblockciphers.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\DCPconst.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\DCPcrypt2.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\DCPgost.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\DCPhaval.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\DCPsha1.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\dde1c6_0.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\fCustomForm.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\fGauge.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\FGInt.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\FGIntPrimeGeneration.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\FGIntRSA.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\FileVersionInfo.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\fRegistrationForm.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\ntics_classes.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\ntics_const.hpp
+Удален файл - D:\MyDoc\components\NTICSLib\include\QLowLevelFunction.hpp
+MAKE Version 5.2  Copyright (c) 1987, 2000 Borland
+	C:\PROGRA~1\Borland\CBUILD~1\Bin\..\BIN\TLib /u NTICS.lib @MAKE0000.@@@
+TLIB 4.5 Copyright (c) 1987, 1999 Inprise Corporation
+  ntics_const.obj QLowLevelFunction.obj ntics_classes.obj fRegistrationForm.obj DCPblockciphers.obj DCPconst.obj DCPcrypt2.obj DCPgost.obj DCPhaval.obj DCPsha1.obj dde1c6_0.obj fCustomForm.obj fGauge.obj FGInt.obj FGIntPrimeGeneration.obj FGIntRSA.obj FileVersionInfo.obj dcpbase64.obj fRegistrationForm.dfm fCustomForm.dfm fGauge.dfm   
+Warning: 'ntics_const' not found in library
+Warning: 'QLowLevelFunction' not found in library
+Warning: 'ntics_classes' not found in library
+Warning: 'fRegistrationForm' not found in library
+Warning: 'DCPblockciphers' not found in library
+Warning: 'DCPconst' not found in library
+Warning: 'DCPcrypt2' not found in library
+Warning: 'DCPgost' not found in library
+Warning: 'DCPhaval' not found in library
+Warning: 'DCPsha1' not found in library
+Warning: 'dde1c6_0' not found in library
+Warning: 'fCustomForm' not found in library
+Warning: 'fGauge' not found in library
+Warning: 'FGInt' not found in library
+Warning: 'FGIntPrimeGeneration' not found in library
+Warning: 'FGIntRSA' not found in library
+Warning: 'FileVersionInfo' not found in library
+Warning: 'dcpbase64' not found in library
+NTICS.lib
+Скопировано файлов:         1.
+fCustomForm.dfm
+fGauge.dfm
+fRegistrationForm.dfm
+Скопировано файлов:         3.
+dcpbase64.dcu
+DCPblockciphers.dcu
+DCPconst.dcu
+DCPcrypt2.dcu
+DCPgost.dcu
+DCPhaval.dcu
+DCPsha1.dcu
+dde1c6_0.dcu
+fCustomForm.dcu
+fGauge.dcu
+FGInt.dcu
+FGIntPrimeGeneration.dcu
+FGIntRSA.dcu
+FileVersionInfo.dcu
+fRegistrationForm.dcu
+ntics_classes.dcu
+ntics_const.dcu
+QLowLevelFunction.dcu
+Скопировано файлов:        18.
+dcpbase64.obj
+DCPblockciphers.obj
+DCPconst.obj
+DCPcrypt2.obj
+DCPgost.obj
+DCPhaval.obj
+DCPsha1.obj
+dde1c6_0.obj
+fCustomForm.obj
+fGauge.obj
+FGInt.obj
+FGIntPrimeGeneration.obj
+FGIntRSA.obj
+FileVersionInfo.obj
+fRegistrationForm.obj
+ntics_classes.obj
+ntics_const.obj
+QLowLevelFunction.obj
+Скопировано файлов:        18.
+MAKE Version 5.2  Copyright (c) 1987, 2000 Borland
+	C:\PROGRA~1\Borland\CBUILD~1\Bin\..\BIN\bcc32 -Od -Vx -Ve -X- -r- -a8 -5 -b- -k -y -v -vi- -c -tWM -w-par -I..\..\..;C:\PROGRA~1\Borland\CBUILD~1\Bin\..\include;C:\PROGRA~1\Borland\CBUILD~1\Bin\..\include\vcl;D:\MyDoc\components\Ehlib\obj;D:\MyDoc\components\Ehlib\Include;..\include;D:\MyDoc\components\FIBplus\Include;D:\MyDoc\components\FIBplus\obj -D_DEBUG;NO_STRICT;_RTLDLL;USEPACKAGES -n.\ .\ntics_registration.cpp .\ntics_login.cpp .\ntics_key_gen.cpp .\ntics_forms.cpp 
+Borland C++ 5.6.4 for Win32 Copyright (c) 1993, 2002 Borland
+.\ntics_registration.cpp:
+Error E2209 .\ntics_includes.h 5: Unable to open include file 'FGIntRSA.hpp'
+Error E2209 .\ntics_includes.h 6: Unable to open include file 'FGInt.hpp'
+Error E2209 .\ntics_includes.h 7: Unable to open include file 'ntics_const.hpp'
+Error E2090 .\ntics_registration.cpp 66: Qualifier 'Fgint' is not a class or namespace name
+Error E2040 .\ntics_registration.cpp 66: Declaration terminated incorrectly
+Error E2090 .\ntics_registration.cpp 67: Qualifier 'Fgint' is not a class or namespace name
+Error E2040 .\ntics_registration.cpp 67: Declaration terminated incorrectly
+Error E2451 .\ntics_registration.cpp 76: Undefined symbol 'TFGInt' in function _fastcall Initialize()
+Error E2379 .\ntics_registration.cpp 76: Statement missing ; in function _fastcall Initialize()
+Error E2268 .\ntics_registration.cpp 79: Call to undefined function 'Base10StringToFGInt' in function _fastcall Initialize()
+Error E2268 .\ntics_registration.cpp 80: Call to undefined function 'FGIntToBase256String' in function _fastcall Initialize()
+Error E2268 .\ntics_registration.cpp 81: Call to undefined function 'FGIntDestroy' in function _fastcall Initialize()
+Error E2268 .\ntics_registration.cpp 82: Call to undefined function 'RSADecrypt' in function _fastcall Initialize()
+Error E2451 .\ntics_registration.cpp 82: Undefined symbol 'FD' in function _fastcall Initialize()
+Error E2451 .\ntics_registration.cpp 82: Undefined symbol 'FN' in function _fastcall Initialize()
+Error E2451 .\ntics_registration.cpp 86: Undefined symbol 'VersionKey' in function _fastcall Initialize()
+Error E2451 .\ntics_registration.cpp 90: Undefined symbol 'Copyrigth' in function _fastcall Initialize()
+Error E2451 .\ntics_registration.cpp 118: Undefined symbol 'FD' in function _fastcall SetKey(const char *,const char *)
+Error E2268 .\ntics_registration.cpp 118: Call to undefined function 'Base10StringToFGInt' in function _fastcall SetKey(const char *,const char *)
+Error E2451 .\ntics_registration.cpp 119: Undefined symbol 'FN' in function _fastcall SetKey(const char *,const char *)
+Error E2268 .\ntics_registration.cpp 119: Call to undefined function 'Base10StringToFGInt' in function _fastcall SetKey(const char *,const char *)
+*** 21 errors in Compile ***
+.\ntics_login.cpp:
+Error E2209 .\ntics_includes.h 5: Unable to open include file 'FGIntRSA.hpp'
+Error E2209 .\ntics_includes.h 6: Unable to open include file 'FGInt.hpp'
+Error E2209 .\ntics_includes.h 7: Unable to open include file 'ntics_const.hpp'
+Warning W8018 .\ntics_login.cpp 32: Assigning int to TConnectType in function _fastcall TIBLogin::TIBLogin(TComponent *)
+Warning W8018 .\ntics_login.cpp 197: Assigning int to TConnectType in function _fastcall TIBLogin::cbConnectTypeClick(TObject *)
+*** 3 errors in Compile ***
+.\ntics_key_gen.cpp:
+Error E2209 .\ntics_includes.h 5: Unable to open include file 'FGIntRSA.hpp'
+Error E2209 .\ntics_includes.h 6: Unable to open include file 'FGInt.hpp'
+Error E2209 .\ntics_includes.h 7: Unable to open include file 'ntics_const.hpp'
+Error E2303 .\ntics_key_gen.h 8: Type name expected
+Error E2316 .\ntics_key_gen.cpp 12: 'MakeKey' is not a member of 'KeyGen'
+Error E2040 .\ntics_key_gen.cpp 12: Declaration terminated incorrectly
+*** 6 errors in Compile ***
+.\ntics_forms.cpp:
+Error E2209 .\ntics_includes.h 5: Unable to open include file 'FGIntRSA.hpp'
+Error E2209 .\ntics_includes.h 6: Unable to open include file 'FGInt.hpp'
+Error E2209 .\ntics_includes.h 7: Unable to open include file 'ntics_const.hpp'
+Warning W8004 .\ntics_forms.cpp 45: 'form' is assigned a value that is never used in function _fastcall TFormManager::FormSave()
+*** 3 errors in Compile ***

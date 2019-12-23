@@ -1,0 +1,3 @@
+@echo cleaning...
+@if EXIST obj\*.* del /q /f /s obj\*.*
+@if EXIST include\*.* del /q /f /s include\*.*

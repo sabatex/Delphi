@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='ISO-8859-1'  ?>
+<xmlhelp version="1.0">
+
+  <toc>
+    <tocitem text="Ïðî ïðîãðàìó ..." target="#ID(3)"/>
+    <tocitem text="²íñòàëÿö³ÿ" target="#ID(4)"/>
+    <tocitem text="Óìîâè ôóíêö³îíóâàííÿ ïðîãðàìè" target="#ID(16)"/>
+    <tocitem text="²íñòðóêö³ÿ êîðèñòóâà÷à">
+        <tocitem text="Ãîëîâíå ìåíþ" target="#ID(5)"/>
+        <tocitem text="Ôàéë">
+            <tocitem text="Ôàéë" target="#ID(6)"/>
+        </tocitem>
+        <tocitem text="Îïö³¿">
+            <tocitem text="Îïö³¿" target="#ID(9)"/>
+            <tocitem text="Êîíô³ãóðàö³ÿ 1Ñ6.0" target="#ID(10)"/>
+            <tocitem text="Ïàðàìåòðè ô³ðìè" target="#ID(11)"/>
+        </tocitem>
+    </tocitem>
+  </toc>
+
+  <topics>
+
+    <topic ID="3">
+      <title>Ïðî ïðîãðàìó ...</title>
+      <browsesequence>300000000</browsesequence>
+      <browseid>0</browseid>
+      <context>About</context>
+      <topicid>1</topicid>
+      <keywords>
+        <keyword>Ïðî ïðîãðàìó ...</keyword>
+      </keywords>
+      <nsrdata>
+        <H4>Ïðî ïðîãðàìó ...</H4>
+      </nsrdata>
+      <maindata>
+        <H2><TT><i><font color="#800080">Ôîðìà 1ÄÔ</font></i></TT></H2>
+        <H4><TT>Copyrigth (c) Ñåðã³é Ëàêàñ 1999-2004 Óæãîðîä</TT></H4>
+        <H4><TT>Âåðñ³ÿ 1.0</TT></H4>
+        <PRE>Îñíîâí³ ìîæëèâîñò³ ïðîãðàìè:</PRE>
+        <PRE>• ôîðìóâàííÿ â³äîìîñò³ 1ÄÔ.</PRE>
+        <PRE>• Ôîðìóâàííÿ ôàéëà ôîðìè 1ÄÔ;</PRE>
+        <PRE>• Âíåñåííÿ çì³í äî ôîðìè 1ÄÔ;</PRE>
+        <PRE>• ²íòåãðàö³ÿ ç 1Ñ6.0 (ç ìîæëèâ³ñòþ ïîâíî¿ àäàïòàö³¿ ï³ä êîíô³ãóðàö³þ çàìîâíèêà);</PRE>
+        <PRE>• ²íòåãðàö³ÿ ç 1Ñ7.7 (ç ìîæëèâ³ñòþ ïîâíî¿ àäàïòàö³¿ ï³ä êîíô³ãóðàö³þ çàìîâíèêà);
+        </PRE>
+        <PRE> </PRE>
+        <PRE>Äåìîíñòðàö³éíà âåðñ³ÿ ðîçïîâñþäæóºòüñÿ áåçêîøòîâíî,¿¿ ìîæíà çàâàíòàæèòè ç <A xml:link="simple" HREF="#ID(17)" content-role="link">http:\\www.elikom.com</A> </PRE>
+        <P><TT>Äåìîíñòðàö³éíà âåðñ³ÿ â³äð³çíÿºòüñÿ â³ä çàðåºñòðîâàíî¿ îáìåæåíîþ ôóíêö³îíàëüí³ñòþ. Ï³ñëÿ ðåã³ñòðàö³¿ âàì áóäå âèñëàíî ñïåö³àëüíèé êëþ÷ äëÿ àêòèâàö³¿ ïðîãðàìè.</TT><font size="-1"> </font></P>
+      </maindata>
+    </topic>
+
+    <topic ID="4">
+      <title>²íñòàëÿö³ÿ</title>
+      <browsesequence>300000000</browsesequence>
+      <browseid>1</browseid>
+      <context>Instalation</context>
+      <topicid>2</topicid>
+      <keywords>
+        <keyword>²íñòàëÿö³ÿ</keyword>
+      </keywords>
+      <nsrdata>
+        <H4>²íñòàëÿö³ÿ</H4>
+      </nsrdata>
+      <maindata>
+        <PRE>Äëÿ ³íñòàëÿö³¿ íåîáõ³äíî çàïóñòèòè ïðîãðàìó 1df1.0.õ.õ.exe. Íîâó âåðñ³þ ïðîãðàìè ìîæíà çàâàíòàæèòè ç ñàéòó <u><font color="#008000">http:\\www.elikom.com</font></u>  .</PRE>
+      </maindata>
+    </topic>
+
+    <topic ID="5">
+      <title>Ãîëîâíå ìåíþ</title>
+      <browsesequence>300000001</browsesequence>
+      <browseid>0</browseid>
+      <context>Topic_5</context>
+      <topicid>1003</topicid>
+      <keywords>
+        <keyword>Ãîëîâíå ìåíþ</keyword>
+      </keywords>
+      <nsrdata>
+        <H4>Ãîëîâíå ìåíþ</H4>
+      </nsrdata>
+      <maindata>
+        <PRE><A xml:link="simple" HREF="#ID(6)" content-role="link">Ôàéë</A>      – ôóíêö³¿ äëÿ îáì³íó ³íôîðìàö³ºþ.</PRE>
+        <PRE><A xml:link="simple" HREF="#ID(18)" content-role="link">Äîâ³äíèêè</A> – ôóíêö³¿ äëÿ ðó÷íîãî ââîäó òà ðåäàãóâàííÿ ³íôîðìàö³¿.</PRE>
+        <PRE>Çâ³òè     - ôîðìè çâ³òíîñò³.
+        </PRE>
+        <PRE><A xml:link="simple" HREF="#ID(9)" content-role="link">Îïö³¿</A>     – ôóíêö³¿ äëÿ íàñòðîéêè ôóíêö³îíóâàííÿ ïðîãðàììè.</PRE>
+        <PRE>Â³êíà     - îïåðàòèâíå óïðàâë³ííÿ ðîçì³ùåííÿì â³êîí â ïðîãðàì³.</PRE>
+        <PRE>?         - äîâ³äêîâà ³íôîðìàö³ÿ. </PRE>
+      </maindata>
+    </topic>
+
+    <topic ID="6">
+      <title>Ôàéë</title>
+      <browsesequence>300000001</browsesequence>
+      <browseid>1</browseid>
+      <context>Topic_6</context>
+      <topicid>1004</topicid>
+      <keywords>
+        <keyword>Ôàéë</keyword>
+      </keywords>
+      <nsrdata>
+        <H4>Ôàéë</H4>
+      </nsrdata>
+      <maindata>
+        <PRE><A xml:link="simple" HREF="#ID(15)" content-role="link">²ìïîðò</A>                 - ôóíêö³¿ äëÿ ³ìïîðòó äàíèõ ç ³íøèõ ïðîãðàìì.</PRE>
+        <PRE><b>Åêñïîðò çâ³òó 1ÄÔ</b>      - Âèâîäèòü íà äèñêåòó çâ³ò 1ÄÔ çà òåêó÷èé ïåð³îä.</PRE>
+        <PRE>Íàñòðîéêà Ïð³íòåðà ... – íàñòðîéêà âàøîãî ïð³íòåðà.</PRE>
+        <PRE>Çàê³í÷èòè ðîáîòó       - çàêðèâàº äàíó ïðîãðàìó.</PRE>
+      </maindata>
+    </topic>
+
+    <topic ID="9">
+      <title>Îïö³¿</title>
+      <browsesequence>300000001</browsesequence>
+      <browseid>4</browseid>
+      <context>Topic_9</context>
+      <topicid>1007</topicid>
+      <keywords>
+        <keyword>Îïö³¿</keyword>
+      </keywords>
+      <nsrdata>
+        <H4>Îïö³¿</H4>
+      </nsrdata>
+      <maindata>
+        <PRE><A xml:link="simple" HREF="#ID(10)" content-role="link">Êîíô³ãóðàö³ÿ 1Ñ6.0</A><b> </b>      - Íàñòðîþþòüñÿ ïàðàìåòðè ³ìïîðòó äàíèõ ç 1Ñ6.0.</PRE>
+        <PRE><b>Ïàðàìåòðè ô³ðìè   </b>
+               - Ââîäÿòüñÿ ïàðàìåòðè âèáðàíî¿ ô³ðìè.</PRE>
+        <PRE><b>Íàñòðîéêà ðîáî÷îãî ñòîëà
+        </b> - Íàñòðîþºòüñÿ çîâí³øí³é âèä ðîáî÷îãî ñòîëà.</PRE>
+      </maindata>
+    </topic>
+
+    <topic ID="10">
+      <title>Êîíô³ãóðàö³ÿ 1Ñ6.0</title>
+      <browsesequence>300000001</browsesequence>
+      <browseid>5</browseid>
+      <context>Topic_10</context>
+      <topicid>1008</topicid>
+      <keywords>
+        <keyword>Êîíô³ãóðàö³ÿ 1Ñ6.0</keyword>
+      </keywords>
+      <nsrdata>
+        <H4>Êîíô³ãóðàö³ÿ 1Ñ6.0</H4>
+      </nsrdata>
+      <maindata>
+        <PRE>Â òàáëèö³ “<b>Ñïèñîê ñóáêîíòî ïî ÿêèì áóäå ïðîâîäèòèñü ôîðìóâàííÿ 1ÄÔ</b>” ââîäÿòüñÿ âèäè ñóáêîíòî ïî ÿêèì íåîáõ³äíî ôîðìóâàòè 1ÄÔ.</PRE>
+        <H2><TT>¹</TT></H2>
+        <PRE>  Íîìåð ñóáêîíòî</PRE>
+        <H4><TT>Íàçâà ñïèñêó</TT></H4>
+        <PRE>  Íàçâà ñóáêîíòî
+        </PRE>
+        <H4><TT>Ïåðøèé</TT></H4>
+        <PRE>  <A xml:link="simple" HREF="#ID(12)" content-role="popup">Ôîðìóëà</A> äëÿ âèçíà÷åííÿ ïåðøîãî íîìåðà â ñïèñêó.</PRE>
+        <H4><TT>Îñòàíí³é</TT></H4>
+        <PRE>  <u><font color="#008000">Ôîðìóëà</font></u>
+         äëÿ âèçíà÷åííÿ îñòàííüãî íîìåðà â ñïèñêó. 
+        </PRE>
+        <H4><TT>²äåíòèô³êàö³éíèé êîä</TT></H4>
+        <PRE>  <u><font color="#008000">Ôîðìóëà</font></u> äëÿ âèçíà÷åííÿ ³äåíòèô³êàö³éíîãî êîäó ç ï³äòðèìêîþ ñèìâîëà &amp;.</PRE>
+        <H4><TT>Ïðèéîìó</TT></H4>
+        <PRE>  <u><font color="#008000">Ôîðìóëà</font></u> äëÿ âèçíà÷åííÿ äàòè ïðèéîìó ç ï³äòðèìêîþ ñèìâîëà &amp;.</PRE>
+        <H4><TT>Çâ³ëüíåííÿ</TT></H4>
+        <PRE>  <u><font color="#008000">Ôîðìóëà</font></u> äëÿ âèçíà÷åííÿ äàòè çâ³ëüíåííÿ ç ï³äòðèìêîþ ñèìâîëà &amp;.</PRE>
+        <H4><TT>Ôîðìóëà äëÿ âèçíà÷åííÿ Ï.².Á.</TT></H4>
+        <PRE>  
+        <u><font color="#008000">Ôîðìóëà</font></u> äëÿ âèçíà÷åííÿ Ï.².Á. ç ï³äòðèìêîþ ñèìâîëà &amp;.</PRE>
+        <PRE><b><i>ïðèì³òêà</i></b>: Ïðè ³ìïîðò³ äàíèõ ïðîãðàìà ïåðåáåðå âñ³ íîìåðè â ä³àïàçîí³ ïåðøèé – îñòàíí³é ³ ï³äñòàâèòü ¿õ â ôîðìóëè çàì³ñòü ñèìâîëà &amp;.
+        </PRE>
+        <PRE>Â òàáëèö³ “<b>Âèäè íàðàõóâàíü</b>” ââîäÿòüñÿ âèäè íàðàõóâàíü äëÿ êîæíîãî ââåäåíîãî âèäó ñóáêîíòî.</PRE>
+        <H4><TT>ÊÎÄ</TT></H4>
+        <PRE>Âèä äîõîäó (01,02,...)</PRE>
+        <H4><TT>Âèä íàðàõóâàííÿ</TT></H4>
+        <BLOCKQUOTE>
+        <PRE>Íàçâà âèäó äîõîäó
+        </PRE>
+        </BLOCKQUOTE>
+        <H4><TT>Ôîðìóëà äëÿ íàðàõîâàíî¿ ñóìè</TT></H4>
+        <BLOCKQUOTE>
+        <PRE><u><font color="#008000">Ôîðìóëà</font></u>
+         äëÿ âèçíà÷åííÿ äîõîäó ïî äàíîìó âèäó ç ï³äòðèìêîþ ñèìâîëà &amp;. </PRE>
+        </BLOCKQUOTE>
+        <H4><TT>Ôîðìóëà äëÿ âèçíà÷åííÿ ïîäàòêó
+        </TT></H4>
+        <BLOCKQUOTE>
+        <PRE><u><font color="#008000">Ôîðìóëà</font></u>
+         äëÿ âèçíà÷åííÿ ïîäàòêó ïî äàíîìó âèäó ç ï³äòðèìêîþ ñèìâîëà &amp;. </PRE>
+        </BLOCKQUOTE>
+        <H4><TT>Ôîðìóëà äëÿ âèïëà÷åíî¿ ñóìè</TT></H4>
+        <BLOCKQUOTE>
+        <PRE><u><font color="#008000">Ôîðìóëà</font></u> äëÿ âèçíà÷åííÿ âèïëà÷åíîãî äîõîäóïî äàíîìó âèäó ç ï³äòðèìêîþ ñèìâîëà &amp;. </PRE>
+        </BLOCKQUOTE>
+        <H4><TT>Ôîðìóëà äëÿ âèçíà÷åííÿ ïåðåðàõîâàíîãî ïîäàòêó</TT></H4>
+        <BLOCKQUOTE>
+        <PRE><u><font color="#008000">Ôîðìóëà</font></u>
+         äëÿ âèçíà÷åííÿ ïåðåðàõîâàíîãî ïîäàòêó ïî äàíîìó âèäó ç ï³äòðèìêîþ ñèìâîëà &amp;. </PRE>
+        </BLOCKQUOTE>
+        <H4><TT>Ôîðìóëà äëÿ âèçíà÷åííÿ òèïó ï³ëüã</TT></H4>
+        <BLOCKQUOTE>
+        <PRE><u><font color="#008000">Ôîðìóëà</font></u>
+         äëÿ âèçíà÷åííÿ òèïó ï³ëüã äëÿ äàíîãî âèäó ç ï³äòðèìêîþ ñèìâîëà &amp;.</PRE>
+        </BLOCKQUOTE>
+        <H4><TT>Ôîðìóëà äëÿ âèçíà÷åííÿ íåîïëàò.</TT></H4>
+        <BLOCKQUOTE>
+        <PRE><u><font color="#008000">Ôîðìóëà</font></u>
+         äëÿ âèçíà÷åííÿ íåîïëàòè ç ï³äòðèìêîþ ñèìâîëà &amp;.(Âèêîðèñòîâóºòüñÿ â òèõ âèïàäêàõ êîëè êîëè ëþäèí³ íå-áóëî âèïëà÷åíî çàðïëàòíþ, àëå â 1ÄÔ íåîáõ³äíî ïîêàçóâàòü ïóñòó êîëîíêó ïî äàí³é îñîá³. Äëÿ òàêèõ âèïàäê³â ôîðìóëà ïîâèííà ïîâåðòàòè çíà÷åííÿ 1. Ïðè â³äñóòíîñò³ ôîðìóëè òàê³ ðÿäêè íå âèâîäÿòüñÿ).</PRE>
+        </BLOCKQUOTE>
+        <H4><TT>Âèä ³ìïîðòó çíà÷åííÿ.</TT>
+        </H4>
+        <BLOCKQUOTE>
+        <PRE><b>Âèêîðèñòîâóþ÷è íàñòðîéêè 1Ñ</b> - ïðè ðîçðàõóíêàõ ôîðìóë äàíîãî ðÿäêà âèêîðèñòîâóºòüñÿ òåêó÷èé ïåð³îä, âèáðàíèé â 1Ñ.</PRE>
+        <PRE><b>Íàðàõîâàíà ³ âèïëà÷åíà çàïëàòà â îäíîìó êâàðòàë³ - </b>ïðè ðîçðàõóíêàõ ôîðìóë äàíîãî ðÿäêà âèêîðèñòîâóºòüñÿ òåêó÷èé êâàðòàë, çàäàíèé â íàñòðîéêàõ äàíî¿ ïðîãðàìè.</PRE>
+        <PRE><b>Íàðàõîâàíà çàðïëàòà çì³ùåíà íà îäèí ì³ñÿöü â³äíîñíî âèïëà÷åíî¿</b> - ïðè ðîçðàõóíêàõ ôîðìóë äàíîãî ðÿäêà âèêîðèñòîâóºòüñÿ òåêó÷èé êâàðòàë, çàäàíèé â íàñòðîéêàõ äàíî¿ ïðîãðàìè, àëå äëÿ íàðàõîâàíî¿ çàðïëàòè òà íàðàõîâàíèõ ïîäàòê³â ïåð³îä çì³ùóºòüñÿ íà îäèí ì³ñÿöü íàçàä.</PRE>
+        </BLOCKQUOTE>
+      </maindata>
+    </topic>
+
+    <topic ID="11">
+      <title>Ïàðàìåòðè ô³ðìè</title>
+      <browsesequence>300000001</browsesequence>
+      <browseid>6</browseid>
+      <context>Topic_11</context>
+      <topicid>1009</topicid>
+      <keywords>
+        <keyword>Ïàðàìåòðè ô³ðìè</keyword>
+      </keywords>
+      <nsrdata>
+        <H4>Ïàðàìåòðè ô³ðìè</H4>
+      </nsrdata>
+      <maindata>
+        <PRE>Óâàãà! Ïîëÿ “²äåòèô³êàö³éíèé íîìåð ô³çè÷íî¿ îñîáè – ñóá’ºêòà ï³äïðèºìíèöüêî¿ ä³ÿëüíîñò³”, “Âèä îñîáè” , “Íàçâà ô³ðìè àáî ô³ç. îñîáè” íåäîñòóïí³ äëÿ ðåäàãóâàííÿ, ââîäÿòüñÿ çà äîïîìîãîþ ñïåö³àëüíîãî <A xml:link="simple" HREF="#ID(14)" content-role="popup">
+        êëþ÷à</A>
+        <u><font color="#008000">.</font></u></PRE>
+        <PRE>Ïîëÿ, ÿê³ Âè íå âèêîðèñòîâóºòå, íåîáõ³äíî çàëèøèòè ïóñòèìè.</PRE>
+        <PRE>Òåôîííèé íîìåð ââîäèòüñÿ áåç ðîçä³ëîâèõ çíàê³â, íàïðèêëàä 1256760.</PRE>
+      </maindata>
+    </topic>
+
+    <topic ID="12">
+      <title>Ôîðìóëà</title>
+      <context>Topic_12</context>
+      <topicid>1010</topicid>
+      <maindata>
+        <PRE>Ôîðìóëè ïîâí³ñòþ â³äïîâ³äàþòü ìàêðî ìîâ³ 1Ñ. Òîáòî, ÿêùî âè çàïèñóºòå</PRE>
+        <PRE>“” + ÑÍ1:1.1 òî çã³äíî 1Ñ âè îòðèìàºòå çíà÷åííÿ ïàðàðàìåòðó 1 ñóáêîíòî 1 âèäó ñóáêîíòî 1. Âñ³ ôîðìóëè ïîâèíí³ ïîâåðòàòè çíà÷åííÿ òèïó ñòðîêà, äëÿ öüîãî íåîáõ³äíî ïåðåä ôîðìóëîþ ñòàâèòè “”+ .  </PRE>
+      </maindata>
+    </topic>
+
+    <topic ID="14">
+      <title>Êëþ÷</title>
+      <context>Topic_14</context>
+      <topicid>1012</topicid>
+      <maindata>
+        <PRE>Ñïåö³àëüíèì ÷èíîì çàêîäîâàíèé ôàéë, â ÿêîìó ì³ñòÿòüñÿ ô³êñîâàí³ ðåêâ³çèòè ô³ðìè. Äëÿ îäåðæàííÿ êëþ÷à ïðîãðàìó íåîáõ³äíî çàðåºñòðóâàòè.</PRE>
+      </maindata>
+    </topic>
+
+    <topic ID="15">
+      <title>²ìïîðò</title>
+      <browsesequence>300000001</browsesequence>
+      <browseid>2</browseid>
+      <context>Topic_15</context>
+      <topicid>1013</topicid>
+      <keywords>
+        <keyword>²ìïîðò</keyword>
+      </keywords>
+      <nsrdata>
+        <H4>²ìïîðò</H4>
+      </nsrdata>
+      <maindata>
+        <PRE><b>²ìïîðò äàíèõ ç 1Ñ6.0 - </b>²ìïîðòóº äàí³ ç 1Ñ6.0 çà òåêó÷èé ïåð³îä. (Óâàãà! Âñ³ äàí³ çà òåêó÷èé ïåð³îä ïðè ³ìïîðò³ áóäå çíèùåíî).</PRE>
+        <PRE><b>²ìïîðò íàñòðîéîê</b>
+         - ²ìïîðòóº ç ôàéëó íàñòðîéêè êîíô³ãóðàö³¿.</PRE>
+        <PRE><b>Åêñïîðò êîíô³ãóðàö³¿ - </b>Çáåð³ãàº â çîâí³øí³é ôàéë òåêó÷ó êîíô³ãóðàö³þ ñèñòåìè.</PRE>
+      </maindata>
+    </topic>
+
+    <topic ID="16">
+      <title>Óìîâè ôóíêö³îíóâàííÿ ïðîãðàìè</title>
+      <browsesequence>300000000</browsesequence>
+      <browseid>3</browseid>
+      <context>Topic_16</context>
+      <topicid>3</topicid>
+      <keywords>
+        <keyword>Óìîâè ôóíêö³îíóâàííÿ ïðîãðàìè</keyword>
+      </keywords>
+      <nsrdata>
+        <H4>Óìîâè ôóíêö³îíóâàííÿ ïðîãðàìè</H4>
+      </nsrdata>
+      <maindata>
+        <PRE>Äëÿ íîðìàëüíîãî ôóíêö³îíóâàííÿ ïðîãðàìè, Âàø êîìïþòåð ïîâèíåí â³äïîâ³äàòè òàêèì âèìîãàì:</PRE>
+        <H4><TT>Ì³í³ìàëüí³ âèìîãè:</TT></H4>
+        <PRE> - WINDOWS 98/Me/NT/2000/ÕÐ</PRE>
+        <PRE> - Pentium 100</PRE>
+        <PRE> - 32MB RAM</PRE>
+        <PRE> - SVGA 800x600
+        </PRE>
+        <PRE> - 10MB HDD Free</PRE>
+        <PRE> - Äðóêóþ÷èé ïðèñòð³é</PRE>
+        <PRE> - Íàêîïè÷óâà÷ 3,5'</PRE>
+        <H4><TT>Îïòèìàëüí³ óìîâè:</TT></H4>
+        <PRE> - WINDOWS 98/Me/2000/ÕÐ</PRE>
+        <PRE> - Celeron 400</PRE>
+        <PRE> - 128MB RAM</PRE>
+        <PRE> - SVGA 1024x768
+        </PRE>
+        <PRE> - 50MB HDD Free</PRE>
+        <PRE> - Äðóêóþ÷èé ïðèñòð³é</PRE>
+        <PRE> - Íàêîïè÷óâà÷ 3,5'</PRE>
+      </maindata>
+    </topic>
+
+    <topic ID="17">
+      <title>http:\\www.elikom.com</title>
+      <context>http___www.elikom.com</context>
+      <topicid>1014</topicid>
+      <maindata>
+      </maindata>
+    </topic>
+
+    <topic ID="18">
+      <title>Äîâ³äíèêè</title>
+      <context>Topic_18</context>
+      <topicid>1015</topicid>
+      <nsrdata>
+        <H4>Äîâ³äíèêè</H4>
+      </nsrdata>
+      <maindata>
+        <P><font size="-1">Ðåäàãóâàííÿ 8ÄÐ</font></P>
+        <P><font size="-1">Ðåäàãóâàííÿ ñïèñêà ïðàö³âíèê³â</font></P>
+      </maindata>
+    </topic>
+  </topics>
+</xmlhelp>

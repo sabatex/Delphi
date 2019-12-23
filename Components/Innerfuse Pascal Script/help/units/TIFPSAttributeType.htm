@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifpscomp: Class TIFPSAttributeType</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="TIFPSAttributeType"><H1>Class TIFPSAttributeType</H1>
+</A><H2>Unit</H2>
+<A href="ifpscomp.htm">ifpscomp</A><BR><H2>Declaration</H2>
+<P><CODE>type TIFPSAttributeType = class(<CODE><A href="TIFPSType.htm">TIFPSType</A></CODE>)</CODE></P><H2>Description</H2>
+An attribute type<H2>Hierarchy</H2>
+<CODE><A href="TIFPSType.htm">TIFPSType</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>constructor <A href="TIFPSAttributeType.htm#Create"><B>Create</B></A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>destructor <A href="TIFPSAttributeType.htm#Destroy"><B>Destroy</B></A>; override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSAttributeType.htm#AddField"><B>AddField</B></A>: <A href="TIFPSAttributeTypeField.htm">TIFPSAttributeTypeField</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSAttributeType.htm#DeleteField"><B>DeleteField</B></A>(I: Longint);</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Create"><CODE>constructor <B>Create</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Create a new instance of this class</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Destroy"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Destroy the instance of this class</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="AddField"><CODE>function <B>AddField</B>: <A href="TIFPSAttributeTypeField.htm">TIFPSAttributeTypeField</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Add a new field</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="DeleteField"><CODE>procedure <B>DeleteField</B>(I: Longint);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Delete a field</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>property <A href="TIFPSAttributeType.htm#FieldCount"><B>FieldCount</B></A>: Longint;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSAttributeType.htm#Fields"><B>Fields</B></A>[i: Longint]: <A href="TIFPSAttributeTypeField.htm">TIFPSAttributeTypeField</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property Name: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSAttributeType.htm#NameHash"><B>NameHash</B></A>: Longint;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSAttributeType.htm#OnApplyAttributeToProc"><B>OnApplyAttributeToProc</B></A>: <A href="ifpscomp.htm#TIFPSApplyAttributeToProc">TIFPSApplyAttributeToProc</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSAttributeType.htm#OnApplyAttributeToType"><B>OnApplyAttributeToType</B></A>: <A href="ifpscomp.htm#TIFPSApplyAttributeToType">TIFPSApplyAttributeToType</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSAttributeType.htm#OrgName"><B>OrgName</B></A>: string;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="FieldCount"><CODE>property <B>FieldCount</B>: Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The number of fields</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Fields"><CODE>property <B>Fields</B>[i: Longint]: <A href="TIFPSAttributeTypeField.htm">TIFPSAttributeTypeField</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>All fields for this attribute</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Name"><CODE>property Name: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The name of this attribute (uppercase)</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="NameHash"><CODE>property <B>NameHash</B>: Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The hash for the name of this attribute</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="OnApplyAttributeToProc"><CODE>property <B>OnApplyAttributeToProc</B>: <A href="ifpscomp.htm#TIFPSApplyAttributeToProc">TIFPSApplyAttributeToProc</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Event: Called when the attribute is applied to a procedure</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="OnApplyAttributeToType"><CODE>property <B>OnApplyAttributeToType</B>: <A href="ifpscomp.htm#TIFPSApplyAttributeToType">TIFPSApplyAttributeToType</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Event: Called when the attribute is applied to a type</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="OrgName"><CODE>property <B>OrgName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The original name of this attribute</P>
+</BODY>
+</HTML>

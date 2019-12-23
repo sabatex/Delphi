@@ -1,0 +1,26 @@
+2004-01-13:
+  - Removed TIFPSInternalProcedure.exportmode and made it always use
+    emExportDecl
+  - RunProcP RunProcPN added
+  - Added Variant and PChar to the default to be exported type list
+  - function TIFPS3CompExec.ExecuteFunction(const Params: array of Variant;
+    const ProcName: string): Variant;
+  - Fix in ExportCheck
+  - Added source for Using_Innerfuse_Pascal_Script.pdf
+  - Updated docs
+2004-01-14:
+  - Added CompExec.GetVarContents (for watches)
+  - Seperate Procedure Parameter reading code from using the actual header
+2004-01-15:
+  - Added IDispatchInvoke scripted function
+  - Copyright Update
+2004-01-16:
+  - Full IDispatch (dynamic) invoke support
+
+  - Made IDispatch code work only on Variant types
+  - Fixes in IFPSVariantToString
+
+
+
+Todo:
+  - Com functions

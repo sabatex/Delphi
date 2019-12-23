@@ -1,0 +1,286 @@
+MAKE Version 5.2  Copyright (c) 1987, 1998 Inprise Corp.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPconst.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+73 lines, 0.02 seconds, 54 bytes code, 4 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPBase64.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+140 lines, 0.10 seconds, 906 bytes code, 68 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPcrypt2.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+455 lines, 0.16 seconds, 3655 bytes code, 4 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPblockciphers.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+775 lines, 0.17 seconds, 6018 bytes code, 4 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPblowfish.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+510 lines, 0.16 seconds, 8241 bytes code, 4220 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPcast128.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+917 lines, 0.18 seconds, 14092 bytes code, 8244 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPcast256.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+559 lines, 0.18 seconds, 8623 bytes code, 4268 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPdes.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+796 lines, 0.19 seconds, 8902 bytes code, 4204 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPgost.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+375 lines, 0.18 seconds, 7286 bytes code, 4196 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPhaval.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+853 lines, 0.19 seconds, 14678 bytes code, 68 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPice.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+458 lines, 0.17 seconds, 3577 bytes code, 16792 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPidea.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+310 lines, 0.18 seconds, 2663 bytes code, 68 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPmars.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+856 lines, 0.18 seconds, 11781 bytes code, 2248 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPmd4.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+248 lines, 0.17 seconds, 2568 bytes code, 36 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPmd5.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+265 lines, 0.17 seconds, 3144 bytes code, 36 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPmisty1.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+317 lines, 0.18 seconds, 3951 bytes code, 2228 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPrc2.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+220 lines, 0.18 seconds, 1920 bytes code, 324 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPrc4.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+224 lines, 0.17 seconds, 1561 bytes code, 20 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPrc5.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+215 lines, 0.17 seconds, 1493 bytes code, 204 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPrc6.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+240 lines, 0.17 seconds, 1925 bytes code, 324 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPreg.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+SOURCE\DCPreg.pas(54) Warning: File not found: 'DCPciphers.dcr'
+SOURCE\DCPreg.pas(55) Warning: File not found: 'DCPhashes.dcr'
+5277 lines, 0.39 seconds, 398 bytes code, 4 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPrijndael.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+1245 lines, 0.18 seconds, 16273 bytes code, 13092 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPripemd128.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+332 lines, 0.16 seconds, 5718 bytes code, 36 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPripemd160.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+693 lines, 0.17 seconds, 11008 bytes code, 44 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPserpent.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+294 lines, 0.18 seconds, 8891 bytes code, 172 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPsha1.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+289 lines, 0.18 seconds, 5488 bytes code, 44 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPsha256.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+295 lines, 0.19 seconds, 12304 bytes code, 68 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPsha512.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+407 lines, 0.19 seconds, 43939 bytes code, 228 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPtea.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+163 lines, 0.17 seconds, 1155 bytes code, 28 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPtiger.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+835 lines, 0.18 seconds, 19598 bytes code, 8248 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPtwofish.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+655 lines, 0.19 seconds, 6024 bytes code, 4662 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\FGInt.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+2083 lines, 0.42 seconds, 27310 bytes code, 5044 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\FGIntElGamal.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+206 lines, 0.39 seconds, 2540 bytes code, 4 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\FGIntPrimeGeneration.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+62 lines, 0.40 seconds, 286 bytes code, 4 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\FGIntRSA.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+212 lines, 0.39 seconds, 2434 bytes code, 4 bytes data.
+MAKE Version 5.2  Copyright (c) 1987, 1998 Inprise Corp.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPconst.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+73 lines, 0.02 seconds, 54 bytes code, 4 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPBase64.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+140 lines, 0.11 seconds, 906 bytes code, 68 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPcrypt2.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+455 lines, 0.18 seconds, 3655 bytes code, 4 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPblockciphers.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+775 lines, 0.18 seconds, 6018 bytes code, 4 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPblowfish.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+510 lines, 0.18 seconds, 8241 bytes code, 4220 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPcast128.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+917 lines, 0.19 seconds, 14092 bytes code, 8244 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPcast256.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+559 lines, 0.18 seconds, 8623 bytes code, 4268 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPdes.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+796 lines, 0.18 seconds, 8902 bytes code, 4204 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPgost.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+375 lines, 0.18 seconds, 7286 bytes code, 4196 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPhaval.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+853 lines, 0.19 seconds, 14678 bytes code, 68 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPice.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+458 lines, 0.18 seconds, 3577 bytes code, 16792 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPidea.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+310 lines, 0.18 seconds, 2663 bytes code, 68 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPmars.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+856 lines, 0.20 seconds, 11781 bytes code, 2248 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPmd4.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+248 lines, 0.18 seconds, 2568 bytes code, 36 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPmd5.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+265 lines, 0.18 seconds, 3144 bytes code, 36 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPmisty1.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+317 lines, 0.18 seconds, 3951 bytes code, 2228 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPrc2.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+220 lines, 0.18 seconds, 1920 bytes code, 324 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPrc4.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+224 lines, 0.17 seconds, 1561 bytes code, 20 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPrc5.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+215 lines, 0.18 seconds, 1493 bytes code, 204 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPrc6.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+240 lines, 0.18 seconds, 1925 bytes code, 324 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPreg.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+SOURCE\DCPreg.pas(54) Warning: File not found: 'DCPciphers.dcr'
+SOURCE\DCPreg.pas(55) Warning: File not found: 'DCPhashes.dcr'
+5277 lines, 0.34 seconds, 398 bytes code, 4 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPrijndael.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+1245 lines, 0.19 seconds, 16273 bytes code, 13092 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPripemd128.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+332 lines, 0.18 seconds, 5718 bytes code, 36 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPripemd160.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+693 lines, 0.18 seconds, 11008 bytes code, 44 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPserpent.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+294 lines, 0.18 seconds, 8891 bytes code, 172 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPsha1.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+289 lines, 0.17 seconds, 5488 bytes code, 44 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPsha256.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+295 lines, 0.18 seconds, 12304 bytes code, 68 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPsha512.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+407 lines, 0.20 seconds, 43939 bytes code, 228 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPtea.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+163 lines, 0.18 seconds, 1155 bytes code, 28 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPtiger.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+835 lines, 0.18 seconds, 19598 bytes code, 8248 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\DCPtwofish.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+655 lines, 0.18 seconds, 6024 bytes code, 4662 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\FGInt.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+2083 lines, 0.42 seconds, 27310 bytes code, 5044 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\FGIntElGamal.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+206 lines, 0.39 seconds, 2540 bytes code, 4 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\FGIntPrimeGeneration.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+62 lines, 0.39 seconds, 286 bytes code, 4 bytes data.
+	P:\BIN\D6U2RTL1\BIN\dcc32 -q SOURCE\FGIntRSA.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2001 Borland Software Corporation
+212 lines, 0.39 seconds, 2434 bytes code, 4 bytes data.

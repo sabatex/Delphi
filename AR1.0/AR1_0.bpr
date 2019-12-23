@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="bin\AR1_0.exe"/>
+    <OBJFILES value="obj\AR1_0.obj obj\default_splash.obj obj\mainc.obj obj\default_about.obj 
+      obj\default_dm_base.obj obj\default_dm_main.obj obj\dm_main.obj 
+      obj\dm_base.obj obj\default_firms.obj obj\wokers.obj obj\form_1df.obj 
+      obj\options.obj obj\config_1C60.obj obj\wizard_save_1DF.obj 
+      ..\..\Lib\Obj\EhLibFIB.obj obj\periodic_edit.obj"/>
+    <RESFILES value="AR1_0.res obj\P8DRMain.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) &quot;..\Common Forms\default_splash.dfm&quot; SOURCE\mainc.dfm 
+      &quot;..\Common Forms\default_about.dfm&quot; &quot;..\Common Forms\default_dm_base.dfm&quot; 
+      &quot;..\Common Forms\default_dm_main.dfm&quot; SOURCE\dm_main.dfm 
+      SOURCE\dm_base.dfm &quot;..\Common Forms\default_firms.dfm&quot; SOURCE\wokers.dfm 
+      SOURCE\form_1df.dfm SOURCE\options.dfm SOURCE\config_1C60.dfm 
+      SOURCE\wizard_save_1DF.dfm &quot;..\Common Forms\periodic_edit.dfm&quot;"/>
+    <LIBFILES value="..\NTICSLib\source\NTICS.lib ..\NTICSLib_PAS\source\NTICS_pas.lib"/>
+    <LIBRARIES value="JvWizardC6R.lib dbrtl.lib vclx.lib frxe6.lib FSIBX6.lib frxIBX6.lib 
+      frxDBX6.lib FSBDE6.lib frxBDE6.lib FSADO6.lib frxADO6.lib FSDB6.lib 
+      frxDB6.lib frx6.lib FS6.lib JvCtrlsC6R.lib JvSystemC6R.lib 
+      JvStdCtrlsC6R.lib JvDBC6R.lib CJclVcl.lib CJcl.lib JvCoreC6R.lib 
+      fc3000v6.lib fr6.lib EhLibB60.lib FIBDBMidas_CB6.lib FIBPlus_CB6.lib 
+      teeqr.lib soaprtl.lib qrpt.lib dclocx.lib dss.lib tee.lib teedb.lib 
+      teeui.lib bdecds.lib vcldbx.lib bcbie.lib bcb2kaxserver.lib DBFBC6R.lib 
+      indy.lib dbxcds.lib nmfast.lib dbexpress.lib inetdbxpress.lib 
+      inetdbbde.lib bcbsmp.lib dsnapcon.lib dsnapcrba.lib visualdbclx.lib cds.lib 
+      ibxpress.lib bdertl.lib adortl.lib vcldb.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib vcldb.lib adortl.lib bdertl.lib ibxpress.lib cds.lib 
+      visualdbclx.lib dsnapcrba.lib dsnapcon.lib bcbsmp.lib inetdbbde.lib 
+      inetdbxpress.lib dbexpress.lib nmfast.lib dbxcds.lib indy.lib DBFBC6R.lib 
+      bcb2kaxserver.lib bcbie.lib vcldbx.lib bdecds.lib teeui.lib teedb.lib 
+      tee.lib dss.lib dclocx.lib qrpt.lib soaprtl.lib teeqr.lib FIBPlus_CB6.lib 
+      FIBDBMidas_CB6.lib EhLibB60.lib fr6.lib fc3000v6.lib JvCoreC6R.lib 
+      CJcl.lib CJclVcl.lib JvDBC6R.lib JvStdCtrlsC6R.lib JvSystemC6R.lib 
+      JvCtrlsC6R.lib FS6.lib frx6.lib frxDB6.lib FSDB6.lib frxADO6.lib 
+      FSADO6.lib frxBDE6.lib FSBDE6.lib frxDBX6.lib frxIBX6.lib FSIBX6.lib 
+      frxe6.lib vclx.lib dbrtl.lib JvWizardC6R.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      ibxpress.bpi dsnap.bpi cds.bpi visualclx.bpi visualdbclx.bpi dsnapcrba.bpi 
+      dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi 
+      inetdbxpress.bpi nmfast.bpi webdsnap.bpi dbexpress.bpi dbxcds.bpi indy.bpi 
+      DBFBC6R.bpi bcb2kaxserver.bpi bcbie.bpi inetdb.bpi vcldbx.bpi bdecds.bpi 
+      dss.bpi teeui.bpi teedb.bpi tee.bpi dclocx.bpi qrpt.bpi soaprtl.bpi 
+      teeqr.bpi websnap.bpi FIBPlus_CB6.bpi FIBDBMidas_CB6.bpi EhLibB60.bpi 
+      fr6.bpi fc3000v6.bpi JvCoreC6R.bpi CJcl.bpi CJclVcl.bpi JvDBC6R.bpi 
+      JvStdCtrlsC6R.bpi JvSystemC6R.bpi JvCtrlsC6R.bpi FS6.bpi frx6.bpi 
+      frxDB6.bpi FSDB6.bpi frxADO6.bpi FSADO6.bpi frxBDE6.bpi FSBDE6.bpi 
+      frxDBX6.bpi frxIBX6.bpi FSIBX6.bpi frxe6.bpi"/>
+    <PATHCPP value=".;&quot;..\Common Forms&quot;;SOURCE"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;SOURCE"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_RTLDLL"/>
+    <MAINSOURCE value="AR1_0.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\FastReports\FastReport 3\LibBCB6&quot;;..\NTICSLib\source;..;&quot;..\Common Forms&quot;;SOURCE;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Projects\NTICSLib_PAS\source"/>
+    <LIBPATH value="..;&quot;..\Common Forms&quot;;&quot;C:\Program Files\FastReports\FastReport 3\LibBCB6&quot;;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\NTICSLib\source;..\NTICSLib_PAS\source;&quot;C:\Program Files\JVCL300BETA2Complete\Resources&quot;"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\FastReports\FastReport 3\LibBCB6&quot; -I..\NTICSLib\source 
+      -I.. -I&quot;..\Common Forms&quot; -ISOURCE -I$(BCB)\include -I$(BCB)\include\vcl 
+      -I$(BCB)\Projects\NTICSLib_PAS\source -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-N2obj -N0obj -$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-lobj -Iobj -D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="AR1_0.res" FORMNAME="" UNITNAME="AR1_0.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AR1_0.cpp" FORMNAME="" UNITNAME="AR1_0" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SOURCE\P8DRMain.rc" FORMNAME="" UNITNAME="P8DRMain.rc" CONTAINERID="RCCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Common Forms\default_splash.cpp" FORMNAME="frmSplash_def" UNITNAME="default_splash" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SOURCE\mainc.cpp" FORMNAME="frmmain_new" UNITNAME="mainc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Common Forms\default_about.cpp" FORMNAME="frmAbout_def" UNITNAME="default_about" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Common Forms\default_dm_base.cpp" FORMNAME="dmBase_def" UNITNAME="default_dm_base" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Common Forms\default_dm_main.cpp" FORMNAME="dmMain_def" UNITNAME="default_dm_main" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\NTICSLib\source\NTICS.lib" FORMNAME="" UNITNAME="NTICS.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SOURCE\dm_main.cpp" FORMNAME="dmMain" UNITNAME="dm_main" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="SOURCE\dm_base.cpp" FORMNAME="dmBase" UNITNAME="dm_base" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Common Forms\default_firms.cpp" FORMNAME="frmFirms_def" UNITNAME="default_firms" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SOURCE\wokers.cpp" FORMNAME="frm_wokers" UNITNAME="wokers" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SOURCE\form_1df.cpp" FORMNAME="frm_1df" UNITNAME="form_1df" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SOURCE\options.cpp" FORMNAME="frm_options" UNITNAME="options" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SOURCE\config_1C60.cpp" FORMNAME="frm_config1c60" UNITNAME="config_1C60" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\NTICSLib_PAS\source\NTICS_pas.lib" FORMNAME="" UNITNAME="NTICS_pas.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SOURCE\wizard_save_1DF.cpp" FORMNAME="frm_wizard_save_1df" UNITNAME="wizard_save_1DF" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\Lib\Obj\EhLibFIB.obj" FORMNAME="" UNITNAME="EhLibFIB.obj" CONTAINERID="OBJTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Common Forms\periodic_edit.cpp" FORMNAME="frm_periodic" UNITNAME="periodic_edit" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=0
+Release=0
+Build=3
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1058
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=NTICS
+FileDescription=
+FileVersion=1.0.0.3
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=Бухгалтерська звітність
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=30
+Item0=C:\Program Files\FastReports\FastReport 3\LibBCB6;..\NTICSLib\source;..;..\Common Forms;SOURCE;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Projects\NTICSLib_PAS\source
+Item1=..\NTICSLib\source;..;..\Common Forms;SOURCE;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Projects\NTICSLib\source;$(BCB)\Projects\NTICSLib_PAS\source
+Item2=..;..\Common Forms;SOURCE;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Projects\NTICSLib\source;$(BCB)\Projects\NTICSLib_PAS\source
+Item3=..\;..\Common Forms;SOURCE;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Projects\NTICSLib\source;$(BCB)\Projects\NTICSLib_PAS\source
+Item4=..\Common Forms;SOURCE;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Projects\NTICSLib\source;$(BCB)\Projects\NTICSLib_PAS\source
+Item5=..\Common Forms;SOURCE;$(BCB)\include;$(BCB)\include\vcl
+Item6=..\Common Forms;C:\Program Files\Borland\CBuilder6\Projects;..\Repository\NTICS_def_Project\source;SOURCE;$(BCB)\include;$(BCB)\include\vcl;D:\MyDoc\Projects\NTICSLib\include;D:\MyDoc\components\jvcl+jcl\Include;D:\MyDoc\Projects\NTICSLib\source_pas;D:\MyDoc\Projects\NTICSLib\source
+Item7=C:\Program Files\Borland\CBuilder6\Projects;..\Repository\NTICS_def_Project\source;SOURCE;$(BCB)\include;$(BCB)\include\vcl;D:\MyDoc\Projects\NTICSLib\include;D:\MyDoc\components\jvcl+jcl\Include;D:\MyDoc\Projects\NTICSLib\source_pas;D:\MyDoc\Projects\NTICSLib\source
+Item8=..\Repository\NTICS_def_Project\source;SOURCE;$(BCB)\include;$(BCB)\include\vcl;D:\MyDoc\Projects\NTICSLib\include;D:\MyDoc\components\jvcl+jcl\Include;D:\MyDoc\Projects\NTICSLib\source_pas;D:\MyDoc\Projects\NTICSLib\source
+Item9=..\Repository\NTICS_def_Project\source;SOURCE;$(BCB)\include;$(BCB)\include\vcl;D:\MyDoc\Projects\NTICSLib\include;D:\MyDoc\components\jvcl+jcl\Include
+Item10=..\Repository\NTICS_def_Project\source;SOURCE;$(BCB)\include;$(BCB)\include\vcl;D:\MyDoc\Projects\NTICSLib\include
+Item11=SOURCE;$(BCB)\include;$(BCB)\include\vcl;D:\MyDoc\Projects\NTICSLib\include
+Item12=SOURCE;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\Projects\components\include
+Item13=SOURCE;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects\include;$(BCB)\projects\include\ntics
+Item14=SOURCE;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\projects\include
+Item15=SOURCE;D:\CBuilder6\Projects\mylibrary\NTICSLib;obj;$(BCB)\include;$(BCB)\include\vcl
+Item16=SOURCE;D:\CBuilder6\Projects\mylibrary\NTICSLib\SOURCE;obj;$(BCB)\include;$(BCB)\include\vcl
+Item17=..;SOURCE;D:\CBuilder6\Projects\mylibrary\NTICSLib\SOURCE;obj;$(BCB)\include;$(BCB)\include\vcl
+Item18=..;SOURCE;C:\Components\NTICSLib;obj;$(BCB)\include;$(BCB)\include\vcl
+Item19=..\;SOURCE;C:\Components\NTICSLib;obj;$(BCB)\include;$(BCB)\include\vcl
+Item20=SOURCE;C:\Components\NTICSLib;obj;$(BCB)\include;$(BCB)\include\vcl
+Item21=SOURCE;C:\Components\NTICSLib;..\..;..\DCU;$(BCB)\include;$(BCB)\include\vcl
+Item22=C:\Components\NTICSLib;..\..;..\DCU;$(BCB)\include;$(BCB)\include\vcl
+Item23=..\..;..\DCU;$(BCB)\include;$(BCB)\include\vcl
+Item24=C:\CBuilder6\Source\vcl;C:\Components\NTICSLib;C:\Components\DBFLib\Source;..\..;..\DCU;$(BCB)\include;$(BCB)\include\vcl
+Item25=C:\Components\NTICSLib;C:\Components\DBFLib\Source;..\..;..\DCU;$(BCB)\include;$(BCB)\include\vcl;C:\CBuilder6\Source\vcl
+Item26=C:\Components\NTICSLib;C:\Components\DBFLib\Source;..\..;..\DCU;$(BCB)\include;$(BCB)\include\vcl
+Item27=C:\Components\NTICSLib;..\..;..\DCU;$(BCB)\include;$(BCB)\include\vcl;C:\Components\Ehlib\sources
+Item28=C:\Components\NTICSLib;..\..;..\DCU\;$(BCB)\include;$(BCB)\include\vcl
+Item29=C:\Components\NTICSLib;..\..;1DF1.0\SOURCE;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=30
+Item0=..;..\Common Forms;C:\Program Files\FastReports\FastReport 3\LibBCB6;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\NTICSLib\source;..\NTICSLib_PAS\source;C:\Program Files\JVCL300BETA2Complete\Resources
+Item1=..;..\Common Forms;C:\Program Files\FastReports\FastReport 3\LibBCB6;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\NTICSLib\source;..\NTICSLib_PAS\source;$(BCB)\Components\JVCL300BETA2Complete\Resources
+Item2=..\;..\Common Forms;C:\Program Files\FastReports\FastReport 3\LibBCB6;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\NTICSLib\source;..\NTICSLib_PAS\source;$(BCB)\Components\JVCL300BETA2Complete\Resources
+Item3=..\;..\Common Forms;C:\Program Files\FastReports\FastReport 3\LibBCB6;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\NTICSLib\source;..\NTICSLib_PAS\source
+Item4=..\Common Forms;C:\Program Files\FastReports\FastReport 3\LibBCB6;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\NTICSLib\source;..\NTICSLib_PAS\source
+Item5=..\Common Forms;..\Repository\NTICS_def_Project\source;C:\Program Files\FastReports\FastReport 3\LibBCB6;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\NTICSLib\source;..\NTICSLib_PAS\source
+Item6=..\Repository\NTICS_def_Project\source;C:\Program Files\FastReports\FastReport 3\LibBCB6;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\NTICSLib\source;..\NTICSLib_PAS\source
+Item7=C:\Program Files\FastReports\FastReport 3\LibBCB6;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\NTICSLib\source;..\NTICSLib_PAS\source
+Item8=C:\Program Files\FastReports\FastReport 3\LibBCB6;C:\Program Files\Borland\CBuilder6\Projects;..\Repository\NTICS_def_Project\source;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\MyDoc\components\DBFLib\obj;D:\MyDoc\Projects\NTICSLib\obj;D:\MyDoc\components\FastReport\obj;D:\MyDoc\components\Ehlib\obj;D:\MyDoc\components\jvcl+jcl\jvcl\Resources
+Item9=C:\Program Files\Borland\CBuilder6\Projects;..\Repository\NTICS_def_Project\source;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\MyDoc\components\DBFLib\obj;D:\MyDoc\Projects\NTICSLib\obj;D:\MyDoc\components\FastReport\obj;D:\MyDoc\components\Ehlib\obj;D:\MyDoc\components\jvcl+jcl\jvcl\Resources
+Item10=C:\Program Files\Borland\CBuilder6\Projects;..\Repository\NTICS_def_Project\source;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\MyDoc\components\DBFLib\obj;D:\MyDoc\Projects\NTICSLib\obj;D:\MyDoc\components\FastReport\obj;D:\MyDoc\components\Ehlib\obj
+Item11=..\Repository\NTICS_def_Project\source;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\MyDoc\components\DBFLib\obj;D:\MyDoc\Projects\NTICSLib\obj;D:\MyDoc\components\FastReport\obj;D:\MyDoc\components\Ehlib\obj
+Item12=..\Repository\NTICS_def_Project\source;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\components\ehlib\obj;D:\MyDoc\components\DBFLib\obj;D:\MyDoc\Projects\NTICSLib\obj;D:\MyDoc\components\FastReport\obj
+Item13=..\Repository\NTICS_def_Project\source;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\components\ehlib\obj;D:\MyDoc\components\DBFLib\obj;$(BCB)\Projects\components\FastReport\obj;D:\MyDoc\Projects\NTICSLib\obj
+Item14=..\Repository\NTICS_def_Project\source;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\components\ehlib\obj;$(BCB)\Projects\components\dbflib\obj;$(BCB)\Projects\components\FastReport\obj;D:\MyDoc\Projects\NTICSLib\obj
+Item15=..\Repository\NTICS_def_Project\source;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\components\NTICSLib\obj;$(BCB)\Projects\components\ehlib\obj;$(BCB)\Projects\components\dbflib\obj;$(BCB)\Projects\components\FastReport\obj
+Item16=SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\components\NTICSLib\obj;$(BCB)\Projects\components\ehlib\obj;$(BCB)\Projects\components\dbflib\obj;$(BCB)\Projects\components\FastReport\obj
+Item17=SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\Lib\NTICS;$(BCB)\Projects\Lib\eh;$(BCB)\Projects\Lib\dbf;$(BCB)\Projects\Lib\FastReport
+Item18=SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\Lib\NTICS;$(BCB)\Projects\Lib\eh;$(BCB)\Projects\Lib\dbf
+Item19=SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\Lib\NTICS;$(BCB)\Projects\Lib\eh
+Item20=SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects\Lib\NTICS
+Item21=SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item22=obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item23=SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\CBuilder6\Projects\mylibrary\NTICSLib;D:\CBuilder6\Projects\components\Ehlib\sources;D:\CBuilder6\Projects\components\DBFLib\Source;D:\CBuilder6\Projects\components\FastReport\source
+Item24=SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\CBuilder6\Projects\mylibrary\NTICSLib;D:\CBuilder6\Projects\components\Ehlib\sources;D:\CBuilder6\Projects\components\DBFLib\Source;D:\CBuilder6\Projects\components\FastReport\source;D:\CBuilder6\Source\vcl
+Item25=SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\CBuilder6\Projects\mylibrary\NTICSLib;D:\CBuilder6\Projects\components\Ehlib\sources;D:\CBuilder6\Projects\components\DBFLib\Source
+Item26=SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\CBuilder6\Projects\mylibrary\NTICSLib;D:\CBuilder6\Projects\components\Ehlib\sources
+Item27=SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\CBuilder6\Projects\mylibrary\NTICSLib;C:\Components\Ehlib\sources;C:\Components\DBFLib\Source;C:\Components\FastReport\source;C:\CBuilder6\Source\vcl
+Item28=SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\CBuilder6\Projects\mylibrary\NTICSLib\SOURCE;C:\Components\Ehlib\sources;C:\Components\DBFLib\Source;C:\Components\FastReport\source;C:\CBuilder6\Source\vcl
+Item29=..;SOURCE;obj;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;D:\CBuilder6\Projects\mylibrary\NTICSLib\SOURCE;C:\Components\Ehlib\sources;C:\Components\DBFLib\Source;C:\Components\FastReport\source;C:\CBuilder6\Source\vcl
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=3
+Item0=obj
+Item1=..\DCU
+Item2=..\DCU\
+
+[HistoryLists\hlFinalOutputDir]
+Count=4
+Item0=bin\
+Item1=bin
+Item2=..\BIN\
+Item3=..\BIN
+
+[HistoryLists\hIBPIOutputDir]
+Count=3
+Item0=obj
+Item1=..\DCU
+Item2=..\DCU\
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=D:\CBuilder6\Projects\AR\BIN\AR1_0.exe
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

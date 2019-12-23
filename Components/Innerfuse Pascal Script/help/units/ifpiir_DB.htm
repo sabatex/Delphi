@@ -1,0 +1,339 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifpiir_DB</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<H1>Unit ifpiir_DB</H1>
+<H2>Description</H2>
+Runtime TDataSet (db) definitions<H2>Functions and Procedures</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><CODE>procedure <A href="#RIRegisterTADTFIELD"><B>RIRegisterTADTFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTARRAYFIELD"><B>RIRegisterTARRAYFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTAUTOINCFIELD"><B>RIRegisterTAUTOINCFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTBCDFIELD"><B>RIRegisterTBCDFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTBINARYFIELD"><B>RIRegisterTBINARYFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTBLOBFIELD"><B>RIRegisterTBLOBFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTBOOLEANFIELD"><B>RIRegisterTBOOLEANFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTBYTESFIELD"><B>RIRegisterTBYTESFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTCURRENCYFIELD"><B>RIRegisterTCURRENCYFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTDATASET"><B>RIRegisterTDATASET</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTDATASETFIELD"><B>RIRegisterTDATASETFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTDATEFIELD"><B>RIRegisterTDATEFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTDATETIMEFIELD"><B>RIRegisterTDATETIMEFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTDEFCOLLECTION"><B>RIRegisterTDEFCOLLECTION</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTFIELD"><B>RIRegisterTFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTFIELDDEF"><B>RIRegisterTFIELDDEF</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTFIELDDEFLIST"><B>RIRegisterTFIELDDEFLIST</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTFIELDDEFS"><B>RIRegisterTFIELDDEFS</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTFIELDLIST"><B>RIRegisterTFIELDLIST</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTFIELDS"><B>RIRegisterTFIELDS</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTFLATLIST"><B>RIRegisterTFLATLIST</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTFLOATFIELD"><B>RIRegisterTFLOATFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTGRAPHICFIELD"><B>RIRegisterTGRAPHICFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTGUIDFIELD"><B>RIRegisterTGUIDFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTINDEXDEF"><B>RIRegisterTINDEXDEF</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTINDEXDEFS"><B>RIRegisterTINDEXDEFS</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTINTEGERFIELD"><B>RIRegisterTINTEGERFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTLARGEINTFIELD"><B>RIRegisterTLARGEINTFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTLOOKUPLIST"><B>RIRegisterTLOOKUPLIST</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTMEMOFIELD"><B>RIRegisterTMEMOFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTNAMEDITEM"><B>RIRegisterTNAMEDITEM</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTNUMERICFIELD"><B>RIRegisterTNUMERICFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTOBJECTFIELD"><B>RIRegisterTOBJECTFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTPARAM"><B>RIRegisterTPARAM</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTPARAMS"><B>RIRegisterTPARAMS</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTREFERENCEFIELD"><B>RIRegisterTREFERENCEFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTSMALLINTFIELD"><B>RIRegisterTSMALLINTFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTSTRINGFIELD"><B>RIRegisterTSTRINGFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTTIMEFIELD"><B>RIRegisterTTIMEFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTVARBYTESFIELD"><B>RIRegisterTVARBYTESFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTVARIANTFIELD"><B>RIRegisterTVARIANTFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTWIDESTRINGFIELD"><B>RIRegisterTWIDESTRINGFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegisterTWORDFIELD"><B>RIRegisterTWORDFIELD</B></A>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#RIRegister_DB"><B>RIRegister_DB</B></A>(CL: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTADTFIELD"><CODE>procedure <B>RIRegisterTADTFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTARRAYFIELD"><CODE>procedure <B>RIRegisterTARRAYFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTAUTOINCFIELD"><CODE>procedure <B>RIRegisterTAUTOINCFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTBCDFIELD"><CODE>procedure <B>RIRegisterTBCDFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTBINARYFIELD"><CODE>procedure <B>RIRegisterTBINARYFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTBLOBFIELD"><CODE>procedure <B>RIRegisterTBLOBFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTBOOLEANFIELD"><CODE>procedure <B>RIRegisterTBOOLEANFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTBYTESFIELD"><CODE>procedure <B>RIRegisterTBYTESFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTCURRENCYFIELD"><CODE>procedure <B>RIRegisterTCURRENCYFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTDATASET"><CODE>procedure <B>RIRegisterTDATASET</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>not implemented</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTDATASETFIELD"><CODE>procedure <B>RIRegisterTDATASETFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTDATEFIELD"><CODE>procedure <B>RIRegisterTDATEFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTDATETIMEFIELD"><CODE>procedure <B>RIRegisterTDATETIMEFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTDEFCOLLECTION"><CODE>procedure <B>RIRegisterTDEFCOLLECTION</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTFIELD"><CODE>procedure <B>RIRegisterTFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTFIELDDEF"><CODE>procedure <B>RIRegisterTFIELDDEF</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTFIELDDEFLIST"><CODE>procedure <B>RIRegisterTFIELDDEFLIST</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTFIELDDEFS"><CODE>procedure <B>RIRegisterTFIELDDEFS</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTFIELDLIST"><CODE>procedure <B>RIRegisterTFIELDLIST</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTFIELDS"><CODE>procedure <B>RIRegisterTFIELDS</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTFLATLIST"><CODE>procedure <B>RIRegisterTFLATLIST</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTFLOATFIELD"><CODE>procedure <B>RIRegisterTFLOATFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTGRAPHICFIELD"><CODE>procedure <B>RIRegisterTGRAPHICFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTGUIDFIELD"><CODE>procedure <B>RIRegisterTGUIDFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTINDEXDEF"><CODE>procedure <B>RIRegisterTINDEXDEF</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTINDEXDEFS"><CODE>procedure <B>RIRegisterTINDEXDEFS</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTINTEGERFIELD"><CODE>procedure <B>RIRegisterTINTEGERFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTLARGEINTFIELD"><CODE>procedure <B>RIRegisterTLARGEINTFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTLOOKUPLIST"><CODE>procedure <B>RIRegisterTLOOKUPLIST</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTMEMOFIELD"><CODE>procedure <B>RIRegisterTMEMOFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTNAMEDITEM"><CODE>procedure <B>RIRegisterTNAMEDITEM</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTNUMERICFIELD"><CODE>procedure <B>RIRegisterTNUMERICFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTOBJECTFIELD"><CODE>procedure <B>RIRegisterTOBJECTFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTPARAM"><CODE>procedure <B>RIRegisterTPARAM</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTPARAMS"><CODE>procedure <B>RIRegisterTPARAMS</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTREFERENCEFIELD"><CODE>procedure <B>RIRegisterTREFERENCEFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTSMALLINTFIELD"><CODE>procedure <B>RIRegisterTSMALLINTFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTSTRINGFIELD"><CODE>procedure <B>RIRegisterTSTRINGFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTTIMEFIELD"><CODE>procedure <B>RIRegisterTTIMEFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTVARBYTESFIELD"><CODE>procedure <B>RIRegisterTVARBYTESFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTVARIANTFIELD"><CODE>procedure <B>RIRegisterTVARIANTFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTWIDESTRINGFIELD"><CODE>procedure <B>RIRegisterTWIDESTRINGFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegisterTWORDFIELD"><CODE>procedure <B>RIRegisterTWORDFIELD</B>(Cl: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="RIRegister_DB"><CODE>procedure <B>RIRegister_DB</B>(CL: <A href="TIFPSRuntimeClassImporter.htm">TIFPSRuntimeClassImporter</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Author</H2>
+<P>Carlo Kok <<A href="mailto:ck@carlo-kok.com">ck@carlo-kok.com</A>></P>
+</BODY>
+</HTML>

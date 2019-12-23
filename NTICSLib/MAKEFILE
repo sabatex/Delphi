@@ -1,0 +1,47 @@
+# ******************************************************************
+# *                                                                *
+# *     Crypto Runtime Library                                     *
+# *     MAKE script                                                *
+# *                                                                *
+# *     Copyright (C) 2000,2003 Serhiy Lakas                       *
+# *                                                                *
+# ******************************************************************
+
+# This MAKE script requires Borland MAKE Version 3.7 or later (MAKE.EXE),
+# Borland Resource and Compiler Version 4.0 or later (BRCC32.EXE).
+
+# The script assumes that DCC32.EXE, TASM32.EXE, and BRCC32.EXE are present
+# on the current search path--if this is not the case, modify the DCC, TASM,
+# and BRCC macros below to reflect the location of these executables.
+
+# To build the runtime library without debug information (the default),
+# simply run MAKE.EXE from the directory containing this MAKEFILE. To
+# build a debug version of the runtime library, specify a -DDEBUG command
+# line parameter when running MAKE.EXE.
+
+# The BIN and LIB macros define the output directories for binaries and
+# compiled units.
+
+DCC = $(MAKEDIR)\dcc32 -q
+BRCC = brcc32
+
+BIN = bin
+LIB = lib
+
+!if $d(DEBUG)
+RTLDEBUG = -$$D+
+ASMDEBUG = -zi
+LIB = Debug_lib 
+!else
+RTLDEBUG = -$$D-
+ASMDEBUG = -zn
+LIB = lib
+!endif
+
+SYSUTILSOBJ = \
+
+default: \
+$(LIB)\DCPConst.dcu 
+
+$(LIB)\DCPConst.dcu: SOURCE\DCPconst.pas
+  $(DCC) SOURCE\DCPconst.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)

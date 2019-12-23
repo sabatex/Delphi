@@ -1,0 +1,641 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifps3: Class TIFPSExec</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="TIFPSExec"><H1>Class TIFPSExec</H1>
+</A><H2>Unit</H2>
+<A href="ifps3.htm">ifps3</A><BR><H2>Declaration</H2>
+<P><CODE>type TIFPSExec = class(TObject)</CODE></P><H2>Description</H2>
+TIFPSExec is the core of the script engine executer<A name=@Fields></A><H2>Fields</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>&nbsp;</TH><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="ExEx"><CODE>ExEx</CODE></A></TD>
+<TD width=100%>The error code</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="ExObject"><CODE>ExObject</CODE></A></TD>
+<TD>The exception object from delphi</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="ExParam"><CODE>ExParam</CODE></A></TD>
+<TD>The optional parameter for the error</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="ExPos"><CODE>ExPos</CODE></A></TD>
+<TD>The position of the last error</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="ExProc"><CODE>ExProc</CODE></A></TD>
+<TD>The proc where the last error occured</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FAttributeTypes"><CODE>FAttributeTypes</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FCurrentPosition"><CODE>FCurrentPosition</CODE></A></TD>
+<TD>The current position in the current proc</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FCurrProc"><CODE>FCurrProc</CODE></A></TD>
+<TD>The current proc</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FCurrStackBase"><CODE>FCurrStackBase</CODE></A></TD>
+<TD>Current stack base</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FData"><CODE>FData</CODE></A></TD>
+<TD>The currproc^.data contents</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FDataLength"><CODE>FDataLength</CODE></A></TD>
+<TD>Length of FData</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FExceptionStack"><CODE>FExceptionStack</CODE></A></TD>
+<TD>The exception stack</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FExportedVars"><CODE>FExportedVars</CODE></A></TD>
+<TD>The list of exported variables</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FGlobalVars"><CODE>FGlobalVars</CODE></A></TD>
+<TD>FGlobalVars contains the global variables of the current script</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FMainProc"><CODE>FMainProc</CODE></A></TD>
+<TD>The main proc no or -1 (no main proc)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FOnRunLine"><CODE>FOnRunLine</CODE></A></TD>
+<TD>FOnRunLine event</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FProcs"><CODE>FProcs</CODE></A></TD>
+<TD>FProcs contains all script procedures</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FRegProcs"><CODE>FRegProcs</CODE></A></TD>
+<TD>List of all registered external functions</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FResources"><CODE>FResources</CODE></A></TD>
+<TD>The list of resources</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FReturnAddressType"><CODE>FReturnAddressType</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FSpecialProcList"><CODE>FSpecialProcList</CODE></A></TD>
+<TD>List of SpecialProcs; See TIFPSExec.AddSpecialProc</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FStack"><CODE>FStack</CODE></A></TD>
+<TD>The Stack</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FStatus"><CODE>FStatus</CODE></A></TD>
+<TD>The current status of the script engine</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FTempVars"><CODE>FTempVars</CODE></A></TD>
+<TD>Temporarily created variables</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FTypes"><CODE>FTypes</CODE></A></TD>
+<TD>FTypes contains all types used by the script</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FVariantArrayType"><CODE>FVariantArrayType</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FVariantType"><CODE>FVariantType</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>constructor <A href="TIFPSExec.htm#Create"><B>Create</B></A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>destructor <A href="TIFPSExec.htm#Destroy"><B>Destroy</B></A>; Override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>class function <A href="TIFPSExec.htm#About"><B>About</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#AddResource"><B>AddResource</B></A>(Proc, P: Pointer);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#AddSpecialProcImport"><B>AddSpecialProcImport</B></A>(const FName: string; P: <A href="ifps3.htm#TIFPSOnSpecialProcImport">TIFPSOnSpecialProcImport</A>; Tag: Pointer);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#Cleanup"><B>Cleanup</B></A>; Virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#Clear"><B>Clear</B></A>; Virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#ClearFunctionList"><B>ClearFunctionList</B></A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#ClearspecialProcImports"><B>ClearspecialProcImports</B></A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#CMD_Err"><B>CMD_Err</B></A>(EC: <A href="ifps3.htm#TIFError">TIFError</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#CMD_Err2"><B>CMD_Err2</B></A>(EC: <A href="ifps3.htm#TIFError">TIFError</A>; const Param: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#CMD_Err3"><B>CMD_Err3</B></A>(EC: <A href="ifps3.htm#TIFError">TIFError</A>; const Param: string; ExObject: TObject);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#DeleteResource"><B>DeleteResource</B></A>(P: Pointer);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#ExceptionProc"><B>ExceptionProc</B></A>(proc, Position: Cardinal; Ex: <A href="ifps3.htm#TIFError">TIFError</A>; const s: string; NewObject: TObject); Virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#FindProcResource"><B>FindProcResource</B></A>(Proc: Pointer): Pointer;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#FindProcResource2"><B>FindProcResource2</B></A>(Proc: Pointer; var StartAt: Longint): Pointer;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#FindSpecialProcImport"><B>FindSpecialProcImport</B></A>(P: <A href="ifps3.htm#TIFPSOnSpecialProcImport">TIFPSOnSpecialProcImport</A>): pointer;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#FindType"><B>FindType</B></A>(StartAt: Cardinal; BaseType: <A href="ifps3utl.htm#TIFPSBaseType">TIFPSBaseType</A>; var l: Cardinal): <A href="ifps3.htm#PIFTypeRec">PIFTypeRec</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#FindType2"><B>FindType2</B></A>(BaseType: <A href="ifps3utl.htm#TIFPSBaseType">TIFPSBaseType</A>): <A href="ifps3.htm#PIFTypeRec">PIFTypeRec</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#GetProc"><B>GetProc</B></A>(const Name: string): Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#GetProcAsMethod"><B>GetProcAsMethod</B></A>(const ProcNo: Cardinal): TMethod;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#GetProcAsMethodN"><B>GetProcAsMethodN</B></A>(const ProcName: string): TMethod;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#GetProcCount"><B>GetProcCount</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#GetProcNo"><B>GetProcNo</B></A>(C: Cardinal): <A href="ifps3.htm#PIFProcRec">PIFProcRec</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#GetType"><B>GetType</B></A>(const Name: string): Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#GetTypeCount"><B>GetTypeCount</B></A>: Longint;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#GetTypeNo"><B>GetTypeNo</B></A>(l: Cardinal): <A href="ifps3.htm#PIFTypeRec">PIFTypeRec</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#GetVar"><B>GetVar</B></A>(const Name: string): Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#GetVar2"><B>GetVar2</B></A>(const Name: string): <A href="ifps3.htm#PIFVariant">PIFVariant</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#GetVarCount"><B>GetVarCount</B></A>: Longint;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#GetVarNo"><B>GetVarNo</B></A>(C: Cardinal): <A href="ifps3.htm#PIFVariant">PIFVariant</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#ImportProc"><B>ImportProc</B></A>(const Name: ShortString; proc: <A href="TIFExternalProcRec.htm">TIFExternalProcRec</A>): Boolean; Virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#InnerfuseCall"><B>InnerfuseCall</B></A>(_Self, Address: Pointer; CallingConv: <A href="ifps3.htm#TIFPSCallingConvention">TIFPSCallingConvention</A>; Params: <A href="TIfList.htm">TIfList</A>; res: <A href="ifps3.htm#PIFPSVariantIFC">PIFPSVariantIFC</A>): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#IsValidResource"><B>IsValidResource</B></A>(Proc, P: Pointer): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#LoadData"><B>LoadData</B></A>(const s: string): Boolean; virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#Pause"><B>Pause</B></A>; Virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#RaiseCurrentException"><B>RaiseCurrentException</B></A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#RegisterAttributeType"><B>RegisterAttributeType</B></A>(useproc: <A href="ifps3.htm#TIFPSAttributeUseProc">TIFPSAttributeUseProc</A>; const TypeName: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#RegisterDelphiFunction"><B>RegisterDelphiFunction</B></A>(ProcPtr: Pointer; const Name: string; CC: <A href="ifps3.htm#TIFPSCallingConvention">TIFPSCallingConvention</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#RegisterDelphiMethod"><B>RegisterDelphiMethod</B></A>(Slf, ProcPtr: Pointer; const Name: string; CC: <A href="ifps3.htm#TIFPSCallingConvention">TIFPSCallingConvention</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#RegisterFunctionName"><B>RegisterFunctionName</B></A>(const Name: string; ProcPtr: <A href="ifps3.htm#TIFProc">TIFProc</A>; Ext1, Ext2: Pointer): <A href="ifps3.htm#PProcRec">PProcRec</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#RunLine"><B>RunLine</B></A>; virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#RunProc"><B>RunProc</B></A>(Params: <A href="TIfList.htm">TIfList</A>; ProcNo: Cardinal): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSExec.htm#RunScript"><B>RunScript</B></A>: Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSExec.htm#Stop"><B>Stop</B></A>; Virtual;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Create"><CODE>constructor <B>Create</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Create an instance of the executer</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Destroy"><CODE>destructor <B>Destroy</B>; Override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Destroy this instance of the executer</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="About"><CODE>class function <B>About</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>This function will return about information</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="AddResource"><CODE>procedure <B>AddResource</B>(Proc, P: Pointer);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Add a resource</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="AddSpecialProcImport"><CODE>procedure <B>AddSpecialProcImport</B>(const FName: string; P: <A href="ifps3.htm#TIFPSOnSpecialProcImport">TIFPSOnSpecialProcImport</A>; Tag: Pointer);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Add a special proc import; this is used for the dll and class library</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Cleanup"><CODE>procedure <B>Cleanup</B>; Virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Reset all variables in the script to zero</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Clear"><CODE>procedure <B>Clear</B>; Virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Clear the currently loaded script</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ClearFunctionList"><CODE>procedure <B>ClearFunctionList</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Clear the function list</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ClearspecialProcImports"><CODE>procedure <B>ClearspecialProcImports</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Clear the list of special proc imports</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="CMD_Err"><CODE>procedure <B>CMD_Err</B>(EC: <A href="ifps3.htm#TIFError">TIFError</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Call CMD_Err to cause an error and stop the script</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="CMD_Err2"><CODE>procedure <B>CMD_Err2</B>(EC: <A href="ifps3.htm#TIFError">TIFError</A>; const Param: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Call CMD_Err2 to cause an error and stop the script</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="CMD_Err3"><CODE>procedure <B>CMD_Err3</B>(EC: <A href="ifps3.htm#TIFError">TIFError</A>; const Param: string; ExObject: TObject);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Call CMD_Err3 to cause an error and stop the script</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="DeleteResource"><CODE>procedure <B>DeleteResource</B>(P: Pointer);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Delete a resource</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD width=100%><A name="ExceptionProc"><CODE>procedure <B>ExceptionProc</B>(proc, Position: Cardinal; Ex: <A href="ifps3.htm#TIFError">TIFError</A>; const s: string; NewObject: TObject); Virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>ExceptionProc is called when an error occurs</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="FindProcResource"><CODE>function <B>FindProcResource</B>(Proc: Pointer): Pointer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Find a resource</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="FindProcResource2"><CODE>function <B>FindProcResource2</B>(Proc: Pointer; var StartAt: Longint): Pointer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Find a resource</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD width=100%><A name="FindSpecialProcImport"><CODE>function <B>FindSpecialProcImport</B>(P: <A href="ifps3.htm#TIFPSOnSpecialProcImport">TIFPSOnSpecialProcImport</A>): pointer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="FindType"><CODE>function <B>FindType</B>(StartAt: Cardinal; BaseType: <A href="ifps3utl.htm#TIFPSBaseType">TIFPSBaseType</A>; var l: Cardinal): <A href="ifps3.htm#PIFTypeRec">PIFTypeRec</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Search for a type (l is the starting position)</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="FindType2"><CODE>function <B>FindType2</B>(BaseType: <A href="ifps3utl.htm#TIFPSBaseType">TIFPSBaseType</A>): <A href="ifps3.htm#PIFTypeRec">PIFTypeRec</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Search for a type</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetProc"><CODE>function <B>GetProc</B>(const Name: string): Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Get function that has been compiled with a name</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetProcAsMethod"><CODE>function <B>GetProcAsMethod</B>(const ProcNo: Cardinal): TMethod;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Returns a TMethod for the procedure you specified (or nil), cast this to the function header you want to use and call it make sure it was exported with ExportDecl</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetProcAsMethodN"><CODE>function <B>GetProcAsMethodN</B>(const ProcName: string): TMethod;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Same as GetProcAsMethod but calls GetProc</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetProcCount"><CODE>function <B>GetProcCount</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Return the number of procedures</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetProcNo"><CODE>function <B>GetProcNo</B>(C: Cardinal): <A href="ifps3.htm#PIFProcRec">PIFProcRec</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Get Proc no (C)</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetType"><CODE>function <B>GetType</B>(const Name: string): Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Get Type that has been compiled with a name</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetTypeCount"><CODE>function <B>GetTypeCount</B>: Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Return the number of types</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetTypeNo"><CODE>function <B>GetTypeNo</B>(l: Cardinal): <A href="ifps3.htm#PIFTypeRec">PIFTypeRec</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Return type no L</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetVar"><CODE>function <B>GetVar</B>(const Name: string): Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Get variable that has been compiled with a name</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetVar2"><CODE>function <B>GetVar2</B>(const Name: string): <A href="ifps3.htm#PIFVariant">PIFVariant</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Get variable compiled with a name as a variant</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetVarCount"><CODE>function <B>GetVarCount</B>: Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Return the number of variables</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetVarNo"><CODE>function <B>GetVarNo</B>(C: Cardinal): <A href="ifps3.htm#PIFVariant">PIFVariant</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Get variable no (C)</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD width=100%><A name="ImportProc"><CODE>function <B>ImportProc</B>(const Name: ShortString; proc: <A href="TIFExternalProcRec.htm">TIFExternalProcRec</A>): Boolean; Virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>ImportProc is called when the script needs to import an external function</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD width=100%><A name="InnerfuseCall"><CODE>function <B>InnerfuseCall</B>(_Self, Address: Pointer; CallingConv: <A href="ifps3.htm#TIFPSCallingConvention">TIFPSCallingConvention</A>; Params: <A href="TIfList.htm">TIfList</A>; res: <A href="ifps3.htm#PIFPSVariantIFC">PIFPSVariantIFC</A>): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Call a method</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="IsValidResource"><CODE>function <B>IsValidResource</B>(Proc, P: Pointer): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Check if P is a valid resource for Proc</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="LoadData"><CODE>function <B>LoadData</B>(const s: string): Boolean; virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Load data into the script engine</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Pause"><CODE>procedure <B>Pause</B>; Virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Pause the script engine</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RaiseCurrentException"><CODE>procedure <B>RaiseCurrentException</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Raises the current Exception object, or if that doesn't exist, an EIFPS3Exception. If there is no current exception in ifps3 at all, it does nothing</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterAttributeType"><CODE>procedure <B>RegisterAttributeType</B>(useproc: <A href="ifps3.htm#TIFPSAttributeUseProc">TIFPSAttributeUseProc</A>; const TypeName: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register Attribute Type</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterDelphiFunction"><CODE>procedure <B>RegisterDelphiFunction</B>(ProcPtr: Pointer; const Name: string; CC: <A href="ifps3.htm#TIFPSCallingConvention">TIFPSCallingConvention</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register a delphi function ProcPtr is a pointer to the proc to be called; Name is the name of that proc (uppercased). CC is the calling convention.</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterDelphiMethod"><CODE>procedure <B>RegisterDelphiMethod</B>(Slf, ProcPtr: Pointer; const Name: string; CC: <A href="ifps3.htm#TIFPSCallingConvention">TIFPSCallingConvention</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register a delphi function Slf is the self pointer, don't use nil, it won't work ProcPtr is a pointer to the proc to be called; Name is the name of that proc (uppercased). CC is the calling convention.</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterFunctionName"><CODE>function <B>RegisterFunctionName</B>(const Name: string; ProcPtr: <A href="ifps3.htm#TIFProc">TIFProc</A>; Ext1, Ext2: Pointer): <A href="ifps3.htm#PProcRec">PProcRec</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register a function by name</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD width=100%><A name="RunLine"><CODE>procedure <B>RunLine</B>; virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>RunLine function</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RunProc"><CODE>function <B>RunProc</B>(Params: <A href="TIfList.htm">TIfList</A>; ProcNo: Cardinal): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Use RunProc to call a script function. The Params will not be freed after the call</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RunScript"><CODE>function <B>RunScript</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Run the current script</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Stop"><CODE>procedure <B>Stop</B>; Virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Stop the script engine</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>property <A href="TIFPSExec.htm#CallCleanup"><B>CallCleanup</B></A>: Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSExec.htm#ExceptionCode"><B>ExceptionCode</B></A>: <A href="ifps3.htm#TIFError">TIFError</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSExec.htm#ExceptionObject"><B>ExceptionObject</B></A>: TObject;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSExec.htm#ExceptionPos"><B>ExceptionPos</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSExec.htm#ExceptionProcNo"><B>ExceptionProcNo</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSExec.htm#ExceptionString"><B>ExceptionString</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSExec.htm#Id"><B>Id</B></A>: Pointer;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSExec.htm#OnException"><B>OnException</B></A>: <A href="ifps3.htm#TIFPSOnException">TIFPSOnException</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSExec.htm#OnRunLine"><B>OnRunLine</B></A>: <A href="ifps3.htm#TIFPSOnLineEvent">TIFPSOnLineEvent</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSExec.htm#Status"><B>Status</B></A>: <A href="ifps3.htm#TIFStatus">TIFStatus</A>;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="CallCleanup"><CODE>property <B>CallCleanup</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Set CallCleanup to false when you don't want the script engine to cleanup all variables after RunScript</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExceptionCode"><CODE>property <B>ExceptionCode</B>: <A href="ifps3.htm#TIFError">TIFError</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Contains the last error code</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExceptionObject"><CODE>property <B>ExceptionObject</B>: TObject;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Contains the exception object</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExceptionPos"><CODE>property <B>ExceptionPos</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Contains the last error position</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExceptionProcNo"><CODE>property <B>ExceptionProcNo</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Contains the last error proc</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExceptionString"><CODE>property <B>ExceptionString</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Contains the last error string</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Id"><CODE>property <B>Id</B>: Pointer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Optional tag of the script engine</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="OnException"><CODE>property <B>OnException</B>: <A href="ifps3.htm#TIFPSOnException">TIFPSOnException</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>OnException is called when an exception occurs</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="OnRunLine"><CODE>property <B>OnRunLine</B>: <A href="ifps3.htm#TIFPSOnLineEvent">TIFPSOnLineEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The OnRunLine event is called after each executed script line</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Status"><CODE>property <B>Status</B>: <A href="ifps3.htm#TIFStatus">TIFStatus</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Status contains the current status of the scriptengine</P>
+</BODY>
+</HTML>

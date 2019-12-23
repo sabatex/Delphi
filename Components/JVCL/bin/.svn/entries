@@ -1,0 +1,140 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/bin
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+PhoneList.csv
+file
+
+
+
+
+2007-01-21T10:53:12.390625Z
+bfeee7b1dbea3237c1e71c1c23408bd4
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+ApplicationHookPlugin
+dir
+
+JVCLInstall.ini
+file
+
+
+
+
+2007-01-21T10:56:59.937500Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+TestData.csv
+file
+
+
+
+
+2007-01-21T10:53:12.390625Z
+a65e09da8c32b2798315695220253e31
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+JVCLInstall.exe
+file
+2
+
+
+
+2007-01-21T10:55:28.671875Z
+7a2dc8c7f8c91a2973000104ad6e07f0
+2007-01-21T11:37:38.609375Z
+2
+Administrator
+has-props
+
+human.bmp
+file
+
+
+
+
+2007-01-21T10:53:12.421875Z
+b62137258c1e38f32b227e11e8adb2eb
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+has-props
+
+bin.txt
+file
+
+
+
+
+2007-01-21T10:53:12.421875Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+DataPlugin
+dir
+
+MDIPlugin
+dir
+
+Data
+dir
+
+BaseTest.mdb
+file
+
+
+
+
+2007-01-21T10:53:12.421875Z
+af5fe96ff2450c67916568ff72074822
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+has-props
+
+grass.bmp
+file
+
+
+
+
+2007-01-21T10:53:12.421875Z
+3d3a549c1cbc114f04c9937154cea481
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+has-props
+

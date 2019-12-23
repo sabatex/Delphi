@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifps3: Class TIFPSRuntimeAttributes</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="TIFPSRuntimeAttributes"><H1>Class TIFPSRuntimeAttributes</H1>
+</A><H2>Unit</H2>
+<A href="ifps3.htm">ifps3</A><BR><H2>Declaration</H2>
+<P><CODE>type TIFPSRuntimeAttributes = class(TObject)</CODE></P><H2>Description</H2>
+List of attributes<H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>constructor <A href="TIFPSRuntimeAttributes.htm#Create"><B>Create</B></A>(AOwner: <A href="TIFPSExec.htm">TIFPSExec</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>destructor <A href="TIFPSRuntimeAttributes.htm#Destroy"><B>Destroy</B></A>; override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSRuntimeAttributes.htm#Add"><B>Add</B></A>: <A href="TIFPSRuntimeAttribute.htm">TIFPSRuntimeAttribute</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSRuntimeAttributes.htm#Delete"><B>Delete</B></A>(I: Longint);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSRuntimeAttributes.htm#FindAttribute"><B>FindAttribute</B></A>(const Name: string): <A href="TIFPSRuntimeAttribute.htm">TIFPSRuntimeAttribute</A>;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Create"><CODE>constructor <B>Create</B>(AOwner: <A href="TIFPSExec.htm">TIFPSExec</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Destroy"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Add"><CODE>function <B>Add</B>: <A href="TIFPSRuntimeAttribute.htm">TIFPSRuntimeAttribute</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Add an item</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Delete"><CODE>procedure <B>Delete</B>(I: Longint);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>delete an item</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="FindAttribute"><CODE>function <B>FindAttribute</B>(const Name: string): <A href="TIFPSRuntimeAttribute.htm">TIFPSRuntimeAttribute</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Find an attribute by name</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>property <A href="TIFPSRuntimeAttributes.htm#Count"><B>Count</B></A>: Longint;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSRuntimeAttributes.htm#Items"><B>Items</B></A>[I: Longint]: <A href="TIFPSRuntimeAttribute.htm">TIFPSRuntimeAttribute</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSRuntimeAttributes.htm#Owner"><B>Owner</B></A>: <A href="TIFPSExec.htm">TIFPSExec</A>;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Count"><CODE>property <B>Count</B>: Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Number of elements</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Items"><CODE>property <B>Items</B>[I: Longint]: <A href="TIFPSRuntimeAttribute.htm">TIFPSRuntimeAttribute</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Item[i]</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Owner"><CODE>property <B>Owner</B>: <A href="TIFPSExec.htm">TIFPSExec</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Owner</P>
+</BODY>
+</HTML>

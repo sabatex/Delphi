@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifps3debug: Class TIFPSCustomDebugExec</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="TIFPSCustomDebugExec"><H1>Class TIFPSCustomDebugExec</H1>
+</A><H2>Unit</H2>
+<A href="ifps3debug.htm">ifps3debug</A><BR><H2>Declaration</H2>
+<P><CODE>type TIFPSCustomDebugExec = class(<CODE><A href="TIFPSExec.htm">TIFPSExec</A></CODE>)</CODE></P><H2>Description</H2>
+The TIFPSCustomDebugExec class is used to load and use compiler debug information<H2>Hierarchy</H2>
+<CODE><A href="TIFPSExec.htm">TIFPSExec</A></CODE><A name=@Fields></A><H2>Fields</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>&nbsp;</TH><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FCurrentCol"><CODE>FCurrentCol</CODE></A></TD>
+<TD width=100%>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FCurrentDebugProc"><CODE>FCurrentDebugProc</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FCurrentFile"><CODE>FCurrentFile</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FCurrentRow"><CODE>FCurrentRow</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FCurrentSourcePos"><CODE>FCurrentSourcePos</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FDebugDataForProcs"><CODE>FDebugDataForProcs</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FGlobalVarNames"><CODE>FGlobalVarNames</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FLastProc"><CODE>FLastProc</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FProcNames"><CODE>FProcNames</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>constructor <A href="TIFPSCustomDebugExec.htm#Create"><B>Create</B></A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>destructor <A href="TIFPSCustomDebugExec.htm#Destroy"><B>Destroy</B></A>; override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSCustomDebugExec.htm#Clear"><B>Clear</B></A>; override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE>procedure <A href="TIFPSCustomDebugExec.htm#ClearDebug"><B>ClearDebug</B></A>; virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSCustomDebugExec.htm#GetCurrentPosition"><B>GetCurrentPosition</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSCustomDebugExec.htm#GetCurrentProcNo"><B>GetCurrentProcNo</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE>function <A href="TIFPSCustomDebugExec.htm#GetCurrentProcParams"><B>GetCurrentProcParams</B></A>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE>function <A href="TIFPSCustomDebugExec.htm#GetCurrentProcVars"><B>GetCurrentProcVars</B></A>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSCustomDebugExec.htm#GetGlobalVar"><B>GetGlobalVar</B></A>(I: Cardinal): <A href="ifps3.htm#PIFVariant">PIfVariant</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSCustomDebugExec.htm#GetProcParam"><B>GetProcParam</B></A>(I: Cardinal): <A href="ifps3.htm#PIFVariant">PIfVariant</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSCustomDebugExec.htm#GetProcVar"><B>GetProcVar</B></A>(I: Cardinal): <A href="ifps3.htm#PIFVariant">PIfVariant</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSCustomDebugExec.htm#LoadDebugData"><B>LoadDebugData</B></A>(const Data: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSCustomDebugExec.htm#TranslatePosition"><B>TranslatePosition</B></A>(Proc, Position: Cardinal): Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSCustomDebugExec.htm#TranslatePositionEx"><B>TranslatePositionEx</B></A>(Proc, Position: Cardinal; var Pos, Row, Col: Cardinal; var Fn: string): Boolean;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Create"><CODE>constructor <B>Create</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Create an instance of the debugger</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Destroy"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>destroy the current instance of the debugger</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Clear"><CODE>procedure <B>Clear</B>; override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Clear the debugdata and the current script</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD width=100%><A name="ClearDebug"><CODE>procedure <B>ClearDebug</B>; virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetCurrentPosition"><CODE>function <B>GetCurrentPosition</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Get the current position</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetCurrentProcNo"><CODE>function <B>GetCurrentProcNo</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The current proc no</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD width=100%><A name="GetCurrentProcParams"><CODE>function <B>GetCurrentProcParams</B>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD width=100%><A name="GetCurrentProcVars"><CODE>function <B>GetCurrentProcVars</B>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetGlobalVar"><CODE>function <B>GetGlobalVar</B>(I: Cardinal): <A href="ifps3.htm#PIFVariant">PIfVariant</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Get global variable no I</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetProcParam"><CODE>function <B>GetProcParam</B>(I: Cardinal): <A href="ifps3.htm#PIFVariant">PIfVariant</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Get proc param no I</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetProcVar"><CODE>function <B>GetProcVar</B>(I: Cardinal): <A href="ifps3.htm#PIFVariant">PIfVariant</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Get Proc variable no I</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="LoadDebugData"><CODE>procedure <B>LoadDebugData</B>(const Data: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Load debug data in the scriptengine</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="TranslatePosition"><CODE>function <B>TranslatePosition</B>(Proc, Position: Cardinal): Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Translate a position to a real position</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="TranslatePositionEx"><CODE>function <B>TranslatePositionEx</B>(Proc, Position: Cardinal; var Pos, Row, Col: Cardinal; var Fn: string): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Translate a position into a row, col and offset</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>property <A href="TIFPSCustomDebugExec.htm#CurrentProcParams"><B>CurrentProcParams</B></A>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSCustomDebugExec.htm#CurrentProcVars"><B>CurrentProcVars</B></A>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSCustomDebugExec.htm#GlobalVarNames"><B>GlobalVarNames</B></A>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSCustomDebugExec.htm#ProcNames"><B>ProcNames</B></A>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="CurrentProcParams"><CODE>property <B>CurrentProcParams</B>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The paramters of the current proc (could be nil)</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="CurrentProcVars"><CODE>property <B>CurrentProcVars</B>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The variables in the current proc (could be nil)</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GlobalVarNames"><CODE>property <B>GlobalVarNames</B>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Contains the names of the global variables</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ProcNames"><CODE>property <B>ProcNames</B>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Contains the names of the procedures</P>
+</BODY>
+</HTML>

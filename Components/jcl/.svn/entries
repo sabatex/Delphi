@@ -1,0 +1,179 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jcl
+file:///D:/VS-SVN/jcl
+
+
+
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e985b798-073e-7148-a25a-63e4055e5e75
+
+install.sh
+file
+
+
+
+
+2007-01-21T10:45:48.468750Z
+45effa8543464377dd726d084a7e6d9b
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+include
+dir
+
+Install.txt
+file
+
+
+
+
+2007-01-21T10:45:48.468750Z
+63cd2034eae2d89fee15ad7259a76a66
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+clean.bat
+file
+
+
+
+
+2007-01-21T10:45:48.468750Z
+1de964572d2905ae25cdc37de1353e7c
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+docs
+dir
+
+want.exe
+file
+
+
+
+
+2007-01-21T10:45:48.484375Z
+7a336f843127770c9a06e5e934a043a6
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+has-props
+
+experts
+dir
+
+clean.sh
+file
+
+
+
+
+2007-01-21T10:45:48.484375Z
+16d09443e0cb3677155be7c3b5afae6e
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+QInstall.bat
+file
+
+
+
+
+2007-01-21T10:45:48.484375Z
+681facd2c24ce9ecfef682994b414855
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+devtools
+dir
+
+source
+dir
+
+install
+dir
+
+lib
+dir
+
+bin
+dir
+
+want.xml
+file
+
+
+
+
+2007-01-21T10:45:48.484375Z
+72696f4a651aa08e72aaaeb01f4a739e
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+makedist.sh
+file
+
+
+
+
+2007-01-21T10:45:48.500000Z
+2bf5e85d9f0f950622d2de81637f5ea7
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+Install.bat
+file
+
+
+
+
+2007-01-21T10:45:48.500000Z
+6f5ed9b684e8f85abdea13002224b679
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+dist-excludes
+file
+
+
+
+
+2007-01-21T10:45:48.703125Z
+abcad2ab2aeb5c8e8ebd1a6db8027956
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+packages
+dir
+
+examples
+dir
+

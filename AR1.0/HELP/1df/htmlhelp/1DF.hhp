@@ -1,0 +1,66 @@
+[OPTIONS]
+Auto index = Yes
+Binary index = Yes
+Compatibility = 1.1
+Compiled File = 1DF.chm
+Contents File = 1DF.hhc
+DEFAULT Window = TP
+DEFAULT topic = topics\index.htm
+Error log file = C:\DELPHI6\PROJECTS\1DF1.0\HELP\1DF\HtmlHelp\1DF.Err
+Display compile progress = Yes
+Full-text search= Yes 
+index File = 1DF.hhk
+Language = 0x409 English (United States)
+Title = 1DF Help
+[WINDOWS]
+TP=,"1DF.hhc","1DF.hhk", topics\index.htm," topics\index.htm", , , , , 0x63520, 222, 0x304e, [0,0,879,615], 0xb0000, , , , , , 0
+[FILES]
+topics\index.htm
+topics\indexm.htm
+topics\indexn.htm
+topics\t10.htm
+topics\t10m.htm
+topics\t10n.htm
+topics\t11.htm
+topics\t11m.htm
+topics\t11n.htm
+topics\t12.htm
+topics\t14.htm
+topics\t15.htm
+topics\t15m.htm
+topics\t15n.htm
+topics\t16.htm
+topics\t16m.htm
+topics\t16n.htm
+topics\t17.htm
+topics\t18.htm
+topics\t18m.htm
+topics\t18n.htm
+topics\t4.htm
+topics\t4m.htm
+topics\t4n.htm
+topics\t5.htm
+topics\t5m.htm
+topics\t5n.htm
+topics\t6.htm
+topics\t6m.htm
+topics\t6n.htm
+topics\t9.htm
+topics\t9m.htm
+topics\t9n.htm
+[ALIAS]
+IDH_About = topics\index.htm
+IDH_Instalation = topics\t4.htm
+IDH_Topic_5 = topics\t5.htm
+IDH_Topic_6 = topics\t6.htm
+IDH_Topic_9 = topics\t9.htm
+IDH_Topic_10 = topics\t10.htm
+IDH_Topic_11 = topics\t11.htm
+IDH_Topic_12 = topics\t12.htm
+IDH_Topic_14 = topics\t14.htm
+IDH_Topic_15 = topics\t15.htm
+IDH_Topic_16 = topics\t16.htm
+IDH_http___www.elikom.com = topics\t17.htm
+IDH_Topic_18 = topics\t18.htm
+[MAP]
+#include 1DF.h

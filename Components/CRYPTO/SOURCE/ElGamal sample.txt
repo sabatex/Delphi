@@ -1,0 +1,76 @@
+uses FGInt, FGIntPrimeGeneration, FGIntElGamal;
+
+procedure ElGamalSignAndVerify;
+var
+   p, phi, g, x, y, k, one, two, temp, gcd : TFGInt;
+   test, a, b : String;
+   ok : boolean;
+begin
+ // Enter a random number to generate a prime, i.e.
+ // incremental search starting from that number
+   Base10StringToFGInt('102336547456161301', p);
+   PrimeSearch(p);
+ // Compute phi(p)
+   FGIntCopy(p, phi);
+   phi.Number[1] := phi.Number[1] - 1;
+ // x is your secret key
+   Base10StringToFGInt('1203', x);
+ // g is any number
+   Base10StringToFGInt('21316465461203', g);
+ // k a random value, such that GCD(k,phi)=1, NEVER use the same k twice
+   Base10StringToFGInt('1131', k);
+
+   Base10StringToFGInt('1', one);
+   Base10StringToFGInt('2', two);
+   FGIntGCD(phi, k, gcd);
+   While FGIntCompareAbs(gcd, one) <> Eq Do
+   Begin
+      FGIntDestroy(gcd);
+      FGIntadd(k, two, temp);
+      FGIntCopy(temp, k);
+      FGIntGCD(phi, k, gcd);
+   End;
+   FGIntDestroy(two);
+   FGIntDestroy(one);
+   FGIntDestroy(gcd);
+ // Now everything is set up to sign and verify
+   test := 'eagles may soar high, but weasles do not get sucked into jet engines';
+
+   ElGamalSign(test, p, g, x, k, a, b);
+ // a and b form the signature
+ // compute a public key from the secret key: g^x = mod p
+   FGIntModExp(g, x, p, y);
+   ElGamalVerify(g, y, p, a, b, test, ok);
+
+end;
+
+
+procedure ElGamalEncryptAndDecrypt;
+var
+   test : String;
+   p, g, x, y, k : TFGInt;
+begin
+// Setting up parameters
+// p a prime number
+   Base10StringToFGInt('56683406451', p);
+   PrimeSearch(p);
+// g,x any numbers, x is your secret key
+   Base10StringToFGInt('7675', g);
+   Base10StringToFGInt('561', x);
+// k a random number, never use the same k twice
+   Base10StringToFGInt('10651', k);
+// y = g^x mod p
+   FGIntModExp(g, x, p, y);
+
+// Now everything is set up to start encrypting and decrypting
+   test := 'A conscience is what hurts when all your other parts feel so good.';
+   ElGamalEncrypt(test, g, y, k, p, test);
+   ElGamalDecrypt(test, x, p, test);
+
+   FGIntDestroy(p);
+   FGIntDestroy(g);
+   FGIntDestroy(x);
+   FGIntDestroy(y);
+   FGIntDestroy(k);
+end;
+

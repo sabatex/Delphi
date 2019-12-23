@@ -1,0 +1,39 @@
+package JvQStdCtrlsD7D;
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS ON}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'JVCLX Standard Controls'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  JvQCoreD7D,
+  JvQStdCtrlsD7R,
+  JvQCtrlsD7R,
+  designide;
+
+contains
+  JvQCheckedItemsForm in '..\..\qdesign\JvQCheckedItemsForm.pas' {JvCheckItemsEditor},
+  JvQProgressEditor in '..\..\qdesign\JvQProgressEditor.pas',
+  JvQStdCtrlsReg in '..\..\qdesign\JvQStdCtrlsReg.pas';
+
+end.

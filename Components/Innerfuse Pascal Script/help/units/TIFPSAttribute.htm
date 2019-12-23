@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifpscomp: Class TIFPSAttribute</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="TIFPSAttribute"><H1>Class TIFPSAttribute</H1>
+</A><H2>Unit</H2>
+<A href="ifpscomp.htm">ifpscomp</A><BR><H2>Declaration</H2>
+<P><CODE>type TIFPSAttribute = class(TObject)</CODE></P><H2>Description</H2>
+An attribute<H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>constructor <A href="TIFPSAttribute.htm#Create"><B>Create</B></A>(AttribType: <A href="TIFPSAttributeType.htm">TIFPSAttributeType</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>destructor <A href="TIFPSAttribute.htm#Destroy"><B>Destroy</B></A>; override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSAttribute.htm#AddValue"><B>AddValue</B></A>(v: <A href="ifpscomp.htm#PIfRVariant">PIFRVariant</A>): Longint;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSAttribute.htm#Assign"><B>Assign</B></A>(Item: <A href="TIFPSAttribute.htm">TIFPSAttribute</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSAttribute.htm#DeleteValue"><B>DeleteValue</B></A>(i: Longint);</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Create"><CODE>constructor <B>Create</B>(AttribType: <A href="TIFPSAttributeType.htm">TIFPSAttributeType</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Create a new attribute</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Destroy"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Destroy the current instance of this class</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="AddValue"><CODE>function <B>AddValue</B>(v: <A href="ifpscomp.htm#PIfRVariant">PIFRVariant</A>): Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Add a new value to this attribute</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Assign"><CODE>procedure <B>Assign</B>(Item: <A href="TIFPSAttribute.htm">TIFPSAttribute</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Assign all the values of this attribute from another attribute</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="DeleteValue"><CODE>procedure <B>DeleteValue</B>(i: Longint);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Delete a field from this attribute</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>property <A href="TIFPSAttribute.htm#AType"><B>AType</B></A>: <A href="TIFPSAttributeType.htm">TIFPSAttributeType</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSAttribute.htm#Count"><B>Count</B></A>: Longint;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSAttribute.htm#Values"><B>Values</B></A>[i: Longint]: <A href="ifpscomp.htm#PIfRVariant">PIfRVariant</A>;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="AType"><CODE>property <B>AType</B>: <A href="TIFPSAttributeType.htm">TIFPSAttributeType</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The type for this attribute</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Count"><CODE>property <B>Count</B>: Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The number of fields in this attribute</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Values"><CODE>property <B>Values</B>[i: Longint]: <A href="ifpscomp.htm#PIfRVariant">PIfRVariant</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>all fields for this attribute</P>
+</BODY>
+</HTML>

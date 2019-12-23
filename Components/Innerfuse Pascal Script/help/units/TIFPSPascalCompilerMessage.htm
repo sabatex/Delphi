@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifpscomp: Class TIFPSPascalCompilerMessage</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="TIFPSPascalCompilerMessage"><H1>Class TIFPSPascalCompilerMessage</H1>
+</A><H2>Unit</H2>
+<A href="ifpscomp.htm">ifpscomp</A><BR><H2>Declaration</H2>
+<P><CODE>type TIFPSPascalCompilerMessage = class(TObject)</CODE></P><H2>Description</H2>
+TIFPSPascalCompilerMessage is the base class for compiler messages<A name=@Fields></A><H2>Fields</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>&nbsp;</TH><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FCol"><CODE>FCol</CODE></A></TD>
+<TD width=100%>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FModuleName"><CODE>FModuleName</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FParam"><CODE>FParam</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FPosition"><CODE>FPosition</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FRow"><CODE>FRow</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD width=100%><CODE>function <A href="TIFPSPascalCompilerMessage.htm#ErrorType"><B>ErrorType</B></A>: string; virtual; abstract;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSPascalCompilerMessage.htm#MessageToString"><B>MessageToString</B></A>: string; virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSPascalCompilerMessage.htm#SetCustomPos"><B>SetCustomPos</B></A>(Pos, Row, Col: Cardinal);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><CODE>procedure <A href="TIFPSPascalCompilerMessage.htm#SetParserPos"><B>SetParserPos</B></A>(Parser: <A href="TIfPascalParser.htm">TIfPascalParser</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSPascalCompilerMessage.htm#ShortMessageToString"><B>ShortMessageToString</B></A>: string; virtual; abstract;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD width=100%><A name="ErrorType"><CODE>function <B>ErrorType</B>: string; virtual; abstract;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="MessageToString"><CODE>function <B>MessageToString</B>: string; virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Convert a Message to a string (full details with Row and col)</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="SetCustomPos"><CODE>procedure <B>SetCustomPos</B>(Pos, Row, Col: Cardinal);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Change the position</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD width=100%><A name="SetParserPos"><CODE>procedure <B>SetParserPos</B>(Parser: <A href="TIfPascalParser.htm">TIfPascalParser</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ShortMessageToString"><CODE>function <B>ShortMessageToString</B>: string; virtual; abstract;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Convert a message to a string</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>property <A href="TIFPSPascalCompilerMessage.htm#Col"><B>Col</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSPascalCompilerMessage.htm#ModuleName"><B>ModuleName</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSPascalCompilerMessage.htm#Param"><B>Param</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSPascalCompilerMessage.htm#Pos"><B>Pos</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSPascalCompilerMessage.htm#Row"><B>Row</B></A>: Cardinal;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Col"><CODE>property <B>Col</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The column this message occured on</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ModuleName"><CODE>property <B>ModuleName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The module name this message occured in, this is not set by the compiler but will be when you use the preprocessor</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Param"><CODE>property <B>Param</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Parameter for this message</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Pos"><CODE>property <B>Pos</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The position (from 0) this message occured on</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Row"><CODE>property <B>Row</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The Row this message occured on</P>
+</BODY>
+</HTML>

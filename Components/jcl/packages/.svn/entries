@@ -1,0 +1,277 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jcl/packages
+file:///D:/VS-SVN/jcl
+
+
+
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e985b798-073e-7148-a25a-63e4055e5e75
+
+JclPackagesCK3.bpg
+file
+
+
+
+
+2007-01-21T10:45:48.406250Z
+79c4c6ea6956cae14a38544c63165679
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+JclDevPackagesDK3.bpg
+file
+
+
+
+
+2007-01-21T10:45:48.406250Z
+b8932afedec954a9e1302ead49e39e1a
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+JclPackagesDK3.bpg
+file
+
+
+
+
+2007-01-21T10:45:48.421875Z
+c08fcb0df51b1227bccb87bf2386f5ad
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+JclPackagesD100.bdsgroup
+file
+
+
+
+
+2007-01-21T10:45:48.421875Z
+0de47dcd5f9f12eb6bf8a4e99df58276
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+JclPackagesC60.bpg
+file
+
+
+
+
+2007-01-21T10:45:48.421875Z
+f38208fa05c8c880b44f5ad412de48e4
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+JclDevPackagesD60.bpg
+file
+
+
+
+
+2007-01-21T10:45:48.421875Z
+fb6e87ec8cf95d64d3153f1cf00fa8fa
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+JclPackagesD60.bpg
+file
+
+
+
+
+2007-01-21T10:45:48.421875Z
+f5ed0b506bf12156b829632bfe9f64e6
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+k3.dev
+dir
+
+bcb.gmk
+file
+
+
+
+
+2007-01-21T10:45:48.437500Z
+29c77ee6f737a9a75e62adfc13129573
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+JclDevPackagesD90.bdsgroup
+file
+
+
+
+
+2007-01-21T10:45:48.437500Z
+d0c3066f7b76f39ba6de410529bc44a2
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+d5
+dir
+
+d6
+dir
+
+d7
+dir
+
+d9
+dir
+
+d10
+dir
+
+d5.dev
+dir
+
+JclPackagesC50.bpg
+file
+
+
+
+
+2007-01-21T10:45:48.437500Z
+40c3b5d2d6abe2479b057aebadf4e104
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+JclDevPackagesD50.bpg
+file
+
+
+
+
+2007-01-21T10:45:48.437500Z
+62bcbeb409587930c9e538a03de5ebff
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+d6.dev
+dir
+
+JclPackagesD50.bpg
+file
+
+
+
+
+2007-01-21T10:45:48.437500Z
+f3da0294b060960c72937528c02b7f99
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+d7.dev
+dir
+
+JclDevPackagesD70.bpg
+file
+
+
+
+
+2007-01-21T10:45:48.437500Z
+c82ea940dc3268c0be9ff2514e954b82
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+JclPackagesD70.bpg
+file
+
+
+
+
+2007-01-21T10:45:48.453125Z
+aab3fd5d699765308d24734f48329770
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+BCB.bmk
+file
+
+
+
+
+2007-01-21T10:45:48.453125Z
+843fc082ebebfaf3b1fecd89e5dd001b
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+xml
+dir
+
+d9.net
+dir
+
+c5
+dir
+
+dirinfo.txt
+file
+
+
+
+
+2007-01-21T10:45:48.453125Z
+5563d0932c61b9a40c5f8c76e5a400bf
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+c6
+dir
+
+JclPackagesD90.bdsgroup
+file
+
+
+
+
+2007-01-21T10:45:48.453125Z
+17013f62802af410f37996e6755b4218
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+d10.net
+dir
+
+k3
+dir
+

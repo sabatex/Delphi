@@ -1,0 +1,513 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: IFPS3CompExec: Class TIFPS3CompExec</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="TIFPS3CompExec"><H1>Class TIFPS3CompExec</H1>
+</A><H2>Unit</H2>
+<A href="IFPS3CompExec.htm">IFPS3CompExec</A><BR><H2>Declaration</H2>
+<P><CODE>type TIFPS3CompExec = class(TComponent)</CODE></P><H2>Description</H2>
+TIFPS3CompExec can be used for compiling and executing scripts<H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>constructor <A href="TIFPS3CompExec.htm#Create"><B>Create</B></A>(AOwner: TComponent); override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>destructor <A href="TIFPS3CompExec.htm#Destroy"><B>Destroy</B></A>; override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#AddFunction"><B>AddFunction</B></A>(Ptr: Pointer; const Decl: string): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#AddFunctionEx"><B>AddFunctionEx</B></A>(Ptr: Pointer; const Decl: string; CallingConv: <A href="IFPS3CompExec.htm#TDelphiCallingConvention">TDelphiCallingConvention</A>): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#AddMethod"><B>AddMethod</B></A>(Slf, Ptr: Pointer; const Decl: string): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#AddMethodEx"><B>AddMethodEx</B></A>(Slf, Ptr: Pointer; const Decl: string; CallingConv: <A href="IFPS3CompExec.htm#TDelphiCallingConvention">TDelphiCallingConvention</A>): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#AddRegisteredPTRVariable"><B>AddRegisteredPTRVariable</B></A>(const VarName, VarType: string): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#AddRegisteredVariable"><B>AddRegisteredVariable</B></A>(const VarName, VarType: string): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#Compile"><B>Compile</B></A>: Boolean; virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#CompilerErrorToStr"><B>CompilerErrorToStr</B></A>(I: Longint): string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#Execute"><B>Execute</B></A>: Boolean; virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#ExecuteFunction"><B>ExecuteFunction</B></A>(const Params: array of Variant; const ProcName: string): Variant;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPS3CompExec.htm#GetCompiled"><B>GetCompiled</B></A>(var data: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#GetProcMethod"><B>GetProcMethod</B></A>(const ProcName: string): TMethod;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#GetVariable"><B>GetVariable</B></A>(const Name: string): <A href="ifps3.htm#PIFVariant">PIFVariant</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#LoadExec"><B>LoadExec</B></A>: Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPS3CompExec.htm#SetCompiled"><B>SetCompiled</B></A>(const Data: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPS3CompExec.htm#SetPointerToData"><B>SetPointerToData</B></A>(const VarName: string; Data: Pointer; aType: <A href="TIFTypeRec.htm">TIFTypeRec</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#SetVarToInstance"><B>SetVarToInstance</B></A>(const VarName: string; cl: TObject): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPS3CompExec.htm#Stop"><B>Stop</B></A>; virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#TranslatePositionPos"><B>TranslatePositionPos</B></A>(Proc, Position: Cardinal; var Pos: Cardinal; var fn: string): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3CompExec.htm#TranslatePositionRC"><B>TranslatePositionRC</B></A>(Proc, Position: Cardinal; var Row, Col: Cardinal; var fn: string): Boolean;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Create"><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Create an instance of the CompExec component</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Destroy"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Dstroy the CompExec component</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="AddFunction"><CODE>function <B>AddFunction</B>(Ptr: Pointer; const Decl: string): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Add a function to the script engine, with <CODE><A href="IFPS3CompExec.htm#cdRegister">cdRegister</A></CODE> as a calling convention</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="AddFunctionEx"><CODE>function <B>AddFunctionEx</B>(Ptr: Pointer; const Decl: string; CallingConv: <A href="IFPS3CompExec.htm#TDelphiCallingConvention">TDelphiCallingConvention</A>): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Add a function to the script engine</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="AddMethod"><CODE>function <B>AddMethod</B>(Slf, Ptr: Pointer; const Decl: string): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Add a method to the script engine, with <CODE><A href="IFPS3CompExec.htm#cdRegister">cdRegister</A></CODE> as a calling convention</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="AddMethodEx"><CODE>function <B>AddMethodEx</B>(Slf, Ptr: Pointer; const Decl: string; CallingConv: <A href="IFPS3CompExec.htm#TDelphiCallingConvention">TDelphiCallingConvention</A>): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Add a method to the script engine, slf should be the self pointer, ptr should be the procedural pointer, for example: Form1.Show<br> AddMethod(Form1, @TForm1.Show, 'procedure Show;', cdRegister);</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="AddRegisteredPTRVariable"><CODE>function <B>AddRegisteredPTRVariable</B>(const VarName, VarType: string): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Add a variable to the script engine that can be used at runtime with the <CODE><A href="TIFPS3CompExec.htm#SetPointerToData">SetPointerToData</A></CODE> function</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="AddRegisteredVariable"><CODE>function <B>AddRegisteredVariable</B>(const VarName, VarType: string): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Add a variable to the script engine that can be used at runtime with the <CODE><A href="TIFPS3CompExec.htm#GetVariable">GetVariable</A></CODE> function</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Compile"><CODE>function <B>Compile</B>: Boolean; virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Compile the script</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="CompilerErrorToStr"><CODE>function <B>CompilerErrorToStr</B>(I: Longint): string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Convert a compiler message to a string</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Execute"><CODE>function <B>Execute</B>: Boolean; virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Execute the compiled script</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExecuteFunction"><CODE>function <B>ExecuteFunction</B>(const Params: array of Variant; const ProcName: string): Variant;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Execute a function</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetCompiled"><CODE>procedure <B>GetCompiled</B>(var data: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Returns the compiled data, first call <CODE><A href="TIFPS3CompExec.htm#Compile">Compile</A></CODE></P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetProcMethod"><CODE>function <B>GetProcMethod</B>(const ProcName: string): TMethod;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Get proc as TMethod, cast this to a method pointer and call it</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetVariable"><CODE>function <B>GetVariable</B>(const Name: string): <A href="ifps3.htm#PIFVariant">PIFVariant</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Returns the variable with the name Name</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="LoadExec"><CODE>function <B>LoadExec</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Load data into the exec, you only need to call this when SuppressLoadData is true</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="SetCompiled"><CODE>procedure <B>SetCompiled</B>(const Data: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Load compiled data in the script engine</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="SetPointerToData"><CODE>procedure <B>SetPointerToData</B>(const VarName: string; Data: Pointer; aType: <A href="TIFTypeRec.htm">TIFTypeRec</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Set a pointer variable to data</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="SetVarToInstance"><CODE>function <B>SetVarToInstance</B>(const VarName: string; cl: TObject): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Set a variable to an object instance</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Stop"><CODE>procedure <B>Stop</B>; virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Stop the script</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="TranslatePositionPos"><CODE>function <B>TranslatePositionPos</B>(Proc, Position: Cardinal; var Pos: Cardinal; var fn: string): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Translate a Proc+ByteCode position into an offset in the script</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="TranslatePositionRC"><CODE>function <B>TranslatePositionRC</B>(Proc, Position: Cardinal; var Row, Col: Cardinal; var fn: string): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Translate a Proc+ByteCode position into an row/col in the script</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><CODE>property <A href="TIFPS3CompExec.htm#About"><B>About</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#Comp"><B>Comp</B></A>: <A href="TIFPSPascalCompiler.htm">TIFPSPascalCompiler</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#CompilerMessageCount"><B>CompilerMessageCount</B></A>: Longint;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#CompilerMessages"><B>CompilerMessages</B></A>[i: Longint]: <A href="TIFPSPascalCompilerMessage.htm">TIFPSPascalCompilerMessage</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#CompilerOptions"><B>CompilerOptions</B></A>: <A href="IFPS3CompExec.htm#TIFPS3CompOptions">TIFPS3CompOptions</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#Defines"><B>Defines</B></A>: TStrings;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#Exec"><B>Exec</B></A>: <A href="TIFPSDebugExec.htm">TIFPSDebugExec</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#ExecErrorByteCodePosition"><B>ExecErrorByteCodePosition</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#ExecErrorCode"><B>ExecErrorCode</B></A>: <A href="ifps3.htm#TIFError">TIFError</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#ExecErrorCol"><B>ExecErrorCol</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#ExecErrorFileName"><B>ExecErrorFileName</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#ExecErrorParam"><B>ExecErrorParam</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#ExecErrorPosition"><B>ExecErrorPosition</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#ExecErrorProcNo"><B>ExecErrorProcNo</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#ExecErrorRow"><B>ExecErrorRow</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#ExecErrorToString"><B>ExecErrorToString</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#MainFileName"><B>MainFileName</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#OnAfterExecute"><B>OnAfterExecute</B></A>: <A href="IFPS3CompExec.htm#TIFPS3CompExecEvent">TIFPS3CompExecEvent</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#OnCompile"><B>OnCompile</B></A>: <A href="IFPS3CompExec.htm#TIFPS3CompExecEvent">TIFPS3CompExecEvent</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#OnCompImport"><B>OnCompImport</B></A>: <A href="IFPS3CompExec.htm#TIFPS3ClOnCompImport">TIFPS3ClOnCompImport</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#OnExecImport"><B>OnExecImport</B></A>: <A href="IFPS3CompExec.htm#TIFPS3ClOnExecImport">TIFPS3ClOnExecImport</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#OnExecute"><B>OnExecute</B></A>: <A href="IFPS3CompExec.htm#TIFPS3CompExecEvent">TIFPS3CompExecEvent</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#OnLine"><B>OnLine</B></A>: TNotifyEvent;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#OnNeedFile"><B>OnNeedFile</B></A>: <A href="IFPS3CompExec.htm#TIFPSCEOnNeedFile">TIFPSCEOnNeedFile</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#OnVerifyProc"><B>OnVerifyProc</B></A>: <A href="IFPS3CompExec.htm#TIFPSCompExecVerifyProc">TIFPSCompExecVerifyProc</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#Plugins"><B>Plugins</B></A>: <A href="TIFPS3CEPlugins.htm">TIFPS3CEPlugins</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#Running"><B>Running</B></A>: Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#Script"><B>Script</B></A>: TStrings;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#SuppressLoadData"><B>SuppressLoadData</B></A>: Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#UseDebugInfo"><B>UseDebugInfo</B></A>: Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3CompExec.htm#UsePreProcessor"><B>UsePreProcessor</B></A>: Boolean;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="About"><CODE>property <B>About</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>About this script engine</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Comp"><CODE>property <B>Comp</B>: <A href="TIFPSPascalCompiler.htm">TIFPSPascalCompiler</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>PascalCompiler object</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="CompilerMessageCount"><CODE>property <B>CompilerMessageCount</B>: Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Returns the number of compiler messages</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="CompilerMessages"><CODE>property <B>CompilerMessages</B>[i: Longint]: <A href="TIFPSPascalCompilerMessage.htm">TIFPSPascalCompilerMessage</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Return compiler message number I</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="CompilerOptions"><CODE>property <B>CompilerOptions</B>: <A href="IFPS3CompExec.htm#TIFPS3CompOptions">TIFPS3CompOptions</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Compiler options</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="Defines"><CODE>property <B>Defines</B>: TStrings;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Compiler Defines</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Exec"><CODE>property <B>Exec</B>: <A href="TIFPSDebugExec.htm">TIFPSDebugExec</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Exec object</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExecErrorByteCodePosition"><CODE>property <B>ExecErrorByteCodePosition</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The bytecode offset the runtime error occured in</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExecErrorCode"><CODE>property <B>ExecErrorCode</B>: <A href="ifps3.htm#TIFError">TIFError</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Runtime errors: error code</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExecErrorCol"><CODE>property <B>ExecErrorCol</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The Col in the script the error occured in, does not work when DebugInfo = False</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExecErrorFileName"><CODE>property <B>ExecErrorFileName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Runtime errors: Exec Error filename</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExecErrorParam"><CODE>property <B>ExecErrorParam</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Runtime errors: more information for the error</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExecErrorPosition"><CODE>property <B>ExecErrorPosition</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The offset in the script the error occured in, does not work when DebugInfo = False</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExecErrorProcNo"><CODE>property <B>ExecErrorProcNo</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The procedure number the runtime error occured in</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExecErrorRow"><CODE>property <B>ExecErrorRow</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The Row in the script the error occured in, does not work when DebugInfo = False</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ExecErrorToString"><CODE>property <B>ExecErrorToString</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Convert an errorcode + errorparam to a string</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="MainFileName"><CODE>property <B>MainFileName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Main file name, this is only relevant to the errors</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="OnAfterExecute"><CODE>property <B>OnAfterExecute</B>: <A href="IFPS3CompExec.htm#TIFPS3CompExecEvent">TIFPS3CompExecEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>OnAfterExecute is called when the script is done executing</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="OnCompile"><CODE>property <B>OnCompile</B>: <A href="IFPS3CompExec.htm#TIFPS3CompExecEvent">TIFPS3CompExecEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>OnCompile event is called when the script is about to be compiled</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="OnCompImport"><CODE>property <B>OnCompImport</B>: <A href="IFPS3CompExec.htm#TIFPS3ClOnCompImport">TIFPS3ClOnCompImport</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>OnCompImport is called when you can import your functions and classes into the compiler</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="OnExecImport"><CODE>property <B>OnExecImport</B>: <A href="IFPS3CompExec.htm#TIFPS3ClOnExecImport">TIFPS3ClOnExecImport</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>OnCompImport is called when you can import your functions and classes into the exec</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="OnExecute"><CODE>property <B>OnExecute</B>: <A href="IFPS3CompExec.htm#TIFPS3CompExecEvent">TIFPS3CompExecEvent</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>OnExecute event is called when the script is about to the executed, useful for changing variables within the script</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="OnLine"><CODE>property <B>OnLine</B>: TNotifyEvent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>OnLine event, is called after each bytecode position, useful for checking messages to make sure longer scripts don't block the application</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="OnNeedFile"><CODE>property <B>OnNeedFile</B>: <A href="IFPS3CompExec.htm#TIFPSCEOnNeedFile">TIFPSCEOnNeedFile</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>OnNeedFile is called when the preprocessor is used and an include statement is used</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="OnVerifyProc"><CODE>property <B>OnVerifyProc</B>: <A href="IFPS3CompExec.htm#TIFPSCompExecVerifyProc">TIFPSCompExecVerifyProc</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>OnVerifyProc is called to check if a procedure matches the expected header</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="Plugins"><CODE>property <B>Plugins</B>: <A href="TIFPS3CEPlugins.htm">TIFPS3CEPlugins</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Plugins for this component</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Running"><CODE>property <B>Running</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Is the script running now?</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="Script"><CODE>property <B>Script</B>: TStrings;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The current script</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="SuppressLoadData"><CODE>property <B>SuppressLoadData</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="UseDebugInfo"><CODE>property <B>UseDebugInfo</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>UseDebugInfo should be true when you want to use debug information, like position information in the script, it does make the executing a bit slower</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="UsePreProcessor"><CODE>property <B>UsePreProcessor</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Use the preprocessor, make sure the OnNeedFile event is assigned</P>
+</BODY>
+</HTML>

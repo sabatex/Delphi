@@ -1,0 +1,113 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jcl/experts/debug
+file:///D:/VS-SVN/jcl
+
+
+
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e985b798-073e-7148-a25a-63e4055e5e75
+
+dialog
+dir
+
+tools
+dir
+
+JclDebugIdeIcon.res
+file
+
+
+
+
+2007-01-21T10:45:24.109375Z
+99717e04f0fd84e736ff572951078333
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+has-props
+
+JclDebugIdeResult.pas
+file
+
+
+
+
+2007-01-21T10:45:24.109375Z
+2d4f8d012b3df424cf06edd5924ad991
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+JclDebugIdeImpl.pas
+file
+
+
+
+
+2007-01-21T10:45:24.125000Z
+aaa9ded3a6d2747f0c1ed9220ccc19c6
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+JclDebugIdeResult.dfm
+file
+
+
+
+
+2007-01-21T10:45:24.125000Z
+1cf26c68d87d3efd3d99d9aae1434f20
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+simdview
+dir
+
+JclDebugThread.pas
+file
+
+
+
+
+2007-01-21T10:45:24.125000Z
+62d964bd5560c8a1c521daed73123cc3
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+threadnames
+dir
+
+Howto.txt
+file
+
+
+
+
+2007-01-21T10:45:24.125000Z
+eb69d2b14b9ea82ed96375d17c0acacd
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+

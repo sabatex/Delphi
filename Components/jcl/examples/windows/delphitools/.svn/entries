@@ -1,0 +1,70 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jcl/examples/windows/delphitools
+file:///D:/VS-SVN/jcl
+
+
+
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e985b798-073e-7148-a25a-63e4055e5e75
+
+dependencyviewer
+dir
+
+resfix
+dir
+
+screenjpg
+dir
+
+toolhelpview
+dir
+
+peviewer
+dir
+
+common
+dir
+
+DelphiToolsGroup.bpg
+file
+
+
+
+
+2007-01-21T10:45:37.046875Z
+b87fa8732d047985355b826d060f9fff
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+Readme.txt
+file
+
+
+
+
+2007-01-21T10:45:37.046875Z
+a92ad9af4d476ec7d7d1d5980742fdf6
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+

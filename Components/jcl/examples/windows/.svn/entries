@@ -1,0 +1,106 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jcl/examples/windows
+file:///D:/VS-SVN/jcl
+
+
+
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e985b798-073e-7148-a25a-63e4055e5e75
+
+clr
+dir
+
+locales
+dir
+
+tasks
+dir
+
+fileversion
+dir
+
+ConsoleExamples.dpr
+file
+
+
+
+
+2007-01-21T10:45:41.031250Z
+ec26a5b49571abfc28f0bdd6563e13da
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+debug
+dir
+
+delphitools
+dir
+
+mapi
+dir
+
+sysinfo
+dir
+
+multimedia
+dir
+
+asuser
+dir
+
+ntservice
+dir
+
+edisdk
+dir
+
+lanman
+dir
+
+peimage
+dir
+
+registry
+dir
+
+ConsoleExamples.dof
+file
+
+
+
+
+2007-01-21T10:45:41.046875Z
+2ca1be0de6033b86f75548ff123d851c
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+structstorage
+dir
+
+ntfs
+dir
+
+appinst
+dir
+

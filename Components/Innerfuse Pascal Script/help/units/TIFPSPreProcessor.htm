@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifps3ppc: Class TIFPSPreProcessor</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="TIFPSPreProcessor"><H1>Class TIFPSPreProcessor</H1>
+</A><H2>Unit</H2>
+<A href="ifps3ppc.htm">ifps3ppc</A><BR><H2>Declaration</H2>
+<P><CODE>type TIFPSPreProcessor = class(TObject)</CODE></P><H2>Description</H2>
+&nbsp;<H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>constructor <A href="TIFPSPreProcessor.htm#Create"><B>Create</B></A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>destructor <A href="TIFPSPreProcessor.htm#Destroy"><B>Destroy</B></A>; override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSPreProcessor.htm#AdjustMessages"><B>AdjustMessages</B></A>(Comp: <A href="TIFPSPascalCompiler.htm">TIFPSPascalCompiler</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSPreProcessor.htm#Clear"><B>Clear</B></A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSPreProcessor.htm#PreProcess"><B>PreProcess</B></A>(const Filename: string; var Output: string);</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Create"><CODE>constructor <B>Create</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Destroy"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="AdjustMessages"><CODE>procedure <B>AdjustMessages</B>(Comp: <A href="TIFPSPascalCompiler.htm">TIFPSPascalCompiler</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Adjust the message in IFPS3 so they will contain the modulename and all the positions will match their real positions, make sure that you call this after you compile any script (but only once)</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Clear"><CODE>procedure <B>Clear</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Clear everything</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="PreProcess"><CODE>procedure <B>PreProcess</B>(const Filename: string; var Output: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Call the preprocessor, filename contains the current file, if FileName is MainFileName (case sensitive) it will no call the OnNeedFile event. the preprocessor will raise an exception on any errors</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>property <A href="TIFPSPreProcessor.htm#CurrentLineInfo"><B>CurrentLineInfo</B></A>: <A href="TIFPSLineInfoList.htm">TIFPSLineInfoList</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSPreProcessor.htm#Defines"><B>Defines</B></A>: TStringList;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSPreProcessor.htm#ID"><B>ID</B></A>: Pointer;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSPreProcessor.htm#MainFile"><B>MainFile</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSPreProcessor.htm#MainFileName"><B>MainFileName</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSPreProcessor.htm#MaxLevel"><B>MaxLevel</B></A>: Longint;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSPreProcessor.htm#OnNeedFile"><B>OnNeedFile</B></A>: <A href="ifps3ppc.htm#TIFPSOnNeedFile">TIFPSOnNeedFile</A>;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="CurrentLineInfo"><CODE>property <B>CurrentLineInfo</B>: <A href="TIFPSLineInfoList.htm">TIFPSLineInfoList</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Current line information</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Defines"><CODE>property <B>Defines</B>: TStringList;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Defines for the parser</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ID"><CODE>property <B>ID</B>: Pointer;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Id Pointer, not used by the preprocessor</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="MainFile"><CODE>property <B>MainFile</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The contents of the "main" file</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="MainFileName"><CODE>property <B>MainFileName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The filename of the MainFile</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="MaxLevel"><CODE>property <B>MaxLevel</B>: Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The maximum number of levels deep the parser will go, defaults to 20</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="OnNeedFile"><CODE>property <B>OnNeedFile</B>: <A href="ifps3ppc.htm#TIFPSOnNeedFile">TIFPSOnNeedFile</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>OnNeedFile event, is called when the parser needs a file</P>
+</BODY>
+</HTML>

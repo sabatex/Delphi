@@ -1,0 +1,52 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/Includes/IB601
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+ibase.h
+file
+
+
+
+
+2007-01-21T10:53:05.937500Z
+b8a05be1912e9479f265bc91c257eb66
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+iberror.h
+file
+
+
+
+
+2007-01-21T10:53:05.937500Z
+36c6da87e0325bfd0c9071d16ba8b826
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+

@@ -1,0 +1,133 @@
+Delphi 7 Build 7.0.4.453 ===================
+
+Added "E:\jcl\lib\D7;E:\jcl\source" to library path.
+
+Added "E:\jcl\source\common;E:\jcl\source\windows;E:\jcl\source\vcl;E:\jcl\source\visclx;" to library browsing path.
+
+Added "E:\jcl\lib\D7\debug" to Debug DCU Path.
+
+Making common library units for Delphi 7
+
+Compiling .dcu files...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+259238 lines, 6.20 seconds, 787 bytes code, 68 bytes data.
+
+Making windows library units for Delphi 7
+
+Compiling .dcu files...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+188471 lines, 7.30 seconds, 47501 bytes code, 16736 bytes data.
+
+Making vcl library units for Delphi 7
+
+Compiling .dcu files...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+17973 lines, 1.72 seconds, 8476 bytes code, 8 bytes data.
+
+Making visclx library units for Delphi 7
+
+Compiling .dcu files...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+10941 lines, 1.52 seconds, 11205 bytes code, 52 bytes data.
+
+Making common library debug units for Delphi 7
+
+Compiling .dcu files...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+259238 lines, 6.28 seconds, 913 bytes code, 68 bytes data.
+
+Making windows library debug units for Delphi 7
+
+Compiling .dcu files...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+188471 lines, 7.39 seconds, 47637 bytes code, 16736 bytes data.
+
+Making vcl library debug units for Delphi 7
+
+Compiling .dcu files...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+17973 lines, 1.66 seconds, 10515 bytes code, 8 bytes data.
+
+Making visclx library debug units for Delphi 7
+
+Compiling .dcu files...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+10941 lines, 1.23 seconds, 16476 bytes code, 52 bytes data.
+
+Installing package E:\jcl\packages\d7\Jcl.dpk...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+128 lines, 1.11 seconds, 774972 bytes code, 44221 bytes data.
+...done.
+
+Installing package E:\jcl\packages\d7\JclVClx.dpk...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+51 lines, 0.38 seconds, 24972 bytes code, 585 bytes data.
+...done.
+
+Installing package E:\jcl\packages\d7\JclVcl.dpk...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+53 lines, 0.25 seconds, 70120 bytes code, 897 bytes data.
+...done.
+
+Installing package E:\jcl\packages\d7\JclBaseExpert.dpk...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+7293 lines, 0.39 seconds, 14144 bytes code, 233 bytes data.
+...done.
+
+Installing package E:\jcl\packages\d7\JclDebugExpert.dpk...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+2457 lines, 0.23 seconds, 11880 bytes code, 185 bytes data.
+...done.
+
+Installing package E:\jcl\packages\d7\JclProjectAnalysisExpert.dpk...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+3756 lines, 0.30 seconds, 14436 bytes code, 201 bytes data.
+...done.
+
+Installing package E:\jcl\packages\d7\JclFavoriteFoldersExpert.dpk...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+3582 lines, 0.28 seconds, 8936 bytes code, 181 bytes data.
+...done.
+
+Installing package E:\jcl\packages\d7\JclUsesExpert.dpk...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+6760 lines, 0.33 seconds, 26148 bytes code, 285 bytes data.
+...done.
+
+Installing package E:\jcl\packages\d7\JclSIMDViewExpert.dpk...
+Borland Delphi Version 15.0
+Copyright (c) 1983,2002 Borland Software Corporation
+10374 lines, 0.38 seconds, 35172 bytes code, 673 bytes data.
+...done.
+
+Installing Exception Dialog...
+-> E:\JCL\EXPERTS\DEBUG\DIALOG\EXCEPTDLG.PAS
+-> E:\JCL\EXPERTS\DEBUG\DIALOG\EXCEPTDLG.ico
+...done.
+
+Installing Exception Dialog with Send...
+-> E:\JCL\EXPERTS\DEBUG\DIALOG\EXCEPTDLGMAIL.PAS
+-> E:\JCL\EXPERTS\DEBUG\DIALOG\EXCEPTDLGMAIL.ico
+...done.
+
+Installing CLX Exception Dialog...
+-> E:\JCL\EXPERTS\DEBUG\DIALOG\CLXEXCEPTDLG.PAS
+-> E:\JCL\EXPERTS\DEBUG\DIALOG\CLXEXCEPTDLG.ico
+...done.
+

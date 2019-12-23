@@ -1,0 +1,58 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jcl/lib/c5
+file:///D:/VS-SVN/jcl
+
+
+
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e985b798-073e-7148-a25a-63e4055e5e75
+
+debug
+dir
+
+dirinfo.txt
+file
+
+
+
+
+2007-01-21T10:45:28.968750Z
+be28bcd429e39cecd5e64ff12dc0a5e8
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+windows.exc
+file
+
+
+
+
+2007-01-21T10:45:28.984375Z
+03bd6d9904d6e42b11610538933f115c
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+obj
+dir
+

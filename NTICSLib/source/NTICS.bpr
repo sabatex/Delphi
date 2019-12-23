@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="NTICS.lib"/>
+    <OBJFILES value="ntics_registration.obj ntics_forms.obj ntics_key_gen.obj ntics_login.obj 
+      FGIntPrimeGeneration.obj ntics_registration_form.obj"/>
+    <RESFILES value=""/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) ntics_login.dfm ntics_registration_form.dfm"/>
+    <LIBFILES value="..\obj\NTICS_pas.lib"/>
+    <LIBRARIES value=""/>
+    <PACKAGES value=""/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <LINKER value="TLib"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <MAINSOURCE value="NTICS.bpf"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;D:\Projects\NTICSLib_PAS;&quot;D:\Components\FIBplus 6.3\source&quot;"/>
+    <LIBPATH value="$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <LISTFILE value=""/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(BCB)\include -I$(BCB)\include\vcl -ID:\Projects\NTICSLib_PAS 
+      -I&quot;D:\Components\FIBplus 6.3\source&quot; -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="/P256"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="$(OBJFILES)"/>
+    <ALLLIB value=""/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="NTICS.bpf" FORMNAME="" UNITNAME="NTICS" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ntics_registration.cpp" FORMNAME="" UNITNAME="ntics_registration.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ntics_forms.cpp" FORMNAME="" UNITNAME="ntics_forms.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ntics_key_gen.cpp" FORMNAME="" UNITNAME="ntics_key_gen.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ntics_login.cpp" FORMNAME="IBLogin" UNITNAME="ntics_login" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FGIntPrimeGeneration.cpp" FORMNAME="" UNITNAME="FGIntPrimeGeneration.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\obj\NTICS_pas.lib" FORMNAME="" UNITNAME="NTICS_pas.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ntics_registration_form.cpp" FORMNAME="Form1" UNITNAME="ntics_registration_form" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1058
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=6
+Item0=$(BCB)\include;$(BCB)\include\vcl;D:\Projects\NTICSLib_PAS;D:\Components\FIBplus 6.3\source
+Item1=$(BCB)\include;$(BCB)\include\vcl;D:\Projects\NTICSLib_PAS
+Item2=$(BCB)\include;$(BCB)\include\vcl;..\include;C:\usr\include\FIBplus;C:\usr\include\EhLib6
+Item3=$(BCB)\include;$(BCB)\include\vcl;..\include;D:\MyDoc\components\FIBplus\Include;D:\MyDoc\components\Ehlib\Include
+Item4=$(BCB)\include;$(BCB)\include\vcl;..\include
+Item5=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=1
+Item0=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlTlibPageSize]
+Count=4
+Item0=0x0100
+Item1=0x00100
+Item2=0x0020
+Item3=0x0010
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

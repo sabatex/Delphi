@@ -1,0 +1,395 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifps3utl</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<H1>Unit ifps3utl</H1>
+<H2>Description</H2>
+Misc Types and functions<P>This unit contains types and functions used by the compiler and executer<br><br> Bytecode Format:<br> Address Space<br> 0..GlobalVarCount -1 = GlobalVars<br> IFPSAddrStackStart div 2 .. IFPSAddrStackStart -1 = negative stack<br> IFPSAddrStackStart... = positive stack<br> <br> <br> TIFPSVariable = packed record<br> VarType: Byte;<br> case VarType of<br> 0: Address: LongWord;<br> 1: TypeNo: LongWord; Data: TData<br> 2: Address_: LongWord; RecFieldNo: Longword;<br> 3: Address__: LongWord; ReadRecFieldNoFrom: LongWord;<br> end;<br> TIFPSHeader = packed record<br> HDR: LongWord;<br> IFPSBuildNo: LongWord;<br> TypeCount: LongWord;<br> ProcCount: LongWord;<br> VarCount: LongWord;<br> MainProcNo: LongWord;<br> ImportTableSize: LongWord; <i>// Set to zero, always</i><br> <i> Types: array[0..typcount-1] of TIFPSType;<br> procs: Array[0..proccount-1] of TIFPSProc;<br> var: array[0..varcount-1] of TIFPSVar;<br> ImportTable: array[0..Importtablesize-1] of TIFPSImportItem;<br> </i><br> end;<br> <i>// Import table isn't used yet</i><br> TIFPSAttributes = packed record<br> Count: Longint;<br> Attributes: array[0..Count-1] of TIFPSAttribute;<br> end;<br><br> TIFPSAttribute = packed record<br> AttribName: string;<br> FieldCount: Longint;<br> TypeNo: LongWord; Data: TData;<br> end;<br> <br> TIFPSType = packed record<br> BaseType: TIFPSBaseType;<br> <i> <br> Record: <br> TypeCount: Longword;<br> Types: array[0..TypeCount-1] of LongWord;<br> Array:<br> SubType: LongWord;<br> BaseType and 128:<br> Export: Name: MyString;<br> </i> <br> Attributes: TIFPSAttributes;<br> end;<br> TIFPSProc = packed record<br> Flags: Byte;<br> <i> Flags:<br> 1 = Imported; (nameLen: Byte; Name: array[0..namelen-1] of byte) else (Offset, Length: Longint);<br> 2 = Export; (only for internal procs); Name, Decl: MyString;<br> 3 = Imported2; nameLen: Byte; Name: array[0..namelen-1] of byte; ParamsLength: Longint; Params: array[0..paramslength-1]of byte;<br> 4 = With attributes (attr: TIFPSAttributes)<br> </i><br> end;<br> <br> TIFPSVar = packed record<br> TypeNo: LongWord;<br> Flags: Byte;<br> <i><br> 1 = Exported; Name: MyString<br> </i><br> end;<br> <br> <br> DebugData:<br> #0+ Proc0Name+#1+Proc1Name+#1+Proc2Name+#1#0<br> #1+ Var0Name+#1+Var1Name+#1+Var2Name+#1#0<br> #2+ MI2S(FuncNo)+ Param0Name+#1+Param0Name+#1#0<br> #3+ MI2S(FuncNo)+ Var1Name+#1+Var1Name+#1#0<br> #4+ FileName + #1 + MI2S(FuncNo)+ MI2S(Pos)+ MI2s(Position)+MI2S(Row)+MI2s(Col)<br><H2>Classes, Interfaces and Objects</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIfList.htm"><CODE>TIfList</CODE></A></TD>
+<TD width=100%>TIfList is the list class used in IFPS3</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIfPascalParser.htm"><CODE>TIfPascalParser</CODE></A></TD>
+<TD>TIfPacalParser is the parser used to parse the scripts</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIfStringList.htm"><CODE>TIfStringList</CODE></A></TD>
+<TD>TIFStringList is the string list class used by IFPS3</TD>
+</TR>
+</TABLE>
+<H2>Functions and Procedures</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><CODE>function <A href="#FastLowerCase"><B>FastLowerCase</B></A>(const s: String): string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#FastUpperCase"><B>FastUpperCase</B></A>(const s: String): string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#FloatToStr"><B>FloatToStr</B></A>(E: Extended): string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#Fw"><B>Fw</B></A>(const S: string): string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#GRFW"><B>GRFW</B></A>(var s: string): string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#GRLW"><B>GRLW</B></A>(var s: string): string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#IntToStr"><B>IntToStr</B></A>(I: LongInt): string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#MakeHash"><B>MakeHash</B></A>(const s: string): Longint;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#StrToFloat"><B>StrToFloat</B></A>(const s: string): Extended;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#StrToInt"><B>StrToInt</B></A>(const S: string): LongInt;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#StrToIntDef"><B>StrToIntDef</B></A>(const S: string; Def: LongInt): LongInt;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="FastLowerCase"><CODE>function <B>FastLowerCase</B>(const s: String): string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Fast lowercase</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="FastUpperCase"><CODE>function <B>FastUpperCase</B>(const s: String): string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Fast uppercase</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="FloatToStr"><CODE>function <B>FloatToStr</B>(E: Extended): string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Convert a float to a string</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="Fw"><CODE>function <B>Fw</B>(const S: string): string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Return the first word of a string</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="GRFW"><CODE>function <B>GRFW</B>(var s: string): string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Get the first word and remove it</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="GRLW"><CODE>function <B>GRLW</B>(var s: string): string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="IntToStr"><CODE>function <B>IntToStr</B>(I: LongInt): string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Integer to string conversion</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="MakeHash"><CODE>function <B>MakeHash</B>(const s: string): Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Make a hash of a string</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="StrToFloat"><CODE>function <B>StrToFloat</B>(const s: string): Extended;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="StrToInt"><CODE>function <B>StrToInt</B>(const S: string): LongInt;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>String to integer</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="StrToIntDef"><CODE>function <B>StrToIntDef</B>(const S: string; Def: LongInt): LongInt;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>String to integer</P>
+<H2>Types</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><TD><A name="IPointer">IPointer</A></TD>
+<TD width=100%>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="PPointerList">PPointerList</A></TD>
+<TD>PPointerList is pointing to an array of pointers</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="tbtchar">tbtchar</A></TD>
+<TD>Chat type</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="tbtCurrency">tbtCurrency</A></TD>
+<TD>Currency</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TbtDouble">TbtDouble</A></TD>
+<TD>Double</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TbtExtended">TbtExtended</A></TD>
+<TD>Extended</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TbtS16">TbtS16</A></TD>
+<TD>Smallint</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TbtS32">TbtS32</A></TD>
+<TD>Integer/Longint</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="tbts64">tbts64</A></TD>
+<TD>An 8 byte signed integer (int64)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TbtS8">TbtS8</A></TD>
+<TD>Shortint</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TbtSingle">TbtSingle</A></TD>
+<TD>Single</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TbtString">TbtString</A></TD>
+<TD>String/Pchar</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TbtU16">TbtU16</A></TD>
+<TD>word</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TbtU32">TbtU32</A></TD>
+<TD>Cardinal/Longword</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TbtU8">TbtU8</A></TD>
+<TD>Byte</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="tbtwidechar">tbtwidechar</A></TD>
+<TD>widechar type</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="tbtwidestring">tbtwidestring</A></TD>
+<TD>widestring type</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFParserErrorEvent">TIFParserErrorEvent</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFParserErrorKind">TIFParserErrorKind</A></TD>
+<TD>TIFParserErrorKind is used to store the parser error</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIfPasToken">TIfPasToken</A></TD>
+<TD>TIFPasToken is used to store the type of the current token</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSBaseType">TIFPSBaseType</A></TD>
+<TD>TIFPSBaseType is the most basic type -type</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSCallingConvention">TIFPSCallingConvention</A></TD>
+<TD>calling convention type</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSVariableType">TIFPSVariableType</A></TD>
+<TD><CODE><A href="TIFPSPascalCompiler.htm#OnUseVariable">OnUseVariable</A></CODE> TIFPSVariableType is used in TIFPSComp.OnUseVariable event</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TPointerList">TPointerList</A></TD>
+<TD>An array of pointers</TD>
+</TR>
+</TABLE><H2>Constants</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btArray">btArray</A></TD>
+<TD width=100%>An array</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btChar">btChar</A></TD>
+<TD>a Char (1 byte)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btClass">btClass</A></TD>
+<TD>class</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btCurrency">btCurrency</A></TD>
+<TD>Currency</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btDouble">btDouble</A></TD>
+<TD>A 8 byte float (double)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btEnum">btEnum</A></TD>
+<TD>Compile time enumeration; This will be a btu32 when compiled</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btExtended">btExtended</A></TD>
+<TD>A 10 byte float (extended)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btInterface">btInterface</A></TD>
+<TD>Interface</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btPChar">btPChar</A></TD>
+<TD>A PChar (internally the same as a string)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btPointer">btPointer</A></TD>
+<TD>A pointer</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btProcPtr">btProcPtr</A></TD>
+<TD>Compile time procedural pointer (will be btu32 when compiled)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btRecord">btRecord</A></TD>
+<TD>A record</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btResourcePointer">btResourcePointer</A></TD>
+<TD>A resource pointer: Variable that can contain things from outside the script engine</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btReturnAddress">btReturnAddress</A></TD>
+<TD>Executer internal type for return addresses, can not be used as a type</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btS16">btS16</A></TD>
+<TD>A 2 byte signed integer (smallint)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btS32">btS32</A></TD>
+<TD>A 4 byte signed integer (Integer/Longint)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btS64">btS64</A></TD>
+<TD>An 8 byte signed integer (int64)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btS8">btS8</A></TD>
+<TD>A 1 byte signed integer (Shortint)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btSet">btSet</A></TD>
+<TD>Set</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btSingle">btSingle</A></TD>
+<TD>A 4 byte float (single)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btStaticArray">btStaticArray</A></TD>
+<TD>Static array</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btString">btString</A></TD>
+<TD>A string</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btType">btType</A></TD>
+<TD>Compile time: a type</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btU16">btU16</A></TD>
+<TD>A 2 byte unsigned integer (word)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btU32">btU32</A></TD>
+<TD>A 4 byte unsigned integer (cardinal/longword)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btU8">btU8</A></TD>
+<TD>A 1 byte unsigned integer (byte)</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btVariant">btVariant</A></TD>
+<TD>A variant</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btWideChar">btWideChar</A></TD>
+<TD>A widechar</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="btWideString">btWideString</A></TD>
+<TD>A wide string</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="CM_A">CM_A</A></TD>
+<TD>Script internal command: Assign command<br> Command: TIFPSCommand;<br> VarDest, // no data<br> VarSrc: TIFPSVariable;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="cm_bn">cm_bn</A></TD>
+<TD>Script internal command: Boolean NOT<br> Command: TIFPSCommand; <br> Var: TIFPSVariable;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="Cm_C">Cm_C</A></TD>
+<TD>Script internal command: Call<br> Command: TIFPSCommand; <br> ProcNo: Longword;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="CM_CA">CM_CA</A></TD>
+<TD>Script internal command: Calculate Command<br> Command: TIFPSCommand; <br> CalcType: Byte;<br> <i><br> 0 = +<br> 1 = -<br> 2 = *<br> 3 = /<br> 4 = MOD<br> 5 = SHL<br> 6 = SHR<br> 7 = AND<br> 8 = OR<br> 9 = XOR<br> </i><br> VarDest, // no data<br> VarSrc: TIFPSVariable;<br> <br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="Cm_CG">Cm_CG</A></TD>
+<TD>Script internal command: Conditional Goto<br> Command: TIFPSCommand; <br> NewPosition: LongWord; //relative to end of this instruction<br> Var: TIFPSVariable; // no data<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="Cm_CNG">Cm_CNG</A></TD>
+<TD>Script internal command: Conditional NOT Goto<br> Command: TIFPSCommand; <br> NewPosition: LongWord; // relative to end of this instruction<br> Var: TIFPSVariable; // no data<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="CM_CO">CM_CO</A></TD>
+<TD>Script internal command: Compare<br> Command: TIFPSCommand; <br> CompareType: Byte;<br> <i><br> 0 = &gt;=<br> 1 = &lt;=<br> 2 = &gt;<br> 3 = &lt;<br> 4 = &lt;&gt<br> 5 = =<br> <i><br> IntoVar: TIFPSAssignment;<br> Compare1, Compare2: TIFPSAssigment;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="Cm_cv">Cm_cv</A></TD>
+<TD>Script internal command: Call Var<br> Command: TIFPSCommand; <br> Var: TIFPSVariable;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="cm_dec">cm_dec</A></TD>
+<TD>Script internal command: Dec<br> Command: TIFPSCommand; <br> Var: TIFPSVariable;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="cm_fg">cm_fg</A></TD>
+<TD>Script internal command: Flag Goto<br> Command: TIFPSCommand; <br> Where: Cardinal;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="Cm_G">Cm_G</A></TD>
+<TD>Script internal command: Goto<br> Command: TIFPSCommand; <br> NewPosition: Longint; //relative to end of this instruction<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="cm_in">cm_in</A></TD>
+<TD>Script internal command: Integer NOT<br> Command: TIFPSCommand; <br> Where: Cardinal;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="cm_inc">cm_inc</A></TD>
+<TD>Script internal command: Inc<br> Command: TIFPSCommand; <br> Var: TIFPSVariable;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="cm_nop">cm_nop</A></TD>
+<TD>Script internal command: nop<br> Command: TIFPSCommand; <br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="CM_P">CM_P</A></TD>
+<TD>Script internal command: Push<br> Command: TIFPSCommand; <br> Var: TIFPSVariable;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="CM_PO">CM_PO</A></TD>
+<TD>Script internal command: Pop<br> Command: TIFPSCommand; <br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="cm_poexh">cm_poexh</A></TD>
+<TD>Script internal command: Pop Exception Handler<br> Command:TIFPSCommand; <br> Position: Byte;<br> <i> 0 = end of try/finally/exception block;<br> 1 = end of first finally<br> 2 = end of except<br> 3 = end of second finally<br> </i><br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="Cm_Pt">Cm_Pt</A></TD>
+<TD>Script internal command: Push Type<br> Command: TIFPSCommand; <br> FType: LongWord;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="cm_puexh">cm_puexh</A></TD>
+<TD>Script internal command: Push Exception Handler<br> Command: TIFPSCommand; <br> FinallyOffset,<br> ExceptionOffset, // FinallyOffset or ExceptionOffset need to be set.<br> Finally2Offset,<br> EndOfBlock: Cardinal;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="CM_PV">CM_PV</A></TD>
+<TD>Script internal command: Push Var<br> Command: TIFPSCommand; <br> Var: TIFPSVariable;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="Cm_R">Cm_R</A></TD>
+<TD>Script internal command: Ret<br> Command: TIFPSCommand; <br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="cm_sf">cm_sf</A></TD>
+<TD>Script internal command: Set Flag<br> Command: TIFPSCommand; <br> Var: TIFPSVariable;<br> DoNot: Boolean;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="cm_sp">cm_sp</A></TD>
+<TD>Script internal command: Set Pointer<br> Command: TIFPSCommand; <br> VarDest: TIFPSVariable;<br> VarSrc: TIFPSVariable;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="cm_spc">cm_spc</A></TD>
+<TD>Script internal command: Set Stack Pointer To Copy<br> Command: TIFPSCommand; <br> Where: Cardinal;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="Cm_ST">Cm_ST</A></TD>
+<TD>Script internal command: Set Stack Type<br> Command: TIFPSCommand; <br> NewType: LongWord;<br> OffsetFromBase: LongWord;<br></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="cm_vm">cm_vm</A></TD>
+<TD>Script internal command: Var Minus<br> Command: TIFPSCommand; <br> Var: TIFPSVariable;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="FCapacityInc">FCapacityInc</A></TD>
+<TD>The Capacity increment that list uses</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="FMaxCheckCount">FMaxCheckCount</A></TD>
+<TD>The maximum number of "resize" operations on the list before it's recreated</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="IFPSAddrNegativeStackStart">IFPSAddrNegativeStackStart</A></TD>
+<TD>Start of the negative stack</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="IFPSAddrStackStart">IFPSAddrStackStart</A></TD>
+<TD>Start of the positive stack</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="IFPSCurrentBuildNo">IFPSCurrentBuildNo</A></TD>
+<TD>The current build of the compiler and executer.</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="IFPSCurrentversion">IFPSCurrentversion</A></TD>
+<TD>The current version of the script engine</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="IFPSLowBuildSupport">IFPSLowBuildSupport</A></TD>
+<TD>The lowest supported build by the executer.</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="IFPSMainProcName">IFPSMainProcName</A></TD>
+<TD>The name of the main proc</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="IFPSMainProcNameOrg">IFPSMainProcNameOrg</A></TD>
+<TD>The original name for the main proc, can be used for user purposes</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="IFPSValidHeader">IFPSValidHeader</A></TD>
+<TD>The header of a compiled IFPS3 binary must start with this</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="MaxListSize">MaxListSize</A></TD>
+<TD>Maximum number of items in a list</TD>
+</TR>
+</TABLE><H2>Author</H2>
+<P>Carlo Kok <<A href="mailto:ck@carlo-kok.com">ck@carlo-kok.com</A>></P>
+</BODY>
+</HTML>

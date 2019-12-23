@@ -1,0 +1,607 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/examples/RaLib/RaInterpreter/samples
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+sample - record.pas
+file
+
+
+
+
+2007-01-21T10:53:47.984375Z
+8fc9325a9d544ee76dfb84cf99bf27e6
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+TextDFM.dfm
+file
+
+
+
+
+2007-01-21T10:53:47.984375Z
+378d6a6f2156acf647cf021b91f0e551
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - string write char.pas
+file
+
+
+
+
+2007-01-21T10:53:47.984375Z
+92604a83f9e1503174cfd72b44491f1e
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+TestUnit 2.pas
+file
+
+
+
+
+2007-01-21T10:53:47.984375Z
+588c4a51686d17aa4bc3dc5b89ffcd3e
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+QRUnit_D3_D4_B3.dfm
+file
+
+
+
+
+2007-01-21T10:53:47.984375Z
+c0bd54db10838cd8fd68fc6793501903
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - program1.pas
+file
+
+
+
+
+2007-01-21T10:53:47.984375Z
+34cd6c9fd5dec35ee86873d937a32332
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - array write.pas
+file
+
+
+
+
+2007-01-21T10:53:48.000000Z
+c330a293a75edc7a5bc8f398e48d7779
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+fModalForm.dfm
+file
+
+
+
+
+2007-01-21T10:53:48.000000Z
+f85cc4faee17d1dbf783645a084024f8
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - read file 1.pas
+file
+
+
+
+
+2007-01-21T10:53:48.000000Z
+5dc532de806e57fc48a3e975ac33eb4c
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+QRUnit_D2_B1.dfm
+file
+
+
+
+
+2007-01-21T10:53:48.000000Z
+36173f7bfca9bf8647207dbe201b1c1a
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - case statement.pas
+file
+
+
+
+
+2007-01-21T10:53:48.000000Z
+b5166e177fbfc2c5e8483684c316fccb
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - extended uses.pas
+file
+
+
+
+
+2007-01-21T10:53:48.015625Z
+a14bf343ac02e123c41d1d16418241cd
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - test1.pas
+file
+
+
+
+
+2007-01-21T10:53:48.015625Z
+92d05d7e36e92fa2ce7a7a9b239eef84
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - form.pas
+file
+
+
+
+
+2007-01-21T10:53:48.015625Z
+a5f745c336c78a0dd2d7b47db66a22bf
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - string char.pas
+file
+
+
+
+
+2007-01-21T10:53:48.015625Z
+d1121f4a79119336cc08ac9cb7623ea1
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - memory leak.pas
+file
+
+
+
+
+2007-01-21T10:53:48.015625Z
+8c13cc2eebc28fa75380a93394bc76c7
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+UUnit2.pas
+file
+
+
+
+
+2007-01-21T10:53:48.031250Z
+108d8297b617913b21eabf879692d07f
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - TStrings write Item.pas
+file
+
+
+
+
+2007-01-21T10:53:48.031250Z
+bdf46839cfc3954836418bfb9a1e3362
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+UUnit3.pas
+file
+
+
+
+
+2007-01-21T10:53:48.031250Z
+f6972a91a5a2b346ae2f8256b1adc963
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - record read.pas
+file
+
+
+
+
+2007-01-21T10:53:48.031250Z
+5093b9629cbd3cb5dc913bc76d789bd1
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - array read.pas
+file
+
+
+
+
+2007-01-21T10:53:48.031250Z
+2cd26320938b197719ee1e681db2af2a
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+DescendantForm.pas
+file
+
+
+
+
+2007-01-21T10:53:48.046875Z
+e927c93a052969f625ca259a81da411f
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - -1.pas
+file
+
+
+
+
+2007-01-21T10:53:48.046875Z
+b7fd9f0dbafbcea9e27ac81fd0a70be0
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - TStrings.pas
+file
+
+
+
+
+2007-01-21T10:53:48.031250Z
+89f8dd05a5a7263aea2d26ff428e7e6c
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Unit1.pas
+file
+
+
+
+
+2007-01-21T10:53:48.046875Z
+5f58b94a7e312fbd2e26deb8694d9b0a
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+AncestorForm.pas
+file
+
+
+
+
+2007-01-21T10:53:48.046875Z
+f4e1e531c2aeb62caca3472ce9ee8e45
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+TestForm.pas
+file
+
+
+
+
+2007-01-21T10:53:48.046875Z
+c59ea61432870ea2f8ea7632fa207cdd
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Unit4.pas
+file
+
+
+
+
+2007-01-21T10:53:48.046875Z
+001eb31b1ab9355b101afca87d9ed831
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+project1
+dir
+
+sample - external function.pas
+file
+
+
+
+
+2007-01-21T10:53:48.062500Z
+eedc0354fb352d797e795dcf047a245e
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - long loop.pas
+file
+
+
+
+
+2007-01-21T10:53:48.062500Z
+89b7714cd59b32ad4eaeabeebffd272d
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+file.txt
+file
+
+
+
+
+2007-01-21T10:53:48.062500Z
+13fff91c7eadc323db9c4ea80c9ca051
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+TextDFM.pas
+file
+
+
+
+
+2007-01-21T10:53:48.062500Z
+7a0de4d9545987508612b46aeff1e1f3
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - TStrings 2.pas
+file
+
+
+
+
+2007-01-21T10:53:48.078125Z
+dc16a6f8eea4f0edaa4f7e122569010a
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - excel-2.pas
+file
+
+
+
+
+2007-01-21T10:53:48.078125Z
+82709bc0076338b873ec1a0ef6a3eaf9
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+DescendantForm.dfm
+file
+
+
+
+
+2007-01-21T10:53:48.078125Z
+81fcc4a6ac017e1a6c455a34f28e2588
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - excel.pas
+file
+
+
+
+
+2007-01-21T10:53:48.078125Z
+bc355439f998dc8bcd8e81d6edcf5fc6
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - global constants and variables (UUnit1).pas
+file
+
+
+
+
+2007-01-21T10:53:48.078125Z
+7d44bdf4e9217541d4ad849d5c722b2e
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - string read char.pas
+file
+
+
+
+
+2007-01-21T10:53:48.093750Z
+7fa1862944383962db4f467230571ad5
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - makeform.pas
+file
+
+
+
+
+2007-01-21T10:53:48.093750Z
+41de9ced3d3e9e20899b11113c9d3e1f
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - case statement (2).pas
+file
+
+
+
+
+2007-01-21T10:53:48.093750Z
+da7a23d6858b54b0943940c2f43cb79c
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+sample - array as parameter.pas
+file
+
+
+
+
+2007-01-21T10:53:48.093750Z
+abff9a54fc5dfbab44cc082c2416a598
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+QRUnit_D3_D4_B3.pas
+file
+
+
+
+
+2007-01-21T10:53:48.093750Z
+d194739928e3c733bde671d71cab66d9
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Unit1.dfm
+file
+
+
+
+
+2007-01-21T10:53:48.093750Z
+0c798ad28a2bd1faa9699037b6a34ca0
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+AncestorForm.dfm
+file
+
+
+
+
+2007-01-21T10:53:48.109375Z
+a85639edcd178396b480adbc3f12c941
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+fModalForm.pas
+file
+
+
+
+
+2007-01-21T10:53:48.109375Z
+6dd47fc8f7da3d9aed5930c1bb307eb4
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Unit4.dfm
+file
+
+
+
+
+2007-01-21T10:53:48.109375Z
+45c13be49e162f85857e49fdc4a5702c
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+TestForm.dfm
+file
+
+
+
+
+2007-01-21T10:53:48.109375Z
+0b797adcbf0823592ccac2f100e6522c
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+QRUnit_D2_B1.pas
+file
+
+
+
+
+2007-01-21T10:53:48.109375Z
+116b3cac8cfd3bc0ff80dc8693176edd
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+

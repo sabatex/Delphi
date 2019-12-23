@@ -1,0 +1,70 @@
+8
+
+dir
+1
+file:///D:/SVN/Delphi%207/DBFLib
+file:///D:/SVN/Delphi%207
+
+
+
+2007-02-04T10:04:25.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3fe73bf7-86af-774c-8f5c-8eba23c6cf1d
+
+DBFLib.iss
+file
+
+
+
+
+2007-02-04T10:04:47.359375Z
+dd171dfa3689164bd802745bc289aa6a
+2007-02-04T10:04:25.390625Z
+1
+Administrator
+
+Source
+dir
+
+Help
+dir
+
+Install.bat
+file
+
+
+
+
+2007-02-04T10:04:47.359375Z
+d54e369dad720a452321ee5339c05a75
+2007-02-04T10:04:25.390625Z
+1
+Administrator
+
+Readme.txt
+file
+
+
+
+
+2007-02-04T10:04:47.390625Z
+6a5a6cc534f970e4727b347f27abbefa
+2007-02-04T10:04:25.390625Z
+1
+Administrator
+

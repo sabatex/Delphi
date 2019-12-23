@@ -1,0 +1,42 @@
+package DDBF7;
+
+{$R *.res}
+{$R 'Halcn6rg.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'DBF Database Engine for Delphi 6'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  designide,
+  dbrtl,
+  DBF7;
+
+contains
+  Halcn6rg in 'Halcn6rg.pas',
+  Halcn6Pr in 'Halcn6Pr.pas' {IndexForm},
+  halcn6id in 'Halcn6Id.pas' {IndexDescDef},
+  gs6_shel in 'GS6_SHEL.PAS';
+
+end.

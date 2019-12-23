@@ -1,0 +1,12 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+USEFORMNS("fCustomForm.pas", Fcustomform, frmCustomForm);
+USEFORMNS("fGauge.pas", Fgauge, frmGauge);
+//---------------------------------------------------------------------------
+#define Library
+
+// To add a file to the library use the Project menu 'Add to Project'.
+
+ 

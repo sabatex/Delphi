@@ -1,0 +1,154 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jcl/source
+file:///D:/VS-SVN/jcl
+
+
+
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e985b798-073e-7148-a25a-63e4055e5e75
+
+jcl.inc
+file
+
+
+
+
+2007-01-21T10:45:28.453125Z
+163eb796032a110a2396d64efaf695f5
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+jedi.inc
+file
+
+
+
+
+2007-01-21T10:45:28.453125Z
+29f5ec07d6f49b7cb4798ec83a4d3c63
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+unix
+dir
+
+Makefile.fpc
+file
+
+
+
+
+2007-01-21T10:45:28.453125Z
+8a2a86eb26d31ca05e5e653581c18c5e
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+vcl
+dir
+
+prototypes
+dir
+
+common
+dir
+
+windows
+dir
+
+unixonly.inc
+file
+
+
+
+
+2007-01-21T10:45:28.671875Z
+12759d86132577806735305b2244d0d0
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+windowsonly.inc
+file
+
+
+
+
+2007-01-21T10:45:28.453125Z
+db7dce6561cca2c67beb7a08c3afdcaa
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+crossplatform.inc
+file
+
+
+
+
+2007-01-21T10:45:28.468750Z
+5b9383dda1a1564bb090e9b8fa09c0fe
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+kylix.inc
+file
+
+
+
+
+2007-01-21T10:45:28.468750Z
+47a52708229590c34bbed2c58f62d1f4
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+visclx
+dir
+
+fpctestunit.bat
+file
+
+
+
+
+2007-01-21T10:45:28.468750Z
+f56ccee9d28084d852d208720739c760
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+fpctest.bat
+file
+
+
+
+
+2007-01-21T10:45:28.468750Z
+d7ca7b9a661690ca54387fa909128f33
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+

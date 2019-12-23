@@ -1,0 +1,59 @@
+package DBF7;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'DBF Database Engine for Delphi 6 RT'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dbrtl;
+
+contains
+  gs6_glbl in 'gs6_glbl.pas',
+  SysHalc in 'SYSHALC.PAS',
+  Conv866 in 'CONV866.PAS',
+  gs6_cnst in 'GS6_CNST.PAS',
+  gs6_encrxm in 'gs6_encrxm.pas',
+  gs6_eror in 'GS6_EROR.PAS',
+  Halcn6DB in 'Halcn6DB.pas',
+  gs6_dbsy in 'GS6_DBSY.PAS',
+  gs6_mix in 'GS6_MIX.PAS',
+  gs6_cdx in 'GS6_CDX.PAS',
+  gs6_mdx in 'GS6_MDX.PAS',
+  gs6_ndx in 'GS6_NDX.PAS',
+  gs6_ntx in 'GS6_NTX.PAS',
+  gs6_indx in 'GS6_INDX.PAS',
+  gs6_DBF in 'GS6_DBF.PAS',
+  gs6_memo in 'GS6_MEMO.PAS',
+  gs6_sort in 'GS6_SORT.PAS',
+  gs6_lcal in 'GS6_LCAL.PAS',
+  gs6_sql in 'GS6_SQL.PAS',
+  gs6_disk in 'GS6_DISK.PAS',
+  gs6_tool in 'GS6_TOOL.PAS',
+  gs6_Date in 'GS6_DATE.PAS',
+  gs6_udf in 'GS6_UDF.PAS';
+
+end.

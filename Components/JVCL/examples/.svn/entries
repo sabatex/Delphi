@@ -1,0 +1,475 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/examples
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+JvPreviewDocument
+dir
+
+JvContentScroller
+dir
+
+RxLib
+dir
+
+JvOutlookBar
+dir
+
+JvDialogs
+dir
+
+JvRegistryTreeView
+dir
+
+JvZoom
+dir
+
+JvSimpleXML Encode
+dir
+
+JediSurveyor
+dir
+
+JvEmbeddedForms
+dir
+
+JvScreenCapture
+dir
+
+JvSpecialProgress
+dir
+
+JvAni
+dir
+
+JvSystemPopup
+dir
+
+JvBalloonHint
+dir
+
+JvZLibMultiple
+dir
+
+JvFindReplace
+dir
+
+JvTimeFrameWork
+dir
+
+JvBackground
+dir
+
+JvTipOfDay
+dir
+
+JvThumbnail
+dir
+
+JvErrorIndicator
+dir
+
+JvDBImage
+dir
+
+JvTranslator
+dir
+
+JvSHFileOperation
+dir
+
+JVCLMegaDemo
+dir
+
+JvLinkLabel
+dir
+
+JvUninstallControls
+dir
+
+JvPlugin
+dir
+
+JvMRUList
+dir
+
+JvDesktopAlert
+dir
+
+JvFullColorCircleDialog
+dir
+
+JvSpellChecker
+dir
+
+JvDomainUpDown
+dir
+
+JvAppStorage
+dir
+
+JvUltimDBGrid
+dir
+
+JvDSADialogs
+dir
+
+JvStarfield
+dir
+
+JvUIB
+dir
+
+JvFileListBox
+dir
+
+JvXMLDatabase
+dir
+
+JvTrayIcon
+dir
+
+JvAppInstances
+dir
+
+RaLib
+dir
+
+JvSystemPopUp2
+dir
+
+CompileExamples.bat
+file
+
+
+
+
+2007-01-21T10:54:32.062500Z
+c35c9fb3ce9018db6fa62f8eff28cef7
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+JvDBDateTimePicker
+dir
+
+JvWinDialogs
+dir
+
+JvComboListBox
+dir
+
+JvProgramVersionCheck
+dir
+
+JvStringGrid
+dir
+
+JvProgressDialog
+dir
+
+JvMouseGesture
+dir
+
+JvShellHook
+dir
+
+JvCaptionButton
+dir
+
+JvRichEdit
+dir
+
+JvDBGridExport
+dir
+
+JvOLEDragCursors
+dir
+
+JvPanel
+dir
+
+JvPlayList
+dir
+
+JvTreeViewAsMenu
+dir
+
+JvLED
+dir
+
+JvSearchFile
+dir
+
+JvDBExplorer
+dir
+
+JvSimpleXML
+dir
+
+JvDBSearch
+dir
+
+JvCharMap
+dir
+
+JvInspectorDB
+dir
+
+JvFullColorDialog
+dir
+
+JvLogFile
+dir
+
+JvArrowButton
+dir
+
+JvMenus
+dir
+
+JvOutlookBarCustomDraw
+dir
+
+Globus
+dir
+
+JvMarkupLabel
+dir
+
+JvDesigner
+dir
+
+JvRollOut
+dir
+
+JvEDI
+dir
+
+JvCSVDataSet
+dir
+
+JvPackageModify
+dir
+
+JvDBActions
+dir
+
+JvTimeline
+dir
+
+JvFooterAndGroupHeader
+dir
+
+JvComputerInfoEx
+dir
+
+JvManagedThreads
+dir
+
+JvTMTimeLine
+dir
+
+JvValidators
+dir
+
+JvXPControls
+dir
+
+JvChangeNotify
+dir
+
+JvHTMLParser
+dir
+
+JvUrlListGrabber
+dir
+
+JvProfiler32
+dir
+
+JvWindowsTitle
+dir
+
+JvBrowseFolder
+dir
+
+JvTransparentButton
+dir
+
+JvGIFAnimator
+dir
+
+JvCheckBoxRadioButton
+dir
+
+JvCreateProcess
+dir
+
+JvObjectPicker
+dir
+
+JvDotNetCtrls
+dir
+
+JvInspector
+dir
+
+JvDbMaskEdit
+dir
+
+JvEdits
+dir
+
+JvListComb
+dir
+
+JvDocking
+dir
+
+JvItemViewer
+dir
+
+JvSimpleXML Validator
+dir
+
+JvDBHTLabel
+dir
+
+JvAppDDECmd
+dir
+
+JvMail
+dir
+
+JvDataEmbedded
+dir
+
+JvPageListTreeView
+dir
+
+makefile.mak
+file
+
+
+
+
+2007-01-21T10:54:32.171875Z
+08a2d4eb6f8c8faac2b4d7a6afa25b42
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+JvDBFindEdit
+dir
+
+JvWndProcHook
+dir
+
+JVCLDemos.bpg
+file
+
+
+
+
+2007-01-21T10:54:32.171875Z
+bd72e738c8e3e8c48cff739e28209e9b
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+JvAviCapture
+dir
+
+JvNavigationPane
+dir
+
+JvAppHotKey
+dir
+
+JvRunDll32
+dir
+
+JvChartDemo
+dir
+
+JvInstallLabel
+dir
+
+JvHIDController
+dir
+
+JvColorButton
+dir
+
+JvParameterList
+dir
+
+JvClipboardViewer
+dir
+
+JvScrollingWindow
+dir
+
+JvDiagramShape
+dir
+
+JvNTEventLog
+dir
+
+JvOfficeColorButton
+dir
+
+JvID3v1
+dir
+
+JvID3v2
+dir
+
+JvCheckTreeView
+dir
+
+JvColorCombo
+dir
+
+JvValidateEdit
+dir
+
+JvBehaviorLabel
+dir
+
+Providers and consumers
+dir
+
+JvControls
+dir
+
+JvThread
+dir
+
+JvBMPAnimator
+dir
+

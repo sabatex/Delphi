@@ -1,0 +1,313 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/packages
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+D6 Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.140625Z
+5d79f740ec95cb27817af299b7190760
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+c6per
+dir
+
+d6per
+dir
+
+d7clx
+dir
+
+c5std
+dir
+
+d5std
+dir
+
+C6Per Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.140625Z
+65ee4cbc9504fb5ac407a8c7f54aa5cb
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+D7Clx Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.140625Z
+23dc00dbcf1b41dd4c61e4add12216b0
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+D5Std Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.140625Z
+298a9df2752ad4f8f8015c403d145f0a
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+D9 Packages.bdsgroup
+file
+
+
+
+
+2007-01-21T10:54:59.156250Z
+3e6b1ea4fa2ad2b627cd9d2e577feb2c
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+D10 Packages.bdsgroup
+file
+
+
+
+
+2007-01-21T10:54:59.156250Z
+e9bb2045ed323277422eec4e7fdbabae
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+d5
+dir
+
+bin
+dir
+
+d6
+dir
+
+d7
+dir
+
+d9
+dir
+
+C5 Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.156250Z
+56360526eb5d92023a20b390a98e42d3
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+D5 Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.156250Z
+b6b3754492aa4f7adae724e2d8d1454c
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+D7 Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.156250Z
+a192aef3e3009fb95835c2b4f2d4c815
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+d7per
+dir
+
+K3 Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.156250Z
+220e9b56129e9de3e267e65226a9af76
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+d9per
+dir
+
+d10
+dir
+
+k3per
+dir
+
+D6Per Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.171875Z
+df1bd5eb288d2f0ccfc3b60b1c349350
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+D7Per Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.171875Z
+4e6a21208a8b108ded30e4c6345a9553
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+C5Std Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.171875Z
+da7dd3d7e00fd39ecc033b2024624f56
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+K3per Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.171875Z
+8289030046d709bde42292fb203c13ec
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+d10per
+dir
+
+packages.txt
+file
+
+
+
+
+2007-01-21T10:54:59.171875Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+BCB.bmk
+file
+
+
+
+
+2007-01-21T10:54:59.187500Z
+26406b2ab37a50cd9312d3deb82fa552
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+xml
+dir
+
+D9Per Packages.bdsgroup
+file
+
+
+
+
+2007-01-21T10:54:59.187500Z
+51f3bc74a23bd12361f80ee9edc4ee70
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+c5
+dir
+
+c6
+dir
+
+k3
+dir
+
+C6 Packages.bpg
+file
+
+
+
+
+2007-01-21T10:54:59.187500Z
+b0e3d0123cdfbc6f7608361d3ee23c79
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+D10Per Packages.bdsgroup
+file
+
+
+
+
+2007-01-21T10:54:59.187500Z
+8e9042f2b4137e879bbda98fa1a1513e
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+

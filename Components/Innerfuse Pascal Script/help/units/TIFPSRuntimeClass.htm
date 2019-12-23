@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifps3: Class TIFPSRuntimeClass</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="TIFPSRuntimeClass"><H1>Class TIFPSRuntimeClass</H1>
+</A><H2>Unit</H2>
+<A href="ifps3.htm">ifps3</A><BR><H2>Declaration</H2>
+<P><CODE>type TIFPSRuntimeClass = class</CODE></P><H2>Description</H2>
+TIFPSRuntimeClass is one class at runtime<A name=@Fields></A><H2>Fields</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>&nbsp;</TH><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FClass"><CODE>FClass</CODE></A></TD>
+<TD width=100%>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FClassItems"><CODE>FClassItems</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FClassName"><CODE>FClassName</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FClassNameHash"><CODE>FClassNameHash</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="protected.gif" alt="Protected"></TD>
+<TD><A name="FEndOfVmt"><CODE>FEndOfVmt</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>constructor <A href="TIFPSRuntimeClass.htm#Create"><B>Create</B></A>(aClass: TClass; const AName: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>destructor <A href="TIFPSRuntimeClass.htm#Destroy"><B>Destroy</B></A>; override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSRuntimeClass.htm#RegisterConstructor"><B>RegisterConstructor</B></A>(ProcPtr: Pointer; const Name: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSRuntimeClass.htm#RegisterEventPropertyHelper"><B>RegisterEventPropertyHelper</B></A>(ReadFunc, WriteFunc: Pointer; const Name: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSRuntimeClass.htm#RegisterMethod"><B>RegisterMethod</B></A>(ProcPtr: Pointer; const Name: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSRuntimeClass.htm#RegisterPropertyHelper"><B>RegisterPropertyHelper</B></A>(ReadFunc, WriteFunc: Pointer; const Name: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSRuntimeClass.htm#RegisterPropertyHelperName"><B>RegisterPropertyHelperName</B></A>(ReadFunc, WriteFunc: Pointer; const Name: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSRuntimeClass.htm#RegisterVirtualAbstractMethod"><B>RegisterVirtualAbstractMethod</B></A>(ClassDef: TClass; ProcPtr: Pointer; const Name: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSRuntimeClass.htm#RegisterVirtualConstructor"><B>RegisterVirtualConstructor</B></A>(ProcPtr: Pointer; const Name: string);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSRuntimeClass.htm#RegisterVirtualMethod"><B>RegisterVirtualMethod</B></A>(ProcPtr: Pointer; const Name: string);</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Create"><CODE>constructor <B>Create</B>(aClass: TClass; const AName: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>create</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Destroy"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>destroy</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterConstructor"><CODE>procedure <B>RegisterConstructor</B>(ProcPtr: Pointer; const Name: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register a constructor</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterEventPropertyHelper"><CODE>procedure <B>RegisterEventPropertyHelper</B>(ReadFunc, WriteFunc: Pointer; const Name: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register a property helper that is an event</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterMethod"><CODE>procedure <B>RegisterMethod</B>(ProcPtr: Pointer; const Name: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register a method</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterPropertyHelper"><CODE>procedure <B>RegisterPropertyHelper</B>(ReadFunc, WriteFunc: Pointer; const Name: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register a property helper</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterPropertyHelperName"><CODE>procedure <B>RegisterPropertyHelperName</B>(ReadFunc, WriteFunc: Pointer; const Name: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register a property helper (name will be passed on the stack)</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterVirtualAbstractMethod"><CODE>procedure <B>RegisterVirtualAbstractMethod</B>(ClassDef: TClass; ProcPtr: Pointer; const Name: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register an abstract virtual method</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterVirtualConstructor"><CODE>procedure <B>RegisterVirtualConstructor</B>(ProcPtr: Pointer; const Name: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register a virtual constructor</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterVirtualMethod"><CODE>procedure <B>RegisterVirtualMethod</B>(ProcPtr: Pointer; const Name: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register a virtual method</P>
+</BODY>
+</HTML>

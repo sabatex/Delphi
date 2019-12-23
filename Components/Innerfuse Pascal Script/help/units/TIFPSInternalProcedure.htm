@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifpscomp: Class TIFPSInternalProcedure</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="TIFPSInternalProcedure"><H1>Class TIFPSInternalProcedure</H1>
+</A><H2>Unit</H2>
+<A href="ifpscomp.htm">ifpscomp</A><BR><H2>Declaration</H2>
+<P><CODE>type TIFPSInternalProcedure = class(<CODE><A href="TIFPSProcedure.htm">TIFPSProcedure</A></CODE>)</CODE></P><H2>Description</H2>
+TIFPSInternalProcedure stores information for scripted procedures<H2>Hierarchy</H2>
+<CODE><A href="TIFPSProcedure.htm">TIFPSProcedure</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>constructor <A href="TIFPSInternalProcedure.htm#Create"><B>Create</B></A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>destructor <A href="TIFPSInternalProcedure.htm#Destroy"><B>Destroy</B></A>; override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSInternalProcedure.htm#ResultUse"><B>ResultUse</B></A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSInternalProcedure.htm#Use"><B>Use</B></A>;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Create"><CODE>constructor <B>Create</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>IFPS3_mi2s(position)+IFPS3_mi2s(destinationnamehash)+destinationname</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Destroy"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ResultUse"><CODE>procedure <B>ResultUse</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Use the result variable</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Use"><CODE>procedure <B>Use</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Use this procedure</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>property <A href="TIFPSInternalProcedure.htm#Data"><B>Data</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#Decl"><B>Decl</B></A>: <A href="TIFPSParametersDecl.htm">TIFPSParametersDecl</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#DeclareCol"><B>DeclareCol</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#DeclarePos"><B>DeclarePos</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#DeclareRow"><B>DeclareRow</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#Forwarded"><B>Forwarded</B></A>: Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#Gotos"><B>Gotos</B></A>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#Labels"><B>Labels</B></A>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property Name: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#NameHash"><B>NameHash</B></A>: Longint;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#OriginalName"><B>OriginalName</B></A>: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#OutputDeclPosition"><B>OutputDeclPosition</B></A>: Cardinal;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#ProcVars"><B>ProcVars</B></A>: <A href="TIfList.htm">TIFList</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#ResultUsed"><B>ResultUsed</B></A>: Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInternalProcedure.htm#Used"><B>Used</B></A>: Boolean;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Data"><CODE>property <B>Data</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The compiled code for this procedure</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Decl"><CODE>property <B>Decl</B>: <A href="TIFPSParametersDecl.htm">TIFPSParametersDecl</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Parameter declaration</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="DeclareCol"><CODE>property <B>DeclareCol</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The col part of the position</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="DeclarePos"><CODE>property <B>DeclarePos</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The position this procedure is declared</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="DeclareRow"><CODE>property <B>DeclareRow</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The row part of the position</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Forwarded"><CODE>property <B>Forwarded</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>This field is true when the last declaration of this procedure was forwarded</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Gotos"><CODE>property <B>Gotos</B>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>All goto's within this procedure</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Labels"><CODE>property <B>Labels</B>: <A href="TIfStringList.htm">TIfStringList</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>All labels within this procedure</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Name"><CODE>property Name: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The name for this procedure (in uppercase)</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="NameHash"><CODE>property <B>NameHash</B>: Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The hash for the name of this procedure</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="OriginalName"><CODE>property <B>OriginalName</B>: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The original name</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="OutputDeclPosition"><CODE>property <B>OutputDeclPosition</B>: Cardinal;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>This field is used when writing the byte code. Do not set or change this</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ProcVars"><CODE>property <B>ProcVars</B>: <A href="TIfList.htm">TIFList</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>A list with all local variables</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ResultUsed"><CODE>property <B>ResultUsed</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>This field is true when the result of this function is assigned somewhere</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Used"><CODE>property <B>Used</B>: Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>True when this procedure is called from somewhere</P>
+</BODY>
+</HTML>

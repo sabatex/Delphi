@@ -1,0 +1,55 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/devtools/JvExCLX
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+PreProcessCLX.bat
+file
+
+
+
+
+2007-01-21T10:52:19.125000Z
+71f128fdcbddee0f6d8723742e886308
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+src
+dir
+
+preprocess.bat
+file
+
+
+
+
+2007-01-21T10:52:19.125000Z
+cc23c822afcd80e9112ffc2f5a576afa
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+

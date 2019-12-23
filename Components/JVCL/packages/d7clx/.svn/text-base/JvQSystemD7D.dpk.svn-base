@@ -1,0 +1,39 @@
+package JvQSystemD7D;
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS ON}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'JVCLX System Components'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  JvQCoreD7D,
+  JvQSystemD7R,
+  clxdesigner;
+
+contains
+  JvQSystemReg in '..\..\qdesign\JvQSystemReg.pas',
+  JvQChangeNotifyEditor in '..\..\qdesign\JvQChangeNotifyEditor.pas',
+  JvQFormPropertiesForm in '..\..\qdesign\JvQFormPropertiesForm.pas' {JvFormPropsDlg},
+  JvQMinMaxForm in '..\..\qdesign\JvQMinMaxForm.pas' {MinMaxInfoEditDialog};
+
+end.

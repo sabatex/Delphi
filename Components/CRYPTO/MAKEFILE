@@ -1,0 +1,149 @@
+# ******************************************************************
+# *                                                                *
+# *     Crypto Runtime Library                                     *
+# *     MAKE script                                                *
+# *                                                                *
+# *     Copyright (C) 2000,2003 Serhiy Lakas                       *
+# *                                                                *
+# ******************************************************************
+
+# This MAKE script requires Borland MAKE Version 3.7 or later (MAKE.EXE),
+# Borland Resource and Compiler Version 4.0 or later (BRCC32.EXE).
+
+# The script assumes that DCC32.EXE, TASM32.EXE, and BRCC32.EXE are present
+# on the current search path--if this is not the case, modify the DCC, TASM,
+# and BRCC macros below to reflect the location of these executables.
+
+# To build the runtime library without debug information (the default),
+# simply run MAKE.EXE from the directory containing this MAKEFILE. To
+# build a debug version of the runtime library, specify a -DDEBUG command
+# line parameter when running MAKE.EXE.
+
+# The BIN and LIB macros define the output directories for binaries and
+# compiled units.
+
+DCC = $(MAKEDIR)\dcc32 -q
+BRCC = brcc32
+
+BIN = bin
+LIB = lib
+
+!if $d(DEBUG)
+RTLDEBUG = -$$D+
+ASMDEBUG = -zi
+LIB = Debug_lib 
+!else
+RTLDEBUG = -$$D-
+ASMDEBUG = -zn
+LIB = lib
+!endif
+
+SYSUTILSOBJ = \
+
+default: \
+$(LIB)\DCPConst.dcu \
+$(LIB)\DCPBase64.dcu \
+$(LIB)\DCPcrypt2.dcu \
+$(LIB)\DCPblockciphers.dcu \
+$(LIB)\DCPblowfish.dcu \
+$(LIB)\DCPcast128.dcu \
+$(LIB)\DCPcast256.dcu \
+$(LIB)\DCPdes.dcu \
+$(LIB)\DCPgost.dcu \
+$(LIB)\DCPhaval.dcu \
+$(LIB)\DCPice.dcu \
+$(LIB)\DCPidea.dcu \
+$(LIB)\DCPmars.dcu \
+$(LIB)\DCPmd4.dcu \
+$(LIB)\DCPmd5.dcu \
+$(LIB)\DCPmisty1.dcu \
+$(LIB)\DCPrc2.dcu \
+$(LIB)\DCPrc4.dcu \
+$(LIB)\DCPrc5.dcu \
+$(LIB)\DCPrc6.dcu \
+$(LIB)\DCPreg.dcu \
+$(LIB)\DCPrijndael.dcu \
+$(LIB)\DCPripemd128.dcu \
+$(LIB)\DCPripemd160.dcu \
+$(LIB)\DCPserpent.dcu \
+$(LIB)\DCPsha1.dcu \
+$(LIB)\DCPsha256.dcu \
+$(LIB)\DCPsha512.dcu \
+$(LIB)\DCPtea.dcu \
+$(LIB)\DCPtiger.dcu \
+$(LIB)\DCPtwofish.dcu \
+$(LIB)\FGInt.dcu \
+$(LIB)\FGIntElGamal.dcu \
+$(LIB)\FGIntPrimeGeneration.dcu \
+$(LIB)\FGIntRSA.dcu
+
+$(LIB)\DCPConst.dcu: SOURCE\DCPconst.pas
+  $(DCC) SOURCE\DCPconst.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPBase64.dcu: SOURCE\DCPBase64.pas
+  $(DCC) SOURCE\DCPBase64.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPcrypt2.dcu: SOURCE\DCPcrypt2.pas
+  $(DCC) SOURCE\DCPcrypt2.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPblockciphers.dcu: SOURCE\DCPblockciphers.pas
+  $(DCC) SOURCE\DCPblockciphers.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPblowfish.dcu: SOURCE\DCPblowfish.pas
+  $(DCC) SOURCE\DCPblowfish.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPcast128.dcu: SOURCE\DCPcast128.pas
+    $(DCC) SOURCE\DCPcast128.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPcast256.dcu: SOURCE\DCPcast256.pas
+    $(DCC) SOURCE\DCPcast256.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPdes.dcu: SOURCE\DCPdes.pas
+    $(DCC) SOURCE\DCPdes.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPgost.dcu: SOURCE\DCPgost.pas
+    $(DCC) SOURCE\DCPgost.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPhaval.dcu: SOURCE\DCPhaval.pas
+    $(DCC) SOURCE\DCPhaval.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPice.dcu: SOURCE\DCPice.pas
+    $(DCC) SOURCE\DCPice.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPidea.dcu: SOURCE\DCPidea.pas
+    $(DCC) SOURCE\DCPidea.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPmars.dcu: SOURCE\DCPmars.pas
+    $(DCC) SOURCE\DCPmars.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPmd4.dcu: SOURCE\DCPmd4.pas
+    $(DCC) SOURCE\DCPmd4.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPmd5.dcu: SOURCE\DCPmd5.pas
+    $(DCC) SOURCE\DCPmd5.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPmisty1.dcu: SOURCE\DCPmisty1.pas
+    $(DCC) SOURCE\DCPmisty1.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPrc2.dcu: SOURCE\DCPrc2.pas
+    $(DCC) SOURCE\DCPrc2.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPrc4.dcu: SOURCE\DCPrc4.pas
+    $(DCC) SOURCE\DCPrc4.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPrc5.dcu: SOURCE\DCPrc5.pas
+    $(DCC) SOURCE\DCPrc5.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPrc6.dcu: SOURCE\DCPrc6.pas
+    $(DCC) SOURCE\DCPrc6.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPreg.dcu: SOURCE\DCPreg.pas
+    $(DCC) SOURCE\DCPreg.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPrijndael.dcu: SOURCE\DCPrijndael.pas
+    $(DCC) SOURCE\DCPrijndael.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPripemd128.dcu: SOURCE\DCPripemd128.pas
+    $(DCC) SOURCE\DCPripemd128.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPripemd160.dcu: SOURCE\DCPripemd160.pas
+    $(DCC) SOURCE\DCPripemd160.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPserpent.dcu: SOURCE\DCPserpent.pas
+    $(DCC) SOURCE\DCPserpent.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPsha1.dcu: SOURCE\DCPsha1.pas
+    $(DCC) SOURCE\DCPsha1.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPsha256.dcu: SOURCE\DCPsha256.pas
+    $(DCC) SOURCE\DCPsha256.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPsha512.dcu: SOURCE\DCPsha512.pas
+    $(DCC) SOURCE\DCPsha512.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPtea.dcu: SOURCE\DCPtea.pas
+    $(DCC) SOURCE\DCPtea.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPtiger.dcu: SOURCE\DCPtiger.pas
+    $(DCC) SOURCE\DCPtiger.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\DCPtwofish.dcu: SOURCE\DCPtwofish.pas
+    $(DCC) SOURCE\DCPtwofish.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\FGInt.dcu: SOURCE\FGInt.pas
+    $(DCC) SOURCE\FGInt.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\FGIntElGamal.dcu: SOURCE\FGIntElGamal.pas
+    $(DCC) SOURCE\FGIntElGamal.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\FGIntPrimeGeneration.dcu: SOURCE\FGIntPrimeGeneration.pas
+    $(DCC) SOURCE\FGIntPrimeGeneration.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)
+$(LIB)\FGIntRSA.dcu: SOURCE\FGIntRSA.pas
+    $(DCC) SOURCE\FGIntRSA.pas -z $(RTLDEBUG) -u$(LIB) -n$(LIB)

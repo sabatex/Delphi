@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+  <HEAD>
+    <meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.01">
+    <!-- Sitemap 1.0 -->
+  </HEAD>
+<BODY>
+  <OBJECT type="text/site properties">
+    <param name="FrameName" value="right">
+    <param name="Window Styles" value="0x800025">
+  </OBJECT>
+<UL>
+    <LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Про програму ...">
+        <param name="Local" value="topics/index.htm">
+        </OBJECT>
+    <LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Інсталяція">
+        <param name="Local" value="topics/t4.htm">
+        </OBJECT>
+    <LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Умови функціонування програми">
+        <param name="Local" value="topics/t16.htm">
+        </OBJECT>
+    <LI> <OBJECT type="text/sitemap">
+        <param name="Name" value="Інструкція користувача">
+        </OBJECT>
+    <UL>
+        <LI> <OBJECT type="text/sitemap">
+            <param name="Name" value="Головне меню">
+            <param name="Local" value="topics/t5.htm">
+            </OBJECT>
+        <LI> <OBJECT type="text/sitemap">
+            <param name="Name" value="Файл">
+            </OBJECT>
+        <UL>
+            <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="Файл">
+                <param name="Local" value="topics/t6.htm">
+                </OBJECT>
+    </UL>
+        <LI> <OBJECT type="text/sitemap">
+            <param name="Name" value="Опції">
+            </OBJECT>
+        <UL>
+            <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="Опції">
+                <param name="Local" value="topics/t9.htm">
+                </OBJECT>
+            <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="Конфігурація 1С6.0">
+                <param name="Local" value="topics/t10.htm">
+                </OBJECT>
+            <LI> <OBJECT type="text/sitemap">
+                <param name="Name" value="Параметри фірми">
+                <param name="Local" value="topics/t11.htm">
+                </OBJECT>
+        </UL>
+    </UL>
+</UL>
+</BODY>
+</HTML>

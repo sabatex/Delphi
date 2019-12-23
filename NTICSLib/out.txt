@@ -1,0 +1,10 @@
+MAKE Version 5.2  Copyright (c) 1987, 1998 Inprise Corp.
+	C:\PROGRA~1\Borland\Delphi6\Bin\dcc32 -q SOURCE\DCPconst.pas -z -$D+ -uDebug_lib -nDebug_lib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2002 Borland Software Corporation
+50 lines, 0.00 seconds, 54 bytes code, 4 bytes data.
+MAKE Version 5.2  Copyright (c) 1987, 1998 Inprise Corp.
+	C:\PROGRA~1\Borland\Delphi6\Bin\dcc32 -q SOURCE\DCPconst.pas -z -$D- -ulib -nlib
+Borland Delphi Version 14.0
+Copyright (c) 1983,2002 Borland Software Corporation
+50 lines, 0.00 seconds, 54 bytes code, 4 bytes data.

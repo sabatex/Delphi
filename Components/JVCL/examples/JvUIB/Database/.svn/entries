@@ -1,0 +1,52 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/examples/JvUIB/Database
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+employee.sql
+file
+
+
+
+
+2007-01-21T10:53:39.484375Z
+05693ecc0a3ef12ca749920f04de40ba
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+employee_IB6.sql
+file
+
+
+
+
+2007-01-21T10:53:39.500000Z
+2ad93324b22be725eb3208d6657a13fc
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+

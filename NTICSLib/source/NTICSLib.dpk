@@ -1,0 +1,63 @@
+package NTICSLib;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  vcldb,
+  EhLib60;
+
+contains
+  ntics_const in 'ntics_const.pas',
+  ntics_classes in 'ntics_classes.pas',
+  QLowLevelFunction in 'QLowLevelFunction.pas',
+  KeyGen in 'KeyGen.pas',
+  DCPbase64 in 'dcpbase64.pas',
+  DCPblockciphers in 'DCPblockciphers.pas',
+  DCPconst in 'DCPconst.pas',
+  DCPcrypt2 in 'DCPcrypt2.pas',
+  DCPgost in 'DCPgost.pas',
+  DCPhaval in 'DCPhaval.pas',
+  DCPsha1 in 'DCPsha1.pas',
+  dde1c6_0 in 'dde1c6_0.pas',
+  fAbout in 'fAbout.pas' {frmAbout},
+  fConfigStorage in 'fConfigStorage.pas',
+  fCustomForm in 'fCustomForm.pas' {frmCustomForm},
+  fGauge in 'fGauge.pas' {frmGauge},
+  FGInt in 'FGInt.pas',
+  FGIntPrimeGeneration in 'FGIntPrimeGeneration.PAS',
+  FGIntRSA in 'FGIntRSA.PAS',
+  FileVersionInfo in 'FileVersionInfo.pas',
+  fLogin in 'fLogin.pas' {frmLogin},
+  FormManager in 'FormManager.pas',
+  frameCustomGrid in 'frameCustomGrid.pas' {frCustomGrid: TFrame},
+  fRegistrationForm in 'fRegistrationForm.pas' {frmRegistrationForm},
+  fSplash in 'fSplash.pas' {frmSplash},
+  crypto_keys in 'crypto_keys.pas';
+
+end.

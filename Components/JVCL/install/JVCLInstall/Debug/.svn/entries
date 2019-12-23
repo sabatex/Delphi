@@ -1,0 +1,52 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/install/JVCLInstall/Debug
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+ExceptionDlg.pas
+file
+
+
+
+
+2007-01-21T10:53:07.406250Z
+273076083269699827a781eaa60280c6
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+ExceptionDlg.dfm
+file
+
+
+
+
+2007-01-21T10:53:07.406250Z
+00f5fa1140aec9496e178abce3755977
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+

@@ -1,0 +1,106 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/examples/JediSurveyor
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+Surveys
+dir
+
+license.txt
+file
+
+
+
+
+2007-01-21T10:53:21.921875Z
+a2ffc3276ec5188c409c9fd4b7fb6f72
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+JediSurveyor.bpg
+file
+
+
+
+
+2007-01-21T10:53:21.921875Z
+62d4d200d7f99eb90cec74a379372af9
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Reporter
+dir
+
+makefile.mak
+file
+
+
+
+
+2007-01-21T10:53:21.937500Z
+49ed6765f3e98a756ec62f2f75aedda6
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Builder
+dir
+
+TakeSurvey.bat
+file
+
+
+
+
+2007-01-21T10:53:21.937500Z
+1b2fe34ab0d001dec534e3b387bd4292
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+common
+dir
+
+readme.txt
+file
+
+
+
+
+2007-01-21T10:53:21.937500Z
+8f4b81953836b75d0cdf61d6e74bf2ef
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+SurveyConvert
+dir
+
+Surveyor
+dir
+

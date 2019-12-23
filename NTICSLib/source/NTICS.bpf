@@ -1,0 +1,11 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+USEFORM("ntics_login.cpp", IBLogin);
+USEFORM("ntics_registration_form.cpp", Form1);
+//---------------------------------------------------------------------------
+#define Library
+
+// To add a file to the library use the Project menu 'Add to Project'.
+

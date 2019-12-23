@@ -1,0 +1,335 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifpscomp</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<H1>Unit ifpscomp</H1>
+<H2>Description</H2>
+The compiler part of the script engine<P>ifpscomp is the compiler part of the script engine. It implements a pascal to byte code compiler that can be loaded with executer part of the script engine.<br> <br> Innerfuse Pascal Script III<br> Copyright (C) 2000-2004 by Carlo Kok <ck@carlo-kok.com><br> <br> Standard functions registered by the script engine.<br> <tt> function floattostr(e: extended): string;<br> function inttostr(i: Longint): string; <br> function strtoint(s: string): Longint;<br> function strtointdef(s: string; def: Longint): Longint;<br> function copy(s: string; ifrom, icount: Longint): string;<br> function pos(substr, s: string): Longint;<br> procedure delete(var s: string; ifrom, icount: Longint);<br> procedure insert(s: string; var s2: string; ipos: Longint);<br> function getarraylength(var v: array): Integer;<br> procedure setarraylength(var v: array; i: Integer);<br> Function StrGet(var S : String; I : Integer) : Char;<br> procedure StrSet(c : Char; I : Integer; var s : String);<br> Function Uppercase(s : string) : string;<br> Function Lowercase(s : string) : string;<br> Function AnsiUppercase(s : string) : string;<br> Function AnsiLowercase(s : string) : string;<br> Function Trim(s : string) : string;<br> Function Length(s : String) : Longint;<br> procedure SetLength(var S: String; L: Longint);<br> Function Sin(e : Extended) : Extended;<br> Function Cos(e : Extended) : Extended;<br> Function Sqrt(e : Extended) : Extended;<br> Function Round(e : Extended) : Longint;<br> Function Trunc(e : Extended) : Longint;<br> Function Int(e : Extended) : Extended;<br> Function Pi : Extended;<br> Function Abs(e : Extended) : Extended;<br> function StrToFloat(s: string): Extended;<br> Function FloatToStr(e : Extended) : String;<br> Function Padl(s : string;I : longInt) : string;<br> Function Padr(s : string;I : longInt) : string;<br> Function Padz(s : string;I : longInt) : string;<br> Function Replicate(c : char;I : longInt) : string;<br> Function StringOfChar(c : char;I : longInt) : string;<br> function StrToInt64(s: string): int64; // only when int64 is available<br> function Int64ToStr(i: Int64): string; // only when int64 is available<br> function SizeOf(c: const): Longint;<br> <br> <br> type<br> TVarType = Word;<br> varEmpty = varempty;<br> varNull = varnull;<br> varSmallint = varsmallint;<br> varInteger = varinteger;<br> varSingle = varsingle;<br> varDouble = vardouble;<br> varCurrency = varcurrency;<br> varDate = vardate;<br> varOleStr = varolestr;<br> varDispatch = vardispatch;<br> varError = varerror;<br> varBoolean = varboolean;<br> varVariant = varvariant;<br> varUnknown = varunknown;<br> varShortInt = varshortint;<br> // D6+ varByte = varbyte;<br> // D6+ varWord = varword;<br> // D6+ varLongWord = varlongword;<br> // D6+ varInt64 = varint64;<br> // D6+ varStrArg = varstrarg;<br> varString = varstring;<br> varAny = varany;<br> varTypeMask = vartypemask;<br> varArray = vararray;<br> varByRef = varByRef;<br> <br> function Unassigned: Variant;<br> function Null: Variant;<br> function VarType(const V: Variant): TVarType;<br> <br> type<br> TIFException = (ErNoError, erCannotImport, erInvalidType, ErInternalError,<br> erInvalidHeader, erInvalidOpcode, erInvalidOpcodeParameter, erNoMainProc,<br> erOutOfGlobalVarsRange, erOutOfProcRange, ErOutOfRange, erOutOfStackRange,<br> ErTypeMismatch, erUnexpectedEof, erVersionError, ErDivideByZero, ErMathError,<br> erCouldNotCallProc, erOutofRecordRange, erOutOfMemory, erException,<br> erNullPointerException, erNullVariantError, erInterfaceNotSupported, erCustomError);<br> <br> <br> procedure RaiseLastException;<br> procedure RaiseException(Ex: TIFException; Param: string);<br> function ExceptionType: TIFException;<br> function ExceptionParam: string;<br> function ExceptionProc: Cardinal;<br> function ExceptionPos: Cardinal;<br> function ExceptionToString(er: TIFException; Param: string): string;<br> <br><br> function IDispatchInvoke(Self: IDispatch; PropertySet: Boolean; const Name: WideString; Par: array of variant): variant;<br> </tt><H2>Classes, Interfaces and Objects</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="EIFPSCompilerException.htm"><CODE>EIFPSCompilerException</CODE></A></TD>
+<TD width=100%>Compiler exception</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSArrayType.htm"><CODE>TIFPSArrayType</CODE></A></TD>
+<TD>Array type information</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSAttribute.htm"><CODE>TIFPSAttribute</CODE></A></TD>
+<TD>An attribute</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSAttributes.htm"><CODE>TIFPSAttributes</CODE></A></TD>
+<TD>A collection of attributes</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSAttributeType.htm"><CODE>TIFPSAttributeType</CODE></A></TD>
+<TD>An attribute type</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSAttributeTypeField.htm"><CODE>TIFPSAttributeTypeField</CODE></A></TD>
+<TD>An attribute type field</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSBinValueOp.htm"><CODE>TIFPSBinValueOp</CODE></A></TD>
+<TD>TIFPSBinValueOp stores information about binairy calculations</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSBlockInfo.htm"><CODE>TIFPSBlockInfo</CODE></A></TD>
+<TD>BlockInfo is used to store the current scope the script engine is current in. There is no need to use or create this object</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSClassType.htm"><CODE>TIFPSClassType</CODE></A></TD>
+<TD>TIFPSClassType is used to store class type information for the script engine</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSCompileTimeClass.htm"><CODE>TIFPSCompileTimeClass</CODE></A></TD>
+<TD>Compiletime class</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSConstant.htm"><CODE>TIFPSConstant</CODE></A></TD>
+<TD>TIFPSContant contains information about constants</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSDelphiClassItem.htm"><CODE>TIFPSDelphiClassItem</CODE></A></TD>
+<TD>an item of a delphi class</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSDelphiClassItemConstructor.htm"><CODE>TIFPSDelphiClassItemConstructor</CODE></A></TD>
+<TD>delphi class constructor type info</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSDelphiClassItemMethod.htm"><CODE>TIFPSDelphiClassItemMethod</CODE></A></TD>
+<TD>delphi class method type info</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSDelphiClassItemProperty.htm"><CODE>TIFPSDelphiClassItemProperty</CODE></A></TD>
+<TD>delphi class property type info</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSEnumType.htm"><CODE>TIFPSEnumType</CODE></A></TD>
+<TD>an TIFPSEnumType holds information for enumerated types</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSExternalProcedure.htm"><CODE>TIFPSExternalProcedure</CODE></A></TD>
+<TD>An external procedure</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSInterface.htm"><CODE>TIFPSInterface</CODE></A></TD>
+<TD>Interface type info</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSInterfaceMethod.htm"><CODE>TIFPSInterfaceMethod</CODE></A></TD>
+<TD>Interface Method type info</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSInterfaceType.htm"><CODE>TIFPSInterfaceType</CODE></A></TD>
+<TD>TIFPSClassType is used to store interface type information for the script engine</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSInternalProcedure.htm"><CODE>TIFPSInternalProcedure</CODE></A></TD>
+<TD>TIFPSInternalProcedure stores information for scripted procedures</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSParameter.htm"><CODE>TIFPSParameter</CODE></A></TD>
+<TD>TIFPSParameter is used to store parameter info</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSParameterDecl.htm"><CODE>TIFPSParameterDecl</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSParameters.htm"><CODE>TIFPSParameters</CODE></A></TD>
+<TD>TIFPSParameters is a list of <CODE><A href="TIFPSParameter.htm">TIFPSParameter</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSParametersDecl.htm"><CODE>TIFPSParametersDecl</CODE></A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSPascalCompiler.htm"><CODE>TIFPSPascalCompiler</CODE></A></TD>
+<TD>The actual compiler</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSPascalCompilerError.htm"><CODE>TIFPSPascalCompilerError</CODE></A></TD>
+<TD>error message class</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSPascalCompilerHint.htm"><CODE>TIFPSPascalCompilerHint</CODE></A></TD>
+<TD>Hint message class</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSPascalCompilerMessage.htm"><CODE>TIFPSPascalCompilerMessage</CODE></A></TD>
+<TD>TIFPSPascalCompilerMessage is the base class for compiler messages</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSPascalCompilerWarning.htm"><CODE>TIFPSPascalCompilerWarning</CODE></A></TD>
+<TD>Warning message class</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSProceduralType.htm"><CODE>TIFPSProceduralType</CODE></A></TD>
+<TD>A procedural pointer type</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSProcedure.htm"><CODE>TIFPSProcedure</CODE></A></TD>
+<TD>TIFPSProcedure is the base type for all procedures</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSProcVar.htm"><CODE>TIFPSProcVar</CODE></A></TD>
+<TD>TIFPSProcVar is used to store local variables</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSRecordFieldTypeDef.htm"><CODE>TIFPSRecordFieldTypeDef</CODE></A></TD>
+<TD>TIFPSRecordFieldTypeDef is used to store record field information, see <CODE><A href="TIFPSRecordType.htm">TIFPSRecordType</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSRecordType.htm"><CODE>TIFPSRecordType</CODE></A></TD>
+<TD>TIFPSRecordType is used to store information about record types</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSRegProc.htm"><CODE>TIFPSRegProc</CODE></A></TD>
+<TD>TIFPSRegProc contains all information needed for external function registered to the script engine.</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSSetType.htm"><CODE>TIFPSSetType</CODE></A></TD>
+<TD>TIFPSSetType stores set type info</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSStaticArrayType.htm"><CODE>TIFPSStaticArrayType</CODE></A></TD>
+<TD>TIFPSStaticArrayType holds information to store static arrays</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSSubItem.htm"><CODE>TIFPSSubItem</CODE></A></TD>
+<TD>TIFPSSubItem is a base case used when storing record or array field number information</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSSubNumber.htm"><CODE>TIFPSSubNumber</CODE></A></TD>
+<TD>Field no constant number</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSSubValue.htm"><CODE>TIFPSSubValue</CODE></A></TD>
+<TD>Field no by value</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSType.htm"><CODE>TIFPSType</CODE></A></TD>
+<TD>TIFPSType is the base class for all types</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSTypeLink.htm"><CODE>TIFPSTypeLink</CODE></A></TD>
+<TD>a type link is an alias for another type</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSUnValueOp.htm"><CODE>TIFPSUnValueOp</CODE></A></TD>
+<TD>TIFPSUnValueOp stores information about unairy calculations</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValue.htm"><CODE>TIFPSValue</CODE></A></TD>
+<TD>Base class for all values</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueAllocatedStackVar.htm"><CODE>TIFPSValueAllocatedStackVar</CODE></A></TD>
+<TD>A temporary value used by the script engine</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueArray.htm"><CODE>TIFPSValueArray</CODE></A></TD>
+<TD>An array constant</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueData.htm"><CODE>TIFPSValueData</CODE></A></TD>
+<TD>A Data value</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueGlobalVar.htm"><CODE>TIFPSValueGlobalVar</CODE></A></TD>
+<TD>A global variable</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueLocalVar.htm"><CODE>TIFPSValueLocalVar</CODE></A></TD>
+<TD>A local variable</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueNil.htm"><CODE>TIFPSValueNil</CODE></A></TD>
+<TD>TIFPSValueNil is used to hold NIL values, that have no actual value until it's assigned to another type</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueParamVar.htm"><CODE>TIFPSValueParamVar</CODE></A></TD>
+<TD>A parameter variable</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueProc.htm"><CODE>TIFPSValueProc</CODE></A></TD>
+<TD>The base class for all procedure calls</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueProcNo.htm"><CODE>TIFPSValueProcNo</CODE></A></TD>
+<TD>A procedure by number call</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueProcPtr.htm"><CODE>TIFPSValueProcPtr</CODE></A></TD>
+<TD>A procedural pointer</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueProcVal.htm"><CODE>TIFPSValueProcVal</CODE></A></TD>
+<TD>A procedure by value call</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueReplace.htm"><CODE>TIFPSValueReplace</CODE></A></TD>
+<TD>TIFPSValueReplace is used internally by the script engine when it needs to replace a value with something else, usually when writing the byte code</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSValueVar.htm"><CODE>TIFPSValueVar</CODE></A></TD>
+<TD>The base class for all variables</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD>Class&nbsp;<A href="TIFPSVar.htm"><CODE>TIFPSVar</CODE></A></TD>
+<TD>TIFPSVar is used to store global variables</TD>
+</TR>
+</TABLE>
+<H2>Functions and Procedures</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><CODE>function <A href="#AddImportedClassVariable"><B>AddImportedClassVariable</B></A>(Sender: <A href="TIFPSPascalCompiler.htm">TIFPSPascalCompiler</A>; const VarName, VarType: string): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#ExportCheck"><B>ExportCheck</B></A>(Sender: <A href="TIFPSPascalCompiler.htm">TIFPSPascalCompiler</A>; Proc: <A href="TIFPSInternalProcedure.htm">TIFPSInternalProcedure</A>; Types: array of <A href="ifps3utl.htm#TIFPSBaseType">TIFPSBaseType</A>; Modes: array of <A href="ifpscomp.htm#TIFPSParameterMode">TIFPSParameterMode</A>): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#IFPS3_mi2s"><B>IFPS3_mi2s</B></A>(i: Cardinal): string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>function <A href="#ParseMethod"><B>ParseMethod</B></A>(Owner: <A href="TIFPSPascalCompiler.htm">TIFPSPascalCompiler</A>; const FClassName: string; Decl: string; var OrgName: string; DestDecl: <A href="TIFPSParametersDecl.htm">TIFPSParametersDecl</A>; var Func: <A href="ifpscomp.htm#TPMFuncType">TPMFuncType</A>): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><CODE>procedure <A href="#SetVarExportName"><B>SetVarExportName</B></A>(P: <A href="TIFPSVar.htm">TIFPSVar</A>; const ExpName: string);</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="AddImportedClassVariable"><CODE>function <B>AddImportedClassVariable</B>(Sender: <A href="TIFPSPascalCompiler.htm">TIFPSPascalCompiler</A>; const VarName, VarType: string): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Add an imported class variable, this should be assigned at runtime before executing</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="ExportCheck"><CODE>function <B>ExportCheck</B>(Sender: <A href="TIFPSPascalCompiler.htm">TIFPSPascalCompiler</A>; Proc: <A href="TIFPSInternalProcedure.htm">TIFPSInternalProcedure</A>; Types: array of <A href="ifps3utl.htm#TIFPSBaseType">TIFPSBaseType</A>; Modes: array of <A href="ifpscomp.htm#TIFPSParameterMode">TIFPSParameterMode</A>): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Check the proc definition. Types[0] is the result type (or 0). Modes specify the parameter passing mode (in, var). High(Types) should always be 1 more than High(Modes).</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="IFPS3_mi2s"><CODE>function <B>IFPS3_mi2s</B>(i: Cardinal): string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>This function returns</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="ParseMethod"><CODE>function <B>ParseMethod</B>(Owner: <A href="TIFPSPascalCompiler.htm">TIFPSPascalCompiler</A>; const FClassName: string; Decl: string; var OrgName: string; DestDecl: <A href="TIFPSParametersDecl.htm">TIFPSParametersDecl</A>; var Func: <A href="ifpscomp.htm#TPMFuncType">TPMFuncType</A>): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Parse a method header</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD width=100%><A name="SetVarExportName"><CODE>procedure <B>SetVarExportName</B>(P: <A href="TIFPSVar.htm">TIFPSVar</A>; const ExpName: string);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Set the export name of a global variable</P>
+<H2>Types</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><TD><A name="PIFPSConstant">PIFPSConstant</A></TD>
+<TD width=100%>PIFPSContant is an alias to a TIFPSConstant</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="PIFPSProcVar">PIFPSProcVar</A></TD>
+<TD>PIFPSProcVar is an alias for <CODE><A href="TIFPSProcVar.htm">TIFPSProcVar</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="PIFPSRecordFieldTypeDef">PIFPSRecordFieldTypeDef</A></TD>
+<TD>PIFPSRecordFieldTypeDef is an alias to <CODE><A href="TIFPSRecordFieldTypeDef.htm">TIFPSRecordFieldTypeDef</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="PIFPSRegProc">PIFPSRegProc</A></TD>
+<TD>Pointer to a <CODE><A href="TIFPSRegProc.htm">TIFPSRegProc</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="PIFPSType">PIFPSType</A></TD>
+<TD>PIFPSType is a alias to a <CODE><A href="TIFPSType.htm">TIFPSType</A></CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="PIFPSVar">PIFPSVar</A></TD>
+<TD>TIFPSVar is an alias for a TIFPSVar</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="PIfRVariant">PIfRVariant</A></TD>
+<TD>Pointer to a <CODE><A href="ifpscomp.htm#TIfRVariant">TIfRVariant</A></CODE> variant</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSApplyAttributeToProc">TIFPSApplyAttributeToProc</A></TD>
+<TD>Event function</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSApplyAttributeToType">TIFPSApplyAttributeToType</A></TD>
+<TD>Event function</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSBinOperatorType">TIFPSBinOperatorType</A></TD>
+<TD>The kind of binairy operand</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSDuplicCheck">TIFPSDuplicCheck</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSOnExportCheck">TIFPSOnExportCheck</A></TD>
+<TD>See TIFPSPascalCompiler.OnExportCheck</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSOnExternalProc">TIFPSOnExternalProc</A></TD>
+<TD>See TIFPSPascalCompiler.OnExternalProc</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSOnNotify">TIFPSOnNotify</A></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSOnTranslateLineInfoProc">TIFPSOnTranslateLineInfoProc</A></TD>
+<TD>See TIFPSPascalCompiler.OnTranslateLineInfo</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSOnUses">TIFPSOnUses</A></TD>
+<TD>See TIFPSPascalCompiler.OnUses</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSOnUseVariable">TIFPSOnUseVariable</A></TD>
+<TD>See TIFPSPascalCompiler.OnUseVariable</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSOnWriteLineEvent">TIFPSOnWriteLineEvent</A></TD>
+<TD>See TIFPSPascalCompiler.OnWriteLine</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSParameterMode">TIFPSParameterMode</A></TD>
+<TD>The mode this parameter was passed</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSPascalCompilerErrorType">TIFPSPascalCompilerErrorType</A></TD>
+<TD>Is used to store the type of a compiler error</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSPascalCompilerHintType">TIFPSPascalCompilerHintType</A></TD>
+<TD>Used to store the type of a hint</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSPascalCompilerWarningType">TIFPSPascalCompilerWarningType</A></TD>
+<TD>Is used to store the type of a warning</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSPropType">TIFPSPropType</A></TD>
+<TD>Property type: iptRW = Read/Write; iptR= readonly; iptW= writeonly</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSSubOptType">TIFPSSubOptType</A></TD>
+<TD>Internal type used to store the current block type</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIFPSUnOperatorType">TIFPSUnOperatorType</A></TD>
+<TD>The kind of unair operand</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TIfRVariant">TIfRVariant</A></TD>
+<TD>A compile time variant<P>. FType is the type number of this variant. Basetype is the basetype of the variant (see <CODE><A href="ifps3utl.htm#TIFPSBaseType">TIFPSBaseType</A></CODE>).</TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><A name="TPMFuncType">TPMFuncType</A></TD>
+<TD>The parsed function type</TD>
+</TR>
+</TABLE><H2>Constants</H2>
+<TABLE cellspacing=2 cellpadding=4 width=100%><TR bgcolor="#e0e0e0"><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor=#efefef valign=top><TD><A name="InvalidVal">InvalidVal</A></TD>
+<TD width=100%>Invalid value, this is returned by most functions of IFPS3 that return a cardinal, when they fail</TD>
+</TR>
+</TABLE><H2>Author</H2>
+<P>Carlo Kok <<A href="mailto:ck@carlo-kok.com">ck@carlo-kok.com</A>></P>
+</BODY>
+</HTML>

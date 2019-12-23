@@ -1,0 +1,92 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/examples/JvProgramVersionCheck
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+Project1.res
+file
+
+
+
+
+2007-01-21T10:53:51.062500Z
+dd33aea02068faafdd4fdedc99c9c2ff
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+has-props
+
+Version Check
+dir
+
+Main.pas
+file
+
+
+
+
+2007-01-21T10:53:51.062500Z
+ab2f72065eb0e5c5210f0ecc73574320
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Main.dfm
+file
+
+
+
+
+2007-01-21T10:53:51.062500Z
+cbb92f8fec06927487c548909fc39d63
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Project1.dpr
+file
+
+
+
+
+2007-01-21T10:53:51.062500Z
+5dbcc3a052391d63388477db996452fb
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Project1.dof
+file
+
+
+
+
+2007-01-21T10:53:51.078125Z
+967961748b131784d279e8fd2afeffc6
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+

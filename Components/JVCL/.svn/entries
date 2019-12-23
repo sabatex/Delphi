@@ -1,0 +1,202 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+todo.txt
+file
+
+
+
+
+2007-01-21T10:54:59.218750Z
+9c389ae0a67368345b0779cefd27317d
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+qrun
+dir
+
+devtools
+dir
+
+locale
+dir
+
+images
+dir
+
+lib
+dir
+
+converter
+dir
+
+build.sh
+file
+
+
+
+
+2007-01-21T10:54:59.343750Z
+90c65859a2331111df0c95a5e749ef9b
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+bin
+dir
+
+qcommon
+dir
+
+Resources
+dir
+
+dcu
+dir
+
+packages
+dir
+
+archive
+dir
+
+makemodified.bat
+file
+
+
+
+
+2007-01-21T10:54:59.203125Z
+00656185d633cfe21ff05c33869176b3
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Dict
+dir
+
+readme.htm
+file
+
+
+
+
+2007-01-21T10:54:59.250000Z
+580dddff534b25cfc91762a379ee209f
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+clean.bat
+file
+
+
+
+
+2007-01-21T10:54:59.250000Z
+74c7f06445cc7cdb4a812318fad9fda8
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+help
+dir
+
+common
+dir
+
+capitalization.txt
+file
+
+
+
+
+2007-01-21T10:54:59.281250Z
+c4049079d502bb20b399f037981f052b
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+qdesign
+dir
+
+jvcl3.txt
+file
+
+
+
+
+2007-01-21T10:54:59.312500Z
+15db2dab21648f4bae6948386ec22b71
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+qexamples
+dir
+
+run
+dir
+
+changelog.txt
+file
+
+
+
+
+2007-01-21T10:54:59.343750Z
+e5db9ddae682c37fbf8089675d68a4e7
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Includes
+dir
+
+install
+dir
+
+design
+dir
+
+install.bat
+file
+
+
+
+
+2007-01-21T10:54:59.359375Z
+a09ff0281c74211cf9d0106cda6eb6f1
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+examples
+dir
+

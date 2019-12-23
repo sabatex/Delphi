@@ -1,0 +1,75 @@
+package ifps3pkg;
+
+{$R *.res}
+{$R 'IFPS3CompExec.dcr'}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Innerfuse Pascal Script 3'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl,
+  rtl,
+  dbrtl;
+
+contains
+  ifpscomp in 'ifpscomp.pas',
+  ifpidateutils in 'ifpidateutils.pas',
+  ifpidateutilsr in 'ifpidateutilsr.pas',
+  ifpidll2 in 'ifpidll2.pas',
+  ifpidll2runtime in 'ifpidll2runtime.pas',
+  ifpii_buttons in 'ifpii_buttons.pas',
+  ifpii_classes in 'ifpii_classes.pas',
+  ifpii_controls in 'ifpii_controls.pas',
+  ifpii_DB in 'ifpii_DB.pas',
+  ifpii_extctrls in 'ifpii_extctrls.pas',
+  ifpii_forms in 'ifpii_forms.pas',
+  ifpii_graphics in 'ifpii_graphics.pas',
+  ifpii_menus in 'ifpii_menus.pas',
+  ifpii_std in 'ifpii_std.pas',
+  ifpii_stdctrls in 'ifpii_stdctrls.pas',
+  ifpiir_buttons in 'ifpiir_buttons.pas',
+  ifpiir_classes in 'ifpiir_classes.pas',
+  ifpiir_controls in 'ifpiir_controls.pas',
+  ifpiir_DB in 'ifpiir_DB.pas',
+  ifpiir_extctrls in 'ifpiir_extctrls.pas',
+  ifpiir_forms in 'ifpiir_forms.pas',
+  ifpiir_graphics in 'ifpiir_graphics.pas',
+  ifpiir_menus in 'ifpiir_menus.pas',
+  ifpiir_std in 'ifpiir_std.pas',
+  ifpiir_stdctrls in 'ifpiir_stdctrls.pas',
+  ifps3 in 'ifps3.pas',
+  IFPS3CompExec in 'IFPS3CompExec.pas',
+  ifps3debug in 'ifps3debug.pas',
+  ifps3disasm in 'ifps3disasm.pas',
+  ifps3utl in 'ifps3utl.pas',
+  ifps3CEImp_Controls in 'ifps3CEImp_Controls.pas',
+  ifps3CEImp_DB in 'ifps3CEImp_DB.pas',
+  ifps3CEImp_Default in 'ifps3CEImp_Default.pas',
+  ifps3CEImp_Forms in 'ifps3CEImp_Forms.pas',
+  ifps3CEImp_StdCtrls in 'ifps3CEImp_StdCtrls.pas',
+  ifps3ppc in 'ifps3ppc.pas',
+  ifpii_comobj in 'ifpii_comobj.pas',
+  ifpiir_comobj in 'ifpiir_comobj.pas',
+  ifps3CEImp_COM in 'ifps3CEImp_COM.pas';
+
+end.

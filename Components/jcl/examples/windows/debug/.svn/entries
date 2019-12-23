@@ -1,0 +1,40 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jcl/examples/windows/debug
+file:///D:/VS-SVN/jcl
+
+
+
+2007-01-21T10:44:47.906250Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e985b798-073e-7148-a25a-63e4055e5e75
+
+threadexcept
+dir
+
+framestrack
+dir
+
+stacktrack
+dir
+
+sourceloc
+dir
+

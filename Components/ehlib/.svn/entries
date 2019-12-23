@@ -1,0 +1,106 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/ehlib
+file:///D:/VS-SVN/ehlib
+
+
+
+2007-01-21T10:39:27.312500Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9c9282be-0c9f-a743-a204-b9820ef29d12
+
+history.txt
+file
+
+
+
+
+2007-01-21T10:39:48.250000Z
+72f60d30fe6f5ce9474a7fdd50205c46
+2007-01-21T10:39:27.312500Z
+1
+Administrator
+
+source
+dir
+
+license.txt
+file
+
+
+
+
+2007-01-21T10:39:48.250000Z
+bf5059508ae657bf70bb055945cec28b
+2007-01-21T10:39:27.312500Z
+1
+Administrator
+
+HLP
+dir
+
+DEMOS
+dir
+
+history.rus
+file
+
+
+
+
+2007-01-21T10:39:48.265625Z
+0acd365cc9021c330038cbf31f7b2c2b
+2007-01-21T10:39:27.312500Z
+1
+Administrator
+
+DataService
+dir
+
+license.rus
+file
+
+
+
+
+2007-01-21T10:39:48.281250Z
+d7b912a1e85c84a3a5620e0468108c38
+2007-01-21T10:39:27.312500Z
+1
+Administrator
+
+readme.txt
+file
+
+
+
+
+2007-01-21T10:39:48.281250Z
+d0538fa8ba6f98880ef08338fc3032af
+2007-01-21T10:39:27.312500Z
+1
+Administrator
+
+LangResources
+dir
+
+AdvTech
+dir
+

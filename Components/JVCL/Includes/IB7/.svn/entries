@@ -1,0 +1,52 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/Includes/IB7
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+ibase.h
+file
+
+
+
+
+2007-01-21T10:53:06.015625Z
+30ecad6510721e8e341f0b6fb2c41275
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+iberror.h
+file
+
+
+
+
+2007-01-21T10:53:06.031250Z
+de362327a662912889b779d0f16b723f
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+

@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: ifpscomp: Class TIFPSInterface</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="TIFPSInterface"><H1>Class TIFPSInterface</H1>
+</A><H2>Unit</H2>
+<A href="ifpscomp.htm">ifpscomp</A><BR><H2>Declaration</H2>
+<P><CODE>type TIFPSInterface = class(TObject)</CODE></P><H2>Description</H2>
+Interface type info<H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>constructor <A href="TIFPSInterface.htm#Create"><B>Create</B></A>(Owner: <A href="TIFPSPascalCompiler.htm">TIFPSPascalCompiler</A>; InheritedFrom: <A href="TIFPSInterface.htm">TIFPSInterface</A>; Guid: TGuid; const Name: string; aType: <A href="TIFPSType.htm">TIFPSType</A>);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>destructor <A href="TIFPSInterface.htm#Destroy"><B>Destroy</B></A>; override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSInterface.htm#CastToType"><B>CastToType</B></A>(IntoType: <A href="TIFPSType.htm">TIFPSType</A>; var ProcNo: Cardinal): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSInterface.htm#Func_Call"><B>Func_Call</B></A>(Index: Cardinal; var ProcNo: Cardinal): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSInterface.htm#Func_Find"><B>Func_Find</B></A>(const Name: string; var Index: Cardinal): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSInterface.htm#IsCompatibleWith"><B>IsCompatibleWith</B></A>(aType: <A href="TIFPSType.htm">TIFPSType</A>): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPSInterface.htm#RegisterDummyMethod"><B>RegisterDummyMethod</B></A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSInterface.htm#RegisterMethod"><B>RegisterMethod</B></A>(const Declaration: string; const cc: <A href="ifps3.htm#TIFPSCallingConvention">TIFPSCallingConvention</A>): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPSInterface.htm#SetNil"><B>SetNil</B></A>(var ProcNo: Cardinal): Boolean;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Create"><CODE>constructor <B>Create</B>(Owner: <A href="TIFPSPascalCompiler.htm">TIFPSPascalCompiler</A>; InheritedFrom: <A href="TIFPSInterface.htm">TIFPSInterface</A>; Guid: TGuid; const Name: string; aType: <A href="TIFPSType.htm">TIFPSType</A>);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Destroy"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="CastToType"><CODE>function <B>CastToType</B>(IntoType: <A href="TIFPSType.htm">TIFPSType</A>; var ProcNo: Cardinal): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Cast an interface to a different type</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Func_Call"><CODE>function <B>Func_Call</B>(Index: Cardinal; var ProcNo: Cardinal): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Call a function</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Func_Find"><CODE>function <B>Func_Find</B>(const Name: string; var Index: Cardinal): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Find a function</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="IsCompatibleWith"><CODE>function <B>IsCompatibleWith</B>(aType: <A href="TIFPSType.htm">TIFPSType</A>): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Check if this interface is compatible with atype</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterDummyMethod"><CODE>procedure <B>RegisterDummyMethod</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register a method that cannot be called, but will hold an empty space This can be used for methods that cannot be registered (for example for functions that use pointer parameters).</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="RegisterMethod"><CODE>function <B>RegisterMethod</B>(const Declaration: string; const cc: <A href="ifps3.htm#TIFPSCallingConvention">TIFPSCallingConvention</A>): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Register a method</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="SetNil"><CODE>function <B>SetNil</B>(var ProcNo: Cardinal): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>returns the procno for nilling an interface</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>property <A href="TIFPSInterface.htm#Guid"><B>Guid</B></A>: TGuid;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInterface.htm#InheritedFrom"><B>InheritedFrom</B></A>: <A href="TIFPSInterface.htm">TIFPSInterface</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property Name: string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPSInterface.htm#NameHash"><B>NameHash</B></A>: Longint;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Guid"><CODE>property <B>Guid</B>: TGuid;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The GUID for this interface</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="InheritedFrom"><CODE>property <B>InheritedFrom</B>: <A href="TIFPSInterface.htm">TIFPSInterface</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>This interface inherits from ...</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Name"><CODE>property Name: string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The name of this interface</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="NameHash"><CODE>property <B>NameHash</B>: Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Hash of the name of this interface</P>
+</BODY>
+</HTML>

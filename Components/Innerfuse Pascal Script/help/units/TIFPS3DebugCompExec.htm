@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="DIPasDoc 0.8.6">
+<TITLE>Innerfuse Pascal Script: IFPS3CompExec: Class TIFPS3DebugCompExec</TITLE>
+<LINK rel="StyleSheet" href="Help.css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor="e0e0e0">
+<TD><A href="AllUnits.htm"><CENTER>Units</CENTER></A></TD>
+<TD><A href="AllClasH.htm"><CENTER>Class Hierarchy</CENTER></A></TD>
+<TD><A href="AllClass.htm"><CENTER>Classes, Interfaces and Objects</CENTER></A></TD>
+<TD><A href="AllTypes.htm"><CENTER>Types</CENTER></A></TD>
+<TD><A href="AllVaria.htm"><CENTER>Variables</CENTER></A></TD>
+<TD><A href="AllConst.htm"><CENTER>Constants</CENTER></A></TD>
+<TD><A href="AllFuncs.htm"><CENTER>Functions and Procedures</CENTER></A></TD>
+<TD><A href="AllIdent.htm"><CENTER>Identifiers</CENTER></A></TD>
+</TR>
+</TABLE>
+<A name="TIFPS3DebugCompExec"><H1>Class TIFPS3DebugCompExec</H1>
+</A><H2>Unit</H2>
+<A href="IFPS3CompExec.htm">IFPS3CompExec</A><BR><H2>Declaration</H2>
+<P><CODE>type TIFPS3DebugCompExec = class(<CODE><A href="TIFPS3CompExec.htm">TIFPS3CompExec</A></CODE>)</CODE></P><H2>Description</H2>
+TIFPS3DebugCompExec has all features of <CODE><A href="TIFPS3CompExec.htm">TIFPS3CompExec</A></CODE> and also supports debugging<H2>Hierarchy</H2>
+<CODE><A href="TIFPS3CompExec.htm">TIFPS3CompExec</A></CODE><H2>Methods</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>constructor <A href="TIFPS3DebugCompExec.htm#Create"><B>Create</B></A>(AOwner: TComponent); override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>destructor <A href="TIFPS3DebugCompExec.htm#Destroy"><B>Destroy</B></A>; override;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPS3DebugCompExec.htm#ClearBreakPoint"><B>ClearBreakPoint</B></A>(const Fn: string; Line: Longint);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPS3DebugCompExec.htm#ClearBreakPoints"><B>ClearBreakPoints</B></A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3DebugCompExec.htm#GetVarContents"><B>GetVarContents</B></A>(const Name: string): string;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>function <A href="TIFPS3DebugCompExec.htm#HasBreakPoint"><B>HasBreakPoint</B></A>(const Fn: string; Line: Longint): Boolean;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPS3DebugCompExec.htm#Pause"><B>Pause</B></A>; virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPS3DebugCompExec.htm#Resume"><B>Resume</B></A>; virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPS3DebugCompExec.htm#SetBreakPoint"><B>SetBreakPoint</B></A>(const Fn: string; Line: Longint);</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPS3DebugCompExec.htm#StepInto"><B>StepInto</B></A>; virtual;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>procedure <A href="TIFPS3DebugCompExec.htm#StepOver"><B>StepOver</B></A>; virtual;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Create"><CODE>constructor <B>Create</B>(AOwner: TComponent); override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Destroy"><CODE>destructor <B>Destroy</B>; override;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ClearBreakPoint"><CODE>procedure <B>ClearBreakPoint</B>(const Fn: string; Line: Longint);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>clear the breakpoint at line Line</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="ClearBreakPoints"><CODE>procedure <B>ClearBreakPoints</B>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Clear All Breakpoints</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="GetVarContents"><CODE>function <B>GetVarContents</B>(const Name: string): string;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Returns the contents of a variable, formatted for a watch window</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="HasBreakPoint"><CODE>function <B>HasBreakPoint</B>(const Fn: string; Line: Longint): Boolean;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Has a breakpoint on line(Line) ?</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Pause"><CODE>procedure <B>Pause</B>; virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="Resume"><CODE>procedure <B>Resume</B>; virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="SetBreakPoint"><CODE>procedure <B>SetBreakPoint</B>(const Fn: string; Line: Longint);</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Set a breakpoint at line Line</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="StepInto"><CODE>procedure <B>StepInto</B>; virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="StepOver"><CODE>procedure <B>StepOver</B>; virtual;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>&nbsp;</P>
+<H2>Properties</H2>
+<H3>Overview</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><CODE>property <A href="TIFPS3DebugCompExec.htm#BreakPoint"><B>BreakPoint</B></A>[I: Longint]: <A href="TIFPSBreakPointInfo.htm">TIFPSBreakPointInfo</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD><CODE>property <A href="TIFPS3DebugCompExec.htm#BreakPointCount"><B>BreakPointCount</B></A>: Longint;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3DebugCompExec.htm#OnBreakpoint"><B>OnBreakpoint</B></A>: <A href="IFPS3CompExec.htm#TIFPS3OnLineInfo">TIFPS3OnLineInfo</A>;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3DebugCompExec.htm#OnIdle"><B>OnIdle</B></A>: TNotifyEvent;</CODE></TD>
+</TR>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD><CODE>property <A href="TIFPS3DebugCompExec.htm#OnLineInfo"><B>OnLineInfo</B></A>: <A href="IFPS3CompExec.htm#TIFPS3OnLineInfo">TIFPS3OnLineInfo</A>;</CODE></TD>
+</TR>
+</TABLE>
+<H3>Description</H3>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="BreakPoint"><CODE>property <B>BreakPoint</B>[I: Longint]: <A href="TIFPSBreakPointInfo.htm">TIFPSBreakPointInfo</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Return breakpoint number I</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="public.gif" alt="Public"></TD>
+<TD width=100%><A name="BreakPointCount"><CODE>property <B>BreakPointCount</B>: Longint;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>Returns the number of currently set breakpoints</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="OnBreakpoint"><CODE>property <B>OnBreakpoint</B>: <A href="IFPS3CompExec.htm#TIFPS3OnLineInfo">TIFPS3OnLineInfo</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>OnBreakPoint is called when the script engine is at a breakpoint</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="OnIdle"><CODE>property <B>OnIdle</B>: TNotifyEvent;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>The on Idle event is called when the script engine is paused or on a breakpoint. You should call Application.ProcessMessages from here and call resume when you are done. If you don't assign a handler to this event, the script engine will not pause or breakpoint</P>
+<TABLE cellspacing=2 cellpadding=4 width=100%>
+<TR bgcolor=#efefef valign=top><TD><IMG src="published.gif" alt="Published"></TD>
+<TD width=100%><A name="OnLineInfo"><CODE>property <B>OnLineInfo</B>: <A href="IFPS3CompExec.htm#TIFPS3OnLineInfo">TIFPS3OnLineInfo</A>;</CODE></A></TD>
+</TR>
+</TABLE>
+<P>OnLineInfo is called for each statement the script engine has debuginfo (row, col, pos) for</P>
+</BODY>
+</HTML>

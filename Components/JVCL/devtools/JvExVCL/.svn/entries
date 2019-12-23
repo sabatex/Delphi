@@ -1,0 +1,68 @@
+8
+
+dir
+1
+file:///D:/VS-SVN/jvcl/devtools/JvExVCL
+file:///D:/VS-SVN/jvcl
+
+
+
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9e1e4154-4754-dc4c-a01a-4eefefacc9e1
+
+src
+dir
+
+jpp.exe
+file
+
+
+
+
+2007-01-21T10:52:12.453125Z
+7e1e1f3c43d91200a1b6fae937b60419
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+has-props
+
+preprocess.bat
+file
+
+
+
+
+2007-01-21T10:52:12.468750Z
+8ca509748aeff1d101b0ffc803f5acaf
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
+Readme.txt
+file
+
+
+
+
+2007-01-21T10:52:12.468750Z
+564cf3979c54759f998d23a4d918e4cf
+2007-01-21T10:50:44.390625Z
+1
+Administrator
+
